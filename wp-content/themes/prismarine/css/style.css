@@ -597,6 +597,8 @@ Author: Very - Andres Posada
 section.our-recipients {
 	color: #2d9cca;
 	color: var(--light-blue);
+	font-size: 18px;
+	font-size: 1.125rem;
 }
 @media screen and (min-width: 300px) and (max-width: 899px) {
 	.site-main {

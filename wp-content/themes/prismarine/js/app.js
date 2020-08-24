@@ -180,11 +180,11 @@ document.addEventListener("DOMContentLoaded", function () {
  * @link        https://verypossible.com
  * @since       1.0.0
  */
-document.addEventListener("DOMContentLoaded", function () {
-  jQuery('.carouselrrr').slick({
+document.addEventListener("DOMContentLoaded", function ($) {
+  $('.carouselrrr').slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 2,
     dots: true
   });
-});
+})(jQuery);

@@ -18,5 +18,5 @@ Author: Very - Andres Posada
 /*!
 Module Name: Our Recipients
 Author: Very - Andres Posada
-*/section.our-recipients{color:#2d9cca;color:var(--light-blue)}@media screen and (min-width:300px) and (max-width:899px){.site-main{margin-top:0}}@media screen and (min-width:1194px){.container{padding:0}}
+*/section.our-recipients{color:#2d9cca;color:var(--light-blue);font-size:18px;font-size:1.125rem}@media screen and (min-width:300px) and (max-width:899px){.site-main{margin-top:0}}@media screen and (min-width:1194px){.container{padding:0}}
 /*# sourceMappingURL=style.css.map */
