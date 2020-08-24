@@ -1,0 +1,52 @@
+//
+// Utilities Mixins
+//
+// @package     bvbj
+// @subpackage  Mixins
+// @author      Very - Engineer Esteban Rocha
+// @link        https://verypossible.com
+// @since       1.0.0
+//
+
+// @mixin Developer basic flex highlighter for chrome
+// Firefox has advanced built-in flex and grid inspectors
+@mixin flex-inspector {
+	outline: 1px solid #dc143c;
+
+	> * {
+		outline: 1px dashed #9300ff;
+	}
+}
+
+// @mixin Center gridline
+@mixin crosshair {
+	position: relative;
+
+	&::before {
+		background: #9300ff;
+		content: "";
+		height: 100vh;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 1px;
+		z-index: 999999;
+	}
+
+	&::after {
+		background: #dc143c;
+		content: "";
+		height: 1px;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		position: fixed;
+		right: 0;
+		top: 50%;
+		width: 100vw;
+		z-index: 999999;
+	}
+}

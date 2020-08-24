@@ -1,0 +1,64 @@
+//
+// Triangles mixing to create any size triangle
+//
+// @package     bvbj
+// @subpackage  Mixins
+// @author      Very - Engineer Esteban Rocha
+// @link        https://verypossible.com
+// @since       1.0.0
+//
+// @mixin   triangle($direction, $size, $color)
+// @param   string $key => color
+// @return  map-get(map-get($colors, $key), $tone);
+//
+
+@mixin triangle($direction, $size, $color) {
+	@if $direction == "bottom" {
+		border-left: #{$size}rem solid transparent;
+		border-right: #{$size}rem solid transparent;
+		border-top: #{$size}rem solid #{$color};
+	} @else if $direction == "left" {
+		border-bottom: #{$size}rem solid transparent;
+		border-right: #{$size}rem solid #{$color};
+		border-top: #{$size}rem solid transparent;
+	} @else if $direction == "right" {
+		border-bottom: #{$size}rem solid transparent;
+		border-left: #{$size}rem solid #{$color};
+		border-top: #{$size}rem solid transparent;
+	} @else if $direction == "top" {
+		border-bottom: #{$size}rem solid #{$color};
+		border-left: #{$size}rem solid transparent;
+		border-right: #{$size}rem solid transparent;
+	} @else {
+		@warn "Unknown `#{$direction}` in triangle.";
+	}
+	height: 0;
+	width: 0;
+}
+
+//================================================
+// Isosceles triangle
+//================================================
+@mixin triangle-isos($direction, $size, $sizes, $color) {
+	@if $direction == "bottom" {
+		border-left: #{$sizes}rem solid transparent;
+		border-right: #{$sizes}rem solid transparent;
+		border-top: #{$size}rem solid #{$color};
+	} @else if $direction == "left" {
+		border-bottom: #{$sizes}rem solid transparent;
+		border-right: #{$size}rem solid #{$color};
+		border-top: #{$sizes}rem solid transparent;
+	} @else if $direction == "right" {
+		border-bottom: #{$sizes}rem solid transparent;
+		border-left: #{$size}rem solid #{$color};
+		border-top: #{$sizes}rem solid transparent;
+	} @else if $direction == "top" {
+		border-bottom: #{$size}rem solid #{$color};
+		border-left: #{$sizes}rem solid transparent;
+		border-right: #{$sizes}rem solid transparent;
+	} @else {
+		@warn "Unknown `#{$direction}` in triangle.";
+	}
+	height: 0;
+	width: 0;
+}

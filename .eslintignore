@@ -1,0 +1,21 @@
+####
+## ESLint: Ignore files
+##
+## @author      Very - Front-End Software Engineer, Esteban Rocha
+## @link        https://verypossible.com
+## @since       1.0.0
+####
+
+# WordPress ignore
+/*
+!/wp-content
+/wp-content/*
+!/wp-content/themes
+/wp-content/themes/*
+# Your theme name
+!/wp-content/themes/prismarine
+
+# Global ignore
+**/*.min.js
+**/node_modules/**
+**/vendor/**

@@ -1,0 +1,155 @@
+//
+// Standard Css Reset Component
+//
+// @package     bvbj
+// @subpackage  Base
+// @author      Very - Engineer Esteban Rocha
+// @link        https://verypossible.com
+//
+// @since       1.0.0
+//
+
+:root {
+	@include theme-colors;
+	@include theme-fonts;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 16px; // Explicit declare REM's
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	// Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ //
+	box-sizing: inherit;
+}
+
+* {
+	&:focus {
+		outline: 0;
+	}
+}
+
+body {
+	// @include crosshair;
+	background: var(--white); // Fallback for when there is no custom background color defined. //
+	color: var(--black);
+	font: {
+		family: var(--system-fonts);
+		size: 16px;
+		style: normal;
+		weight: normal;
+	}
+	margin: 0;
+}
+
+// W3C Headings Recommendation Standard
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.17rem;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+h5 {
+	font-size: 0.83rem;
+}
+
+h6 {
+	font-size: 0.67rem;
+}
+
+pre,
+pre > *,
+code,
+code > * {
+	font-family: var(--system-fonts-mono);
+	font-size: 1rem;
+	line-height: 1.2;
+}
+
+a {
+	text: {
+		decoration: none;
+	}
+
+	&:hover {
+		text: {
+			decoration: none;
+		}
+	}
+}
+
+//Select
+// a,
+// br,
+// div,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// label,
+// p,
+// span,
+// strong,
+// i,
+// em {
+// 	&::selection {
+// 		background-color: transparent;
+// 		color: #846caa;
+// 	}
+// }
+
+img {
+	height: auto; // Make sure images are scaled correctly. //
+	max-width: 100%; // Adhere to container width. //
+}
+
+figure {
+	margin: 0; // no need or want margins on figures
+}
+
+hr {
+	border: 0.5px solid var(--black);
+	height: 0;
+	margin: 0;
+	max-width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+// Customize scrollbar for webkit browsers, Chrome <-> Safari
+$scrollIndex: 99;
+$scrollTickness: 8px;
+
+::-webkit-scrollbar {
+	height: $scrollTickness; // for horizontal scrollbars //
+	width: $scrollTickness; // for vertical scrollbars //
+	z-index: $scrollIndex;
+}
+
+::-webkit-scrollbar-track {
+	background: #eeeeee;
+	z-index: $scrollIndex;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #626262;
+	z-index: $scrollIndex;
+}

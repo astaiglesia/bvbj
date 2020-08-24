@@ -1,0 +1,24 @@
+//
+// Fonts Palette Component
+//
+// @package     bvbj
+// @subpackage  Base
+// @author      Very - Engineer Esteban Rocha
+// @link        https://verypossible.com
+//
+// @since       1.0.0
+//
+
+// Theme Colors
+@mixin theme-fonts {
+	--system-fonts: "Rubik", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Roboto",
+		"Oxygen", "Oxygen-Sans", "Ubuntu", "Cantarell", "Arial", "system-ui", "Segoe UI", "sans-serif",
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--system-fonts-mono: "FuraCode Nerd Font", "SFMono-Regular", "Ubuntu Mono", "Consolas",
+		"DejaVu Sans Mono", "Menlo", "monospace";
+
+	// Custom fonts
+	--rubik: "Rubik";
+	--times: "Times";
+	--patrick: "Patrick Hand";
+}

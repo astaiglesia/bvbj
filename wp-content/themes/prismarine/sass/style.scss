@@ -1,0 +1,38 @@
+/*!
+Theme Name: bvbj
+Theme URI: https://verypossible.com/
+Author: Very - Engineer Esteban Rocha
+Author URI: https://verypossible.com/
+Description: bvbj is the Very Possible in-house an all-purpose custom theme and pre-build WordPress installation, with high coding standards, strong developer focus and WooCommerce ready. It is based on Automattic’s and Roots.io years of experience and outstanding good practices.
+Version: 1.0.0
+License URI: LICENSE
+Text Domain: bvbj
+*/
+
+//
+// Sass Architecture - The Triad Pattern
+// Based on: https://sass-guidelin.es/#architecture
+//
+
+// DO NOT CHANGE ORDERING
+
+// 1. Configuration and helpers // @import "mixins/default";
+// @import "mixins/animated-underline";
+@import "mixins/borders";
+@import "mixins/fluid--type";
+@import "mixins/media";
+@import "mixins/transitions";
+@import "mixins/triangles";
+@import "mixins/utils";
+
+// 2. Base stuff // @import "base/default";
+@import "base/variables"; // Variables.
+@import "base/root"; // Custom reset & base settings.
+@import "base/libraries"; // Custom reset & base settings.
+@import "base/grid-var"; // Media query breakpoints and grid options
+@import "base/layout"; // Base layout
+
+// 3. Components // @import "components/default";
+// @import "components/default"
+@import "_modules/hero.module/hero-module";
+@import "_modules/our_recipients.module/our_recipients-module";

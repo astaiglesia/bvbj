@@ -1,0 +1,20 @@
+//
+// Color Palette Component
+//
+// @package     bvbj
+// @subpackage  Base
+// @author      Very - Engineer Esteban Rocha
+// @link        https://verypossible.com
+//
+// @since       1.0.0
+//
+
+// Theme Colors
+@mixin theme-colors {
+	--black: #000;
+	--light-gray: #e3e2e8;
+	--white: #fff;
+	--main-blue: #25274d;
+	--light-blue: #2d9cca;
+	--dark-blue: #29658a;
+}

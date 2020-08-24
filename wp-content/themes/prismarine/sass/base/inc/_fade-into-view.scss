@@ -1,0 +1,45 @@
+//
+// Fade into view, transition library
+//
+// @author      Very - Engineer Esteban Rocha
+// @link        https://verypossible.com
+// @version     1.0.0
+//
+
+.lazy-load {
+	opacity: 0;
+	$trns-props: (opacity);
+	@include transitions($trns-props, "1.4s cubic-bezier(0.59, 0.01, 0.28, 1) 0s");
+
+	&.in-view {
+		opacity: 1;
+	}
+}
+
+.fadeIntoView {
+	opacity: 0;
+	$trns-props: (transform, opacity);
+	@include transitions($trns-props, "0.5s cubic-bezier(0.59, 0.01, 0.28, 1) 0.6s");
+
+	// Down
+	&.-down {
+		transform: translateY(-2.5vw);
+	}
+
+	// Up
+	&.-up {
+		transform: translateY(2.5vw);
+	}
+
+	// Speed mods
+	&.-x2 {
+		$trns-props: (transform, opacity);
+		@include transitions($trns-props, "0.5s cubic-bezier(0.59, 0.01, 0.28, 1) 0.5s");
+	}
+
+	// In view state
+	&.in-view {
+		opacity: 1;
+		transform: initial;
+	}
+}

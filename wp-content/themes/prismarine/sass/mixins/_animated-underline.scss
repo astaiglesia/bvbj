@@ -1,0 +1,45 @@
+//
+// Animated Underline Mixin
+//
+// @package     bvbj
+// @subpackage  Mixins
+// @author      Very - Engineer Esteban Rocha
+// @link        https://verypossible.com
+// @since       1.0.0
+//
+
+@mixin animated-underlines($scaleFactor, $inverted, $color) {
+	$scaleX: 1;
+	$scaleInitial: 0;
+	$visibility: hidden;
+
+	@if $inverted == true {
+		$scaleInitial: #{$scaleFactor};
+		$visibility: visible;
+	} @else if $inverted == false {
+		$scaleX: #{$scaleFactor};
+	}
+
+	position: relative;
+
+	&::before {
+		background-color: var(#{$color});
+		bottom: 0;
+		content: "";
+		height: 2px;
+		left: 0;
+		position: absolute;
+		transform: scaleX($scaleInitial);
+		$trns-props: (transform, visibility);
+		@include transitions($trns-props, "0.3s ease-in-out 0s");
+		visibility: $visibility;
+		width: 100%;
+	}
+
+	&:hover {
+		&::before {
+			transform: scaleX($scaleX);
+			visibility: visible;
+		}
+	}
+}

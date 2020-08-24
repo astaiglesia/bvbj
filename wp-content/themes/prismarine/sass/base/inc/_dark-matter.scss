@@ -1,0 +1,327 @@
+//
+// Dark Matter CSS
+// Fast and reusable functional css library.
+//
+//  ___           _     __  __      _   _              ___ ___ ___
+// |   \ __ _ _ _| |__ |  \/  |__ _| |_| |_ ___ _ _   / __/ __/ __|
+// | |) / _` | '_| / / | |\/| / _` |  _|  _/ -_) '_| | (__\__ \__ \
+// |___/\__,_|_| |_\_\ |_|  |_\__,_|\__|\__\___|_|    \___|___/___/
+//
+// @author      Esteban Rocha
+// @link        https://keybase.io/estebanrocha
+// @version     1.2.0
+// Inpired by: tachyons.io
+//
+
+//
+// Absolute Positioned Element Module
+//
+.d-abs {
+	position: absolute;
+
+	// Centered
+	&.-a-center {
+		left: 0;
+		margin: {
+			left: auto;
+			right: auto;
+		}
+		right: 0;
+		width: fit-content;
+	}
+} // Absolute Positioned Element Module
+
+//
+// Flexbox Container Module
+//
+.d-flex {
+	display: flex;
+} // Flexbox Container Module
+
+// Align Items
+.-items {
+	&-normal {
+		align-items: normal;
+	}
+
+	&-start {
+		align-items: flex-start;
+	}
+
+	&-end {
+		align-items: flex-end;
+	}
+
+	&-center {
+		align-items: center;
+	}
+
+	&-baseline {
+		align-items: baseline;
+	}
+
+	&-stretch {
+		align-items: stretch;
+	}
+} // Align Items
+
+// Flex Direction
+.-column {
+	flex-direction: column;
+
+	&-reverse {
+		flex-direction: column-reverse;
+	}
+}
+
+.-row {
+	flex-direction: row;
+
+	&-reverse {
+		flex-direction: row-reverse;
+	}
+} // Flex Direction
+
+// Flex Wrap
+.-wrap {
+	flex-wrap: wrap;
+
+	&-reverse {
+		flex-wrap: wrap-reverse;
+	}
+}
+
+.-nowrap {
+	flex-wrap: nowrap;
+} // Flex Wrap
+
+// Justify Content
+.-justify {
+	&-start {
+		justify-content: flex-start;
+	}
+
+	&-end {
+		justify-content: flex-end;
+	}
+
+	&-center {
+		justify-content: center;
+	}
+
+	&-normal {
+		justify-content: normal;
+	}
+
+	&-stretch {
+		justify-content: stretch;
+	}
+
+	&-between {
+		justify-content: space-between;
+	}
+
+	&-around {
+		justify-content: space-around;
+	}
+
+	&-evenly {
+		justify-content: space-evenly;
+	}
+} // Justify Content
+
+//
+// Flexbox Item Module
+//
+.d-flex-item {
+	// flex-basis: auto;
+	flex-grow: 0;
+	flex-shrink: 1;
+
+	// Align Self
+	&.-self {
+		&-normal {
+			align-self: normal;
+		}
+
+		&-start {
+			align-self: flex-start;
+		}
+
+		&-end {
+			align-self: flex-end;
+		}
+
+		&-center {
+			align-self: center;
+		}
+
+		&-baseline {
+			align-self: baseline;
+		}
+
+		&-stretch {
+			align-self: stretch;
+		}
+	} // Align Self
+
+	// Flex Grow
+	&.-grow {
+		&-1 {
+			flex-grow: 1;
+		}
+
+		&-2 {
+			flex-grow: 2;
+		}
+
+		&-3 {
+			flex-grow: 3;
+		}
+
+		&-4 {
+			flex-grow: 4;
+		}
+	} // Flex Grow
+
+	// Flex Shrink
+	&.-shrink {
+		&-0 {
+			flex-shrink: 0;
+		}
+
+		&-2 {
+			flex-shrink: 2;
+		}
+	} // Flex Shrink
+
+	// Flex Order
+	&.-order {
+		&-0 {
+			order: 0;
+		}
+
+		&-1 {
+			order: 1;
+		}
+
+		&-2 {
+			order: 2;
+		}
+
+		&-3 {
+			order: 3;
+		}
+
+		&-4 {
+			order: 4;
+		}
+
+		&-5 {
+			order: 5;
+		}
+
+		&-6 {
+			order: 6;
+		}
+
+		&-7 {
+			order: 7;
+		}
+
+		&-8 {
+			order: 8;
+		}
+
+		&-last {
+			order: 99999;
+		}
+	} // Flex Order
+} // Flexbox Item Module
+
+//
+// Style Lists
+//
+.d-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+//
+// Sections
+//
+.d-section {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+	width: 100%;
+}
+
+//
+// Rows
+//
+.d-row {
+	$margY: 1rem;
+	margin: {
+		bottom: $margY;
+		left: auto;
+		right: auto;
+		top: $margY;
+	}
+	max-width: 90rem;
+	width: 100%;
+}
+
+//
+// z-index Stacking Context Module
+//
+.d-zidx {
+	&-0 {
+		z-index: 0;
+	}
+
+	&-1 {
+		z-index: 1;
+	}
+
+	&-2 {
+		z-index: 2;
+	}
+
+	&-3 {
+		z-index: 3;
+	}
+
+	&-4 {
+		z-index: 4;
+	}
+
+	&-5 {
+		z-index: 5;
+	}
+
+	&-6 {
+		z-index: 6;
+	}
+
+	&-9 {
+		z-index: 9;
+	}
+
+	&-99 {
+		z-index: 99;
+	}
+
+	&-999 {
+		z-index: 999;
+	}
+
+	&-over {
+		z-index: 9999;
+	}
+
+	&-max {
+		z-index: 2147483647;
+	}
+} // z-index Stacking Context Module

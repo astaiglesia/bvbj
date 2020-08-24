@@ -1,0 +1,40 @@
+//
+// Color Classes Component
+//
+// @package     bvbj
+// @subpackage  Base
+// @author      Very - Engineer Esteban Rocha
+// @link        https://verypossible.com
+//
+// @since       1.0.0
+//
+
+//
+// Color Functional CSS Classes
+//
+.colr {
+	&-white {
+		color: var(--white);
+	}
+
+	&-black {
+		color: var(--black);
+	}
+
+	&-main-blue {
+		color: var(--main-blue);
+	}
+
+	&-light-blue {
+		color: var(--light-blue);
+	}
+
+	&-dark-blue {
+		color: var(--dark-blue);
+	}
+
+	&-light-gray {
+		color: var(--light-gray);
+	}
+
+}

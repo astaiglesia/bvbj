@@ -1,0 +1,17 @@
+####
+## Prettier: Ignore files
+##
+## @author      Very - Front-End Software Engineer, Esteban Rocha
+## @link        https://verypossible.com
+## @since       1.0.0
+####
+
+# Global ignore
+**/*.html
+**/*.twig
+**/*.liquid
+**/*.min.*
+**/*.min.css
+**/*.min.js
+**/node_modules/**
+**/vendor/**
