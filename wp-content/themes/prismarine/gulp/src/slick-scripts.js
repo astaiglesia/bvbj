@@ -9,13 +9,13 @@
  */
 
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function ($) {
 
-	jQuery('.carouselrrr').slick({
+	$('.carouselrrr').slick({
 		infinite: true,
 		slidesToShow: 5,
 		slidesToScroll: 2,
 		dots:true,
 	});
 
-});
+})( jQuery );

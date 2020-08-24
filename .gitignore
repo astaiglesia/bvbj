@@ -11,7 +11,6 @@
 #=================================================
 
 *.log
-wp-config*.php
 wp-cli.local.yml
 wp-content/advanced-cache.php
 wp-content/backup-db/

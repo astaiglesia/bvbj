@@ -65,7 +65,6 @@ function bvbj_enqueue_style() {
 }
 
 function bvbj_enqueue_script() {
-	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-1.12.4.min.js', array(), '1.12.4', 'true' );
 	if ( is_front_page() ) {
 		wp_enqueue_script( 'slick-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', array('jquery'), '1.0.0', 'true' );
 		wp_enqueue_script( 'slick-scripts', get_template_directory_uri() . '/js/slick-scripts.min.js', array('jquery'), '1.0.0', 'true' );
