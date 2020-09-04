@@ -46,6 +46,10 @@ jobs:
           name: Set up the Pantheon install git remotes
           command: git push pantheon master
       - run: echo "It's live!"
+      - slack/status:
+          channel: "C01AGSBAELR"
+          fail_only: false
+          webhook: "${SLACK_WEBHOOK}"
 
 workflows:
   version: 2
