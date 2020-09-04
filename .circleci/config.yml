@@ -54,9 +54,6 @@ workflows:
       - eslint
       - stylelint
       - deploy:
-          requires:
-            - eslint
-            - stylelint
           filters:
             branches:
               only:

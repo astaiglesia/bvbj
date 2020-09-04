@@ -1,5 +1,5 @@
 /**
- * ESLint: Config
+ * ESLint:  Config
  *
  * @author      Very - Front-End Software Engineer, Esteban Rocha
  * @link        https://verypossible.com
