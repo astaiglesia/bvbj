@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	 *
 	 * @return  {undefined} undefined
 	 */
-	const isScrolled = () => fadeMeIn.forEach((el) => el.classList.add("in-view"));
+	const isScrolled = () => fadeMeIn.forEach(el => el.classList.add("in-view"));
 
 	/**
 	 * λ getScrollY() ~ Gets window.scrollY value.
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	 * @param    {object} ele
 	 * @return   {boolean} boolean
 	 */
-	const isVisible = (ele) => {
+	const isVisible = ele => {
 		const { top, bottom } = ele.getBoundingClientRect();
 		const vHeight = window.innerHeight || document.documentElement.clientHeight;
 		return (top > 0 || bottom > 0) && top < vHeight + 100;
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	 * @param       {object} j
 	 * @return      {undefined} undefined
 	 */
-	const unFadeToView = (j) => j.forEach((el) => isVisible(el) && el.classList.add("in-view"));
+	const unFadeToView = j => j.forEach(el => isVisible(el) && el.classList.add("in-view"));
 
 	// Trigger in-view state for visible element Nodes
 	unFadeToView(fadeMeIn);
@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	scrolledPage() && isScrolled();
 
 	// Add event for scroll if scrolledPage() == truthy
+	// eslint-disable-next-line
 	!scrolledPage() &&
 		window.addEventListener("scroll", function x() {
 			unFadeToView(fadeMeIn);
