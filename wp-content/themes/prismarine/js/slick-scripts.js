@@ -10,10 +10,10 @@
  * @since       1.0.0
  */
 document.addEventListener("DOMContentLoaded", function ($) {
-  $('.carouselrrr').slick({
+  $('.carousel-r').slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 2,
     dots: true
   });
-})(jQuery);
+}(jQuery));

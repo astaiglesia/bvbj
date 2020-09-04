@@ -42,31 +42,19 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <main id="page" class="site-main">
-	<header id="masthead" class="site-header container">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			?>
-		</div><!-- .site-branding -->
+	<header id="masthead" class="site-header">
+		<button class="js-menu menu" aria-controls="primary-menu" aria-expanded="false" type="button">
+			<span class="bar"></span>
+		</button>
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bvbj' ); ?></button>
 			<?php
 				wp_nav_menu( array(
-					'menu'           => 'menu-1',
+					'menu'           => 'header-menu',
 					'container'      => 'ul',
-					'theme_location' => 'menu-1',
+					'theme_location' => 'header-menu',
 					'menu_id'        => 'primary-menu',
-					'menu_class'     => 'd-flex -items-center -row -wrap -justify-between navbar',
+					'menu_class'     => 'navbar',
 				) );
 			?>
 		</nav><!-- #site-navigation -->

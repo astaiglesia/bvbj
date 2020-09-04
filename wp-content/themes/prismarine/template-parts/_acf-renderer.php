@@ -22,8 +22,20 @@ if ( have_rows('modules') ):
 			renderPart('modules/hero.module/_hero');
 			break;
 
+		case 'our_co_chairs':
+			renderPart('modules/our_co_chairs.module/_our_co_chairs');
+			break;
+
 		case 'our_recipients':
 			renderPart('modules/our_recipients.module/_our_recipients');
+			break;
+
+		case 'our_goals':
+				renderPart('modules/our_goals.module/_our_goals');
+				break;
+
+		case 'our_supporting_partners':
+			renderPart('modules/our_supporting_partners.module/_our_supporting_partners');
 			break;
 
 		default:

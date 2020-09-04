@@ -17,9 +17,8 @@ pageTemplate();
 	<!-- Begin Footer -->
 	<footer id="colophon" class="site-footer container">
 		<div class="site-info">
-			<?php
-				printf( esc_html__( '%1$s by %2$s.', 'bvbj' ), 'bvbj', '<a href="https://verypossible.com/">Very LLC</a>' );
-			?>
+			<?php $heading = get_field( 'heading', 'option' );  ?>
+			<h2> <?php echo $heading; ?> </h2>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 	<!-- End Footer -->

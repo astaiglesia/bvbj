@@ -33,6 +33,8 @@ Text Domain: bvbj
 @import "base/layout"; // Base layout
 
 // 3. Components // @import "components/default";
-// @import "components/default"
+@import "components/header";
+
+// 4. modules //
 @import "_modules/hero.module/hero-module";
 @import "_modules/our_recipients.module/our_recipients-module";

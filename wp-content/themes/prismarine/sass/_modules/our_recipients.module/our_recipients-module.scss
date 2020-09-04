@@ -9,3 +9,39 @@ section.our-recipients {
 	color: var(--light-blue);
 	font-size: 1.125rem;
 }
+
+.social-icon {
+	display: inline-block;
+}
+
+.svg-social {
+	height: 0.9375rem;
+	width: 0.9375rem;
+	background-size: 0.9375rem;
+}
+
+.fb-svg {
+	background: url("../assets/svg/facebook.svg") no-repeat center center transparent;
+	background-size: 0.9375rem;
+}
+
+.tw-svg {
+	background: url("../assets/svg/twitter.svg") no-repeat center center transparent;
+	background-size: 0.9375rem;
+}
+
+.ins-svg {
+	background: url("../assets/svg/instagram.svg") no-repeat center center transparent;
+	background-size: 0.9375rem;
+}
+
+.link-svg {
+	background: url("../assets/svg/linkedin.svg") no-repeat center center transparent;
+	background-size: 0.9375rem;
+}
+/* height: 1.875rem;
+width: 1.875rem;
+background: url("../assets/svg-icons/facebook-square.svg") no-repeat center center transparent;
+background-size: 1.875rem;
+display: block;
+text-indent: -62499.9375rem; */

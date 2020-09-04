@@ -27,117 +27,92 @@ $acfDBOR = [
 			</div>
 		<?php endif; ?>
 
-
 		<div class="wrapper">
-			<div class="carouselrrr">
-				<div>
-					<a data-fancybox data-src="#modal1" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+1">
-					</a>
-					<div style="display: none;" id="modal1">
-						<h2>Hello! #1</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
-				<div>
-					<a data-fancybox data-src="#modal2" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+2">
-					</a>
-					<div style="display: none;" id="modal2">
-						<h2>Hello! #2</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
-				<div>
-					<a data-fancybox data-src="#modal3" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+3">
-					</a>
-					<div style="display: none;" id="modal3">
-						<h2>Hello! #3</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
-				<div>
-					<a data-fancybox data-src="#modal4" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+4">
-					</a>
-					<div style="display: none;" id="modal4">
-						<h2>Hello! #4</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
-				<div>
-					<a data-fancybox data-src="#modal5" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+5">
-					</a>
-					<div style="display: none;" id="modal5">
-						<h2>Hello! #5</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
-				<div>
-					<a data-fancybox data-src="#modal6" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+6">
-					</a>
-					<div style="display: none;" id="modal6">
-						<h2>Hello! #6</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
-				<div>
-					<a data-fancybox data-src="#modal7" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+7">
-					</a>
-					<div style="display: none;" id="modal7">
-						<h2>Hello! #7</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
-				<div>
-					<a data-fancybox data-src="#modal8" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+8">
-					</a>
-					<div style="display: none;" id="modal8">
-						<h2>Hello! #8</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
-				<div>
-					<a data-fancybox data-src="#modal9" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+9">
-					</a>
-					<div style="display: none;" id="modal9">
-						<h2>Hello! #9</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
-				<div>
-					<a data-fancybox data-src="#modal10" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+10">
-					</a>
-					<div style="display: none;" id="modal10">
-						<h2>Hello! #10</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
-				<div>
-					<a data-fancybox data-src="#modal11" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+11">
-					</a>
-					<div style="display: none;" id="modal11">
-						<h2>Hello! #11</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
-				<div>
-					<a data-fancybox data-src="#modal12" href="javascript:;" class="btn btn-primary">
-						<img src="https://via.placeholder.com/140x140?text=Image+12">
-					</a>
-					<div style="display: none;" id="modal12">
-						<h2>Hello! #12</h2>
-						<p>You are awesome!</p>
-					</div>
-				</div>
+			<div class="carousel-r">
+
+				<?php
+					// Check rows exists.
+					if( have_rows('carousel_recipients') ):
+							$i = 1;
+							// Loop through rows.
+							while( have_rows('carousel_recipients') ) : the_row();
+
+									// Load sub field value.
+									$image_carousel = get_sub_field('image_carousel');
+									$name = get_sub_field('name');
+									$location = get_sub_field('location');
+									$image_popup = get_sub_field('image_popup');
+									$description = get_sub_field('description');
+									$video_url = get_sub_field('video_url');
+									$facebook_url = get_sub_field('facebook_url');
+									$twitter_url = get_sub_field('twitter_url');
+									$instagram_url = get_sub_field('instagram_url');
+									$linkedin_url = get_sub_field('linkedin_url');
+							?>
+									<div class="recipient">
+										<a data-fancybox data-src="#modal<?php echo $i; ?>" href="javascript:;" class="btn btn-primary">
+											<?php if ($image_carousel): ?>
+												<img src="<?php echo $image_carousel; ?>">
+											<?php endif; ?>
+											<?php if ($name): ?>
+												<h2><?php echo $name; ?></h2>
+											<?php endif; ?>
+											<?php if ($location): ?>
+												<span><?php echo $location; ?></span>
+											<?php endif; ?>
+										</a>
+										<div style="display: none;" id="modal<?php echo $i; ?>">
+											<?php if ($name): ?>
+												<h2><?php echo $name; ?></h2>
+											<?php endif; ?>
+											<?php if ($location): ?>
+												<span><?php echo $location; ?></span>
+											<?php endif; ?>
+											<?php if ($description): ?>
+												<p><?php echo $description; ?></p>
+											<?php endif; ?>
+											<?php if ($image_popup): ?>
+												<img src="<?php echo $image_popup; ?>">
+											<?php endif; ?>
+
+											<?php if ($video_url): ?>
+												<div class="yt-video">
+													<?php echo $video_url; ?>
+												</div>
+											<?php endif; ?>
+
+											<span>Social Media</span>
+											<?php if ($facebook_url): ?>
+											<a href="<?php echo $facebook_url; ?>" target="_blank" class="social-icon">
+												<div class="fb-svg svg-social"></div>
+											</a>
+											<?php endif; ?>
+											<?php if ($twitter_url): ?>
+											<a href="<?php echo $twitter_url; ?>" target="_blank" class="social-icon">
+												<div class="tw-svg svg-social"></div>
+											</a>
+											<?php endif; ?>
+											<?php if ($instagram_url): ?>
+											<a href="<?php echo $instagram_url; ?>" target="_blank" class="social-icon">
+												<div class="ins-svg svg-social"></div>
+											</a>
+											<?php endif; ?>
+											<?php if ($linkedin_url): ?>
+											<a href="<?php echo $linkedin_url; ?>" target="_blank" class="social-icon">
+												<div class="link-svg svg-social"></div>
+											</a>
+											<?php endif; ?>
+										</div>
+									</div>
+
+							<?php
+							$i++;
+							// End loop.
+							endwhile;
+
+					endif;
+				?>
+
 			</div>
 		</div>
 

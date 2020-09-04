@@ -50,7 +50,7 @@ if ( ! function_exists( 'bvbj_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'bvbj' ),
+				'header-menu' => esc_html__( 'Header Menu', 'bvbj' ),
 			)
 		);
 
@@ -213,3 +213,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * Options pages.
+ */
+require_once get_template_directory() . '/inc/acf-options.php';

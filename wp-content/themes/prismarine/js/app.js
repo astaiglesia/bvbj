@@ -136,6 +136,34 @@ document.addEventListener("DOMContentLoaded", function () {
 "use strict";
 
 /**
+ * Header Menu
+ *
+ * @package     bvbj
+ * @subpackage  src
+ * @author      Very - Andres Posada
+ * @link        https://verypossible.com
+ * @since       1.0.0
+ */
+document.addEventListener("DOMContentLoaded", function () {
+  var isActive = false;
+  jQuery('.js-menu').on('click', function () {
+    if (isActive) {
+      jQuery(this).removeClass('active');
+      jQuery('body').removeClass('menu-open');
+    } else {
+      jQuery(this).addClass('active');
+      jQuery('body').addClass('menu-open');
+    }
+
+    isActive = !isActive;
+  });
+});
+
+/* @Concat Next -> */
+
+"use strict";
+
+/**
  * File skip-link-focus-fix.js.
  *
  * Helps with accessibility for keyboard only users.
@@ -181,10 +209,10 @@ document.addEventListener("DOMContentLoaded", function () {
  * @since       1.0.0
  */
 document.addEventListener("DOMContentLoaded", function ($) {
-  $('.carouselrrr').slick({
+  $('.carousel-r').slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 2,
     dots: true
   });
-})(jQuery);
+}(jQuery));

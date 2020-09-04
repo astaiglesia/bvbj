@@ -47,6 +47,68 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_5f457a1e1f306": {
+                    "key": "layout_5f457a1e1f306",
+                    "name": "our_co_chairs",
+                    "label": "Our Co-Chairs",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f457a281f307",
+                            "label": "Our Co-Chairs",
+                            "name": "our_co-chairs",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5f45788ed3618"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5f456ad7cb1e0": {
+                    "key": "layout_5f456ad7cb1e0",
+                    "name": "our_goals",
+                    "label": "Our Goals",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f456adfcb1e1",
+                            "label": "Our Goals",
+                            "name": "our_goals",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5f455096bf518"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5f433f3951eb9": {
                     "key": "layout_5f433f3951eb9",
                     "name": "our_recipients",
@@ -68,6 +130,37 @@
                             },
                             "clone": [
                                 "group_5f433de28817f"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5f45ceac1c39d": {
+                    "key": "layout_5f45ceac1c39d",
+                    "name": "our_supporting_partners",
+                    "label": "Our Supporting Partners",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f45ceb01c39e",
+                            "label": "Our Supporting Partners",
+                            "name": "our_supporting_partners",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5f45cdbc861b8"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -114,5 +207,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1598246787
+    "modified": 1598410438
 }
