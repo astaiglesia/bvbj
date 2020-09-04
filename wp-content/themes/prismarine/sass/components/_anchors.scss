@@ -1,7 +1,7 @@
 //
 // Anchors Component
 //
-// @package     bvbj
+// @package     Very 2020
 // @subpackage  Components
 // @author      Very - Engineer Esteban Rocha
 // @link        https://verypossible.com
@@ -38,39 +38,39 @@
 // White
 .W {
 	&::before {
-		background-color: color(white);
+		background-color: var(--primary-light);
 	}
 
 	&:hover {
-		color: color(white);
+		color: var(--primary-light);
 	}
 }
 
 // Blue
 .B {
 	&::before {
-		background-color: color(blue);
+		background-color: var(--secondary-light-blue);
 	}
 
 	&:hover {
-		color: color(blue);
+		color: var(--secondary-light-blue);
 	}
 }
 
 // Gray
 .G {
 	&::before {
-		background-color: color(gray, dark1);
+		background-color: var(--bg-jungle-green);
 	}
 
 	&:hover {
-		color: color(gray, dark1);
+		color: var(--bg-jungle-green);
 	}
 }
 
 // Gray Light
 .GL {
 	&::before {
-		background-color: color(gray, light1);
+		background-color: var(--bg-light-gray);
 	}
 }

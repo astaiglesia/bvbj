@@ -25,6 +25,27 @@ jobs:
       - run:
           name: "Test: ESLint Check"
           command: npm run eslint
+  deploy:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "6a:98:92:ad:97:41:c6:a9:d7:86:30:68:8c:ce:4d:4b"
+      # Set up the git remotes for Pantheon
+      - run:
+          name: Set up the Pantheon install git remotes
+          command: |
+            echo '[codeserver.dev.1d2272b5-93b6-49e2-95d8-1067150ef643.drush.in]:2222 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSY3gnr0DrbqJJSnEFy6jazDmAdBm4Zs/EkWIQa7x31qgSYyYJMz5V+pk62lBf2BN42VtubwO83vW9G+yG2K1RGOvZJaK5GBvBb/Ws2ZPcp/4sNHpPzkdd75e5/Pk8AWA59XUbJcBWmrDrHMbWV1j2zqPPikxbqGeTTjSx4QR18LIRei5OwT6VQnaVnJqPAqFZ+oCbpr0DL96foL3UEY8EWT/6GH2cANEGZO4ppbhdDw4uG6TaI7S0lxWMQEVy+iwjCNH/nanjd73cwoYd90E0OVdgNDr3hVbIuE6sUW6UwlaAwuyOM/xJYPg1y0rF66958pyVJlZ9KD5A0kY3bHg7' >> ~/.ssh/known_hosts
+            git config --global user.email "esteban@verypossible.com"
+            git config --global user.name "Esteban CircleCI Avatar"
+            git remote add pantheon ssh://codeserver.dev.1d2272b5-93b6-49e2-95d8-1067150ef643@codeserver.dev.1d2272b5-93b6-49e2-95d8-1067150ef643.drush.in:2222/~/repository.git
+      # Set up the git remotes for Pantheon
+      - run:
+          name: Set up the Pantheon install git remotes
+          command: git push pantheon master
+      - run: echo "It's live!"
 
 workflows:
   version: 2

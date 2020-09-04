@@ -46,6 +46,7 @@
 		#{$property}: $min-value $importantOver;
 	}
 
+	/* stylelint-disable */
 	@media (min-width: $min-vw) {
 		@each $property in $properties {
 			#{$property}: calc(
@@ -59,6 +60,7 @@
 				$importantOver;
 		}
 	}
+	/* stylelint-enable */
 
 	@media (min-width: $max-vw) {
 		@each $property in $properties {
@@ -91,6 +93,7 @@
 		#{$property}: $min-value $importantOver;
 	}
 
+	/* stylelint-disable */
 	@media (min-height: $min-vw) {
 		@each $property in $properties {
 			#{$property}: calc(
@@ -102,6 +105,7 @@
 				$importantOver;
 		}
 	}
+	/* stylelint-enable */
 
 	@media (min-height: $max-vw) {
 		@each $property in $properties {

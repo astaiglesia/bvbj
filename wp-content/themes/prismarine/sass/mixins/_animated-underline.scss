@@ -19,7 +19,6 @@
 	} @else if $inverted == false {
 		$scaleX: #{$scaleFactor};
 	}
-
 	position: relative;
 
 	&::before {
@@ -30,10 +29,11 @@
 		left: 0;
 		position: absolute;
 		transform: scaleX($scaleInitial);
-		$trns-props: (transform, visibility);
-		@include transitions($trns-props, "0.3s ease-in-out 0s");
 		visibility: $visibility;
 		width: 100%;
+		$trns-props: (transform, visibility);
+
+		@include transitions($trns-props, "0.3s ease-in-out 0s");
 	}
 
 	&:hover {
