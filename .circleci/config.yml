@@ -1,0 +1,42 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+  slack: circleci/slack@3.4.2
+jobs:
+  stylelint:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - run:
+          name: "Install package"
+          command: npm install
+      - run:
+          name: "Test: Stylelint Check"
+          command: npm run style
+  eslint:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - run:
+          name: "Install package"
+          command: npm install
+      - run:
+          name: "Test: ESLint Check"
+          command: npm run eslint
+
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - eslint
+      - stylelint
+      - deploy:
+          requires:
+            - eslint
+            - stylelint
+          filters:
+            branches:
+              only:
+                - master
