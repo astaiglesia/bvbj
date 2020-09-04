@@ -64,7 +64,7 @@ const sourcemaps = require("gulp-sourcemaps");
  * @function  const emptiness: (done: any) => any
  * @param     signal @callback async completion
  */
-const emptiness = (done) => done();
+const emptiness = done => done();
 
 /**
  * Generate:
@@ -73,7 +73,7 @@ const emptiness = (done) => done();
  * @function  const errorHandler: function(r: any) => void
  * @param     Mixed err.
  */
-const errorHandler = (r) => {
+const errorHandler = r => {
 	notify.onError("\n\n❌  ===> ERROR: <%= error.message %>\n")(r);
 	beep();
 	// this.emit('end');
@@ -96,8 +96,8 @@ gulp.task("dockerInit", () => {
 		.pipe(
 			exec(
 				gp.docker.autoStart
-					? `cd ${gp.docker.path} || return && docker-compose start`
-					: `cd ${gp.docker.path} || return && docker-compose stop`
+					? `docker-compose -f ../../../../../docker-compose.yaml start`
+					: `docker-compose -f ../../../../../docker-compose.yaml stop`
 			)
 		);
 });
@@ -109,7 +109,7 @@ gulp.task("dockerInit", () => {
  * @function  const  browsersync: function(done: any) => void
  * @param     signal @callback async completion
  */
-const browsersync = (done) => {
+const browsersync = done => {
 	log(
 		`\n\n${gp.log.color.red}${gp.log.divider}\n${gp.log.browserScLog.up}\n${gp.log.divider}${gp.log.color.white}\n`
 	);
@@ -131,7 +131,7 @@ const browsersync = (done) => {
  * @function  const  reload: function(done: any) => void
  * @param     signal @callback async completion
  */
-const reload = (done) => {
+const reload = done => {
 	log(
 		`\n\n${gp.log.color.red}${gp.log.divider}\n${gp.log.browserScLog.reload}\n${gp.log.divider}${gp.log.color.white}\n`
 	);

@@ -9,11 +9,25 @@
  * @since       1.0.0
  */
 
-// BrowserSync Multi Environment
+const thisPath = __dirname;
+
+// BrowserSync Multi Environment Switch
 let browserSyncProxy;
-process.env.USER === "makarov"
-	? (browserSyncProxy = "127.0.0.1:88/")
-	: (browserSyncProxy = ".test");
+switch (process.env.USER) {
+	case "makarov":
+		browserSyncProxy = "127.0.0.1:88/";
+		break;
+	case "jonathancaiaffa":
+		browserSyncProxy = "127.0.0.1:88/";
+		break;
+	case "andres":
+		browserSyncProxy = "127.0.0.1:88/";
+		break;
+
+	default:
+		browserSyncProxy = undefined;
+		break;
+}
 
 // Sass Style bundle switcher
 const sassTemplate = {
@@ -22,28 +36,14 @@ const sassTemplate = {
 		scssDir: "../css/",
 		scssEntry: "../sass/*.scss",
 	},
-	// // hero.module
-	// heroModule: {
-	// 	cssBundle: "**/!(*.min.*)*.css",
-	// 	scssDir: "../template-parts/modules/hero.module",
-	// 	scssEntry: "../sass/_modules/hero.module/*.scss",
-	// },
 };
 
 // JavaScript bundle switcher
 const jsTemplate = {
-	// aboutTabs: {
-	// 	bundle: "**/V_About_Tabs.js",
-	// 	concat: "V_About_Tabs.js",
-	// 	dest: "../js/dist/",
-	// 	release: "../js/dist/V_About_Tabs.min.js",
-	// 	src: "../js/src/**",
-	// },
 	babel: {
 		bundle: "**/!(*.min.*)*.js",
 		concat: "app.js",
 		dest: "../js/",
-		// release: "../js/dist/V_About_Tabs.min.js",
 		src: "src/**/*.js",
 	},
 };
@@ -51,9 +51,8 @@ const jsTemplate = {
 module.exports = {
 	// Docker Container auto init
 	docker: {
-		active: browserSyncProxy === "127.0.0.1:88/" ? true : false,
+		active: browserSyncProxy !== undefined ? true : false,
 		autoStart: true,
-		path: "$MKEVNMAKA/bvbj/www",
 	},
 
 	// BrowserSync Server options
