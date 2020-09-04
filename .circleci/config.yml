@@ -32,11 +32,3 @@ workflows:
     jobs:
       - eslint
       - stylelint
-      - deploy:
-          requires:
-            - eslint
-            - stylelint
-          filters:
-            branches:
-              only:
-                - master
