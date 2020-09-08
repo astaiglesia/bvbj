@@ -3,7 +3,7 @@ Module Name: Hero Home
 Author: Very - Andres Posada
 */
 
-@import "./media"; // Custom reset & base settings.
+// @import "./media"; // Custom reset & base settings.
 
 section.hero {
 	background-color: var(--main-blue);
@@ -13,6 +13,7 @@ section.hero {
 	.heading {
 		max-width: 61.5625rem;
 		margin: 0 auto;
+
 		p {
 			font-size: 3.125rem;
 			line-height: 1.2;
