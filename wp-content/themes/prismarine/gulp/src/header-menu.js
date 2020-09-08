@@ -8,21 +8,18 @@
  * @since       1.0.0
  */
 
-
-document.addEventListener("DOMContentLoaded", function () {
-
-	var isActive = false;
-
-	jQuery('.js-menu').on('click', function() {
+document.addEventListener("DOMContentLoaded", () => {
+	let isActive = false;
+	const btnClick = document.getElementsByClassName("js-menu")[0];
+	const bodyEl = document.getElementsByTagName("BODY")[0];
+	btnClick.addEventListener("click", function setActive() {
 		if (isActive) {
-			jQuery(this).removeClass('active');
-			jQuery('body').removeClass('menu-open');
+			btnClick.classList.remove("active");
+			bodyEl.classList.remove("menu-open");
 		} else {
-			jQuery(this).addClass('active');
-			jQuery('body').addClass('menu-open');
+			btnClick.classList.add("active");
+			bodyEl.classList.add("menu-open");
 		}
-
 		isActive = !isActive;
 	});
-
 });
