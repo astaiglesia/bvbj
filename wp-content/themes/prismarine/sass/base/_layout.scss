@@ -8,22 +8,20 @@
 // @since       1.0.0
 //
 
-
 //-----------------------------------------
 // Full-width Helper
 //-----------------------------------------
 .site-main {
-	margin:0 auto;
+	margin: 0 auto;
 	width: 100%;
 
 	@include media($phone, $tablet-landscape) {
-    margin-top: 0;
-  }
+		margin-top: 0;
+	}
 
 	&.acf-content-blocks {
 		margin: 0 auto;
 	} // &.acf-content-blocks
-
 } // .site-main
 
 //-----------------------------------------
@@ -32,7 +30,6 @@
 .container {
 	margin: 0 auto;
 	padding: 0 2.5rem;
-
 	max-width: $max-width;
 	position: relative;
 

@@ -3,11 +3,12 @@ Module Name: Our Co Chairs
 Author: Very - Andres Posada
 */
 
-@import "./media"; // Custom reset & base settings.
+// @import "./media"; // Custom reset & base settings.
 
 section.our-co-chairs {
 	color: var(--black);
 	font-size: 1.125rem;
+
 	.social-icon {
 		display: inline-block;
 	}
