@@ -8,7 +8,6 @@
 // @since       1.0.0
 //
 
-
 //-----------------------------------------
 // Grid Values – Used for general Sass/styling. Note the rem values!
 //-----------------------------------------
@@ -22,6 +21,9 @@ $desktop-large: 1800px;
 
 /// Gutenberg backend breakpoints.
 $gutenberg-tablet: 1330px;
+
+/// Header width
+$header-desktop: 1370px;
 
 /// Standard Desktops and Larger Laptops.
 $desktop: 1200px;

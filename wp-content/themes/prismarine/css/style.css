@@ -14,8 +14,9 @@ Text Domain: bvbj
 	--light-gray: #e3e2e8;
 	--white: #fff;
 	--main-blue: #25274d;
-	--light-blue: #2d9cca;
+	--light-blue: #2e9cca;
 	--dark-blue: #29658a;
+	--dark-blue-btn: #3a7aaa;
 	--system-fonts: "Rubik", "-apple-system", "BlinkMacSystemFont",
 		"Helvetica Neue", "Roboto", "Oxygen", "Oxygen-Sans", "Ubuntu", "Cantarell",
 		"Arial", "system-ui", "Segoe UI", "sans-serif", "Apple Color Emoji",
@@ -137,7 +138,7 @@ table {
 	color: var(--main-blue);
 }
 .colr-light-blue {
-	color: #2d9cca;
+	color: #2e9cca;
 	color: var(--light-blue);
 }
 .colr-dark-blue {
@@ -557,20 +558,28 @@ table {
 	padding: 0 2.5rem;
 	position: relative;
 }
-header {
-	height: 50px;
-	left: 0;
+.header {
+	background-color: transparent;
+	height: 112px;
+	height: 7rem;
 	position: absolute;
-	top: 30px;
-	z-index: 999999;
+	width: 100%;
+	z-index: 2;
 }
-.menu {
+.header .header__container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1370px;
+	max-width: 85.625rem;
+	width: 100%;
+}
+.header .header__container .toggleMenu {
 	background: 0;
 	border: 0;
 	float: left;
 	height: 20px;
 	height: 1.25rem;
-	margin: 1rem;
+	margin: 1rem 0;
 	outline: 0;
 	padding: 0;
 	position: relative;
@@ -582,12 +591,43 @@ header {
 	width: 1.25rem;
 	z-index: 9999;
 }
-.menu:hover {
+.header .header__container .toggleMenu:hover {
 	cursor: pointer;
 }
-.bar,
-.bar:after,
-.bar:before {
+.header .header__container .toggleMenu.--active .toggleMenu__bar {
+	background: 0;
+}
+.header .header__container .toggleMenu.--active .toggleMenu__bar:before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 20px;
+	width: 1.25rem;
+}
+.header .header__container .toggleMenu.--active .toggleMenu__bar:after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	width: 20px;
+	width: 1.25rem;
+}
+.header .header__container .toggleMenu.--active .toggleMenu__bar:after,
+.header .header__container .toggleMenu.--active .toggleMenu__bar:before {
+	top: 0;
+}
+.header .header__container .toggleMenu.--active .toggleMenu__bar,
+.header .header__container .toggleMenu.--active .toggleMenu__bar:after,
+.header .header__container .toggleMenu.--active .toggleMenu__bar:before {
+	-webkit-transition: background 0.2s linear 0.1s, top 0.2s linear,
+		-webkit-transform 0.2s linear 0.2s;
+	transition: background 0.2s linear 0.1s, top 0.2s linear,
+		-webkit-transform 0.2s linear 0.2s;
+	transition: background 0.2s linear 0.1s, top 0.2s linear,
+		transform 0.2s linear 0.2s;
+	transition: background 0.2s linear 0.1s, top 0.2s linear,
+		transform 0.2s linear 0.2s, -webkit-transform 0.2s linear 0.2s;
+}
+.header .header__container .toggleMenu .toggleMenu__bar,
+.header .header__container .toggleMenu .toggleMenu__bar:after,
+.header .header__container .toggleMenu .toggleMenu__bar:before {
 	background: #fff;
 	background: var(--white);
 	content: "";
@@ -606,50 +646,28 @@ header {
 		transform 0.2s linear, -webkit-transform 0.2s linear;
 	width: 100%;
 }
-.bar {
-	margin-top: -0.25rem;
+.header .header__container .toggleMenu .toggleMenu__bar {
+	width: 22px;
+	width: 1.375rem;
 }
-.bar:before {
-	top: -5.6px;
-	top: -0.35rem;
+.header .header__container .toggleMenu .toggleMenu__bar:before {
+	top: -7.2px;
+	top: -0.45rem;
+	width: 15px;
+	width: 0.9375rem;
 }
-.bar:after {
-	top: 5.6px;
-	top: 0.35rem;
+.header .header__container .toggleMenu .toggleMenu__bar:after {
+	top: 7.2px;
+	top: 0.45rem;
+	width: 19px;
+	width: 1.1875rem;
 }
-.bar:after,
-.bar:before {
+.header .header__container .toggleMenu .toggleMenu__bar:after,
+.header .header__container .toggleMenu .toggleMenu__bar:before {
 	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
 }
-.active .bar {
-	background: 0;
-}
-.active .bar:before {
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-.active .bar:after {
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-.active .bar:after,
-.active .bar:before {
-	top: 0;
-}
-.active .bar,
-.active .bar:after,
-.active .bar:before {
-	-webkit-transition: background 0.2s linear 0.1s, top 0.2s linear,
-		-webkit-transform 0.2s linear 0.2s;
-	transition: background 0.2s linear 0.1s, top 0.2s linear,
-		-webkit-transform 0.2s linear 0.2s;
-	transition: background 0.2s linear 0.1s, top 0.2s linear,
-		transform 0.2s linear 0.2s;
-	transition: background 0.2s linear 0.1s, top 0.2s linear,
-		transform 0.2s linear 0.2s, -webkit-transform 0.2s linear 0.2s;
-}
-nav {
+.header .header__container nav {
 	background: #eaeaea;
 	height: 100vh;
 	padding-top: 3rem;
@@ -664,22 +682,65 @@ nav {
 	width: 100%;
 	z-index: 999;
 }
-.menu-open nav {
+.--menu-open .header .header__container nav {
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
 }
-nav ul {
+.header .header__container nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-nav ul li {
+.header .header__container nav ul li {
 	font-size: 32px;
 	font-size: 2rem;
 	padding: 20px 5px;
 }
-nav ul li:hover {
+.header .header__container nav ul li:hover {
 	background: #ccc;
+}
+.header .header__container .topHeading {
+	margin-left: auto;
+	margin-right: auto;
+}
+.header .header__container .topHeading h1 {
+	color: #2e9cca;
+	color: var(--light-blue);
+	font-family: Red Rose;
+	font-size: 32px;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+.header .header__container .buttonsHeader {
+	width: 255px;
+	width: 15.9375rem;
+}
+.header .header__container .buttonsHeader .cta {
+	border-radius: 1.875rem;
+	padding: 1rem 0;
+	text-align: center;
+	width: 120px;
+	width: 7.5rem;
+}
+.header .header__container .buttonsHeader .cta,
+.header .header__container .buttonsHeader .cta.cta--darkblue {
+	background-color: #3a7aaa;
+	background-color: var(--dark-blue-btn);
+}
+.header .header__container .buttonsHeader .cta.cta--lightblue {
+	background-color: #2e9cca;
+	background-color: var(--light-blue);
+}
+.header .header__container .buttonsHeader .cta .cta__btn {
+	color: #fff;
+	color: var(--white);
+	font-size: 16px;
+	font-size: 1rem;
+	letter-spacing: 0.1px;
+	letter-spacing: 0.00625rem;
+	line-height: 16px;
+	line-height: 1rem;
 }
 
 /*!
@@ -691,6 +752,7 @@ section.hero {
 	background-color: var(--main-blue);
 	color: #fff;
 	color: var(--white);
+	padding-top: 9.375rem;
 	text-align: center;
 }
 section.hero .heading {
@@ -719,7 +781,7 @@ Module Name: Our Recipients
 Author: Very - Andres Posada
 */
 section.our-recipients {
-	color: #2d9cca;
+	color: #2e9cca;
 	color: var(--light-blue);
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -753,6 +815,53 @@ section.our-recipients {
 @media screen and (min-width: 300px) and (max-width: 899px) {
 	.site-main {
 		margin-top: 0;
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+	.header {
+		padding-top: 0.625rem;
+	}
+	.header .header__container .toggleMenu {
+		left: 24px;
+		left: 1.5rem;
+	}
+	.header .header__container .topHeading {
+		max-width: 220px;
+		max-width: 13.75rem;
+	}
+	.header .header__container .topHeading h1 {
+		font-size: 18px;
+		font-size: 1.125rem;
+		line-height: 25px;
+		line-height: 1.5625rem;
+	}
+	.header .header__container .buttonsHeader {
+		margin-top: 0.9375rem;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		width: 100%;
+	}
+	.header .header__container .buttonsHeader .cta {
+		border-radius: 0;
+		padding: 1.3125rem 0;
+		width: 50%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1369px) {
+	.header .header__container {
+		padding: 0 1.25rem;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 938px) {
+	.header .header__container .buttonsHeader {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		width: 100%;
+	}
+	.header .header__container .buttonsHeader .cta {
+		margin: 0 0.9375rem;
 	}
 }
 @media screen and (min-width: 1194px) {
