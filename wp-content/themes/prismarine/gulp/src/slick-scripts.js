@@ -14,7 +14,7 @@ document.addEventListener(
 		$(".carousel-r").slick({
 			infinite: true,
 			slidesToShow: 5,
-			slidesToScroll: 2,
+			slidesToScroll: 3,
 			dots: true,
 		});
 	})(jQuery)
