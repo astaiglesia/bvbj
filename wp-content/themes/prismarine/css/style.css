@@ -14,8 +14,9 @@ Text Domain: bvbj
 	--light-gray: #e3e2e8;
 	--white: #fff;
 	--main-blue: #25274d;
-	--light-blue: #2d9cca;
+	--light-blue: #2e9cca;
 	--dark-blue: #29658a;
+	--dark-blue-btn: #3a7aaa;
 	--system-fonts: "Rubik", "-apple-system", "BlinkMacSystemFont",
 		"Helvetica Neue", "Roboto", "Oxygen", "Oxygen-Sans", "Ubuntu", "Cantarell",
 		"Arial", "system-ui", "Segoe UI", "sans-serif", "Apple Color Emoji",
@@ -137,7 +138,7 @@ table {
 	color: var(--main-blue);
 }
 .colr-light-blue {
-	color: #2d9cca;
+	color: #2e9cca;
 	color: var(--light-blue);
 }
 .colr-dark-blue {
@@ -559,8 +560,8 @@ table {
 }
 .header {
 	background-color: transparent;
-	height: 80px;
-	height: 5rem;
+	height: 112px;
+	height: 7rem;
 	position: absolute;
 	width: 100%;
 	z-index: 2;
@@ -568,7 +569,8 @@ table {
 .header .header__container {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1360px;
+	max-width: 1370px;
+	max-width: 85.625rem;
 	width: 100%;
 }
 .header .header__container .toggleMenu {
@@ -577,7 +579,7 @@ table {
 	float: left;
 	height: 20px;
 	height: 1.25rem;
-	margin: 1rem;
+	margin: 1rem 0;
 	outline: 0;
 	padding: 0;
 	position: relative;
@@ -598,10 +600,14 @@ table {
 .header .header__container .toggleMenu.--active .toggleMenu__bar:before {
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
+	width: 20px;
+	width: 1.25rem;
 }
 .header .header__container .toggleMenu.--active .toggleMenu__bar:after {
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+	width: 20px;
+	width: 1.25rem;
 }
 .header .header__container .toggleMenu.--active .toggleMenu__bar:after,
 .header .header__container .toggleMenu.--active .toggleMenu__bar:before {
@@ -641,15 +647,20 @@ table {
 	width: 100%;
 }
 .header .header__container .toggleMenu .toggleMenu__bar {
-	margin-top: -0.25rem;
+	width: 22px;
+	width: 1.375rem;
 }
 .header .header__container .toggleMenu .toggleMenu__bar:before {
-	top: -5.6px;
-	top: -0.35rem;
+	top: -7.2px;
+	top: -0.45rem;
+	width: 15px;
+	width: 0.9375rem;
 }
 .header .header__container .toggleMenu .toggleMenu__bar:after {
-	top: 5.6px;
-	top: 0.35rem;
+	top: 7.2px;
+	top: 0.45rem;
+	width: 19px;
+	width: 1.1875rem;
 }
 .header .header__container .toggleMenu .toggleMenu__bar:after,
 .header .header__container .toggleMenu .toggleMenu__bar:before {
@@ -688,6 +699,49 @@ table {
 .header .header__container nav ul li:hover {
 	background: #ccc;
 }
+.header .header__container .topHeading {
+	margin-left: auto;
+	margin-right: auto;
+}
+.header .header__container .topHeading h1 {
+	color: #2e9cca;
+	color: var(--light-blue);
+	font-family: Red Rose;
+	font-size: 32px;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+.header .header__container .buttonsHeader {
+	width: 255px;
+	width: 15.9375rem;
+}
+.header .header__container .buttonsHeader .cta {
+	border-radius: 1.875rem;
+	padding: 1rem 0;
+	text-align: center;
+	width: 120px;
+	width: 7.5rem;
+}
+.header .header__container .buttonsHeader .cta,
+.header .header__container .buttonsHeader .cta.cta--darkblue {
+	background-color: #3a7aaa;
+	background-color: var(--dark-blue-btn);
+}
+.header .header__container .buttonsHeader .cta.cta--lightblue {
+	background-color: #2e9cca;
+	background-color: var(--light-blue);
+}
+.header .header__container .buttonsHeader .cta .cta__btn {
+	color: #fff;
+	color: var(--white);
+	font-size: 16px;
+	font-size: 1rem;
+	letter-spacing: 0.1px;
+	letter-spacing: 0.00625rem;
+	line-height: 16px;
+	line-height: 1rem;
+}
 
 /*!
 Module Name: Hero Home
@@ -698,6 +752,7 @@ section.hero {
 	background-color: var(--main-blue);
 	color: #fff;
 	color: var(--white);
+	padding-top: 9.375rem;
 	text-align: center;
 }
 section.hero .heading {
@@ -726,7 +781,7 @@ Module Name: Our Recipients
 Author: Very - Andres Posada
 */
 section.our-recipients {
-	color: #2d9cca;
+	color: #2e9cca;
 	color: var(--light-blue);
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -760,6 +815,53 @@ section.our-recipients {
 @media screen and (min-width: 300px) and (max-width: 899px) {
 	.site-main {
 		margin-top: 0;
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+	.header {
+		padding-top: 0.625rem;
+	}
+	.header .header__container .toggleMenu {
+		left: 24px;
+		left: 1.5rem;
+	}
+	.header .header__container .topHeading {
+		max-width: 220px;
+		max-width: 13.75rem;
+	}
+	.header .header__container .topHeading h1 {
+		font-size: 18px;
+		font-size: 1.125rem;
+		line-height: 25px;
+		line-height: 1.5625rem;
+	}
+	.header .header__container .buttonsHeader {
+		margin-top: 0.9375rem;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		width: 100%;
+	}
+	.header .header__container .buttonsHeader .cta {
+		border-radius: 0;
+		padding: 1.3125rem 0;
+		width: 50%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1369px) {
+	.header .header__container {
+		padding: 0 1.25rem;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 938px) {
+	.header .header__container .buttonsHeader {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		width: 100%;
+	}
+	.header .header__container .buttonsHeader .cta {
+		margin: 0 0.9375rem;
 	}
 }
 @media screen and (min-width: 1194px) {
