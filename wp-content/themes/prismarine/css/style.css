@@ -722,15 +722,15 @@ h5 {
 	margin: 0;
 	padding: 0;
 }
-.header .header__container .menuHeader ul li {
+.header .header__container .menuHeader li {
 	font-size: 32px;
 	font-size: 2rem;
 	padding: 1.25rem 0;
 }
-.header .header__container .menuHeader ul li:first-of-type {
+.header .header__container .menuHeader li:first-of-type {
 	padding-top: 0;
 }
-.header .header__container .menuHeader ul li a {
+.header .header__container .menuHeader li a {
 	color: #fff;
 	color: var(--white);
 	font-family: Red Rose, cursive;
@@ -927,10 +927,10 @@ section.our-recipients {
 	.header .header__container .menuHeader .image {
 		display: none;
 	}
-	.header .header__container .menuHeader ul li {
+	.header .header__container .menuHeader li {
 		padding: 0.7rem 0;
 	}
-	.header .header__container .menuHeader ul li a {
+	.header .header__container .menuHeader li a {
 		font-size: 32px;
 		font-size: 2rem;
 		letter-spacing: -0.8px;

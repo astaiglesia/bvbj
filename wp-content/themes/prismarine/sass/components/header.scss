@@ -153,38 +153,35 @@
 				}
 			}
 
-			nav {
-			}
-
 			ul {
 				margin: 0;
 				list-style: none;
 				padding: 0;
+			}
 
-				li {
-					padding: 1.25rem 0;
-					font-size: 2rem;
+			li {
+				padding: 1.25rem 0;
+				font-size: 2rem;
+
+				@include media($phone, 768px) {
+					padding: 0.7rem 0;
+				}
+
+				&:first-of-type {
+					padding-top: 0;
+				}
+
+				a {
+					font-family: "Red Rose", cursive;
+					font-size: 3rem;
+					color: var(--white);
+					letter-spacing: 0.029375rem;
+					line-height: 1.625rem;
 
 					@include media($phone, 768px) {
-						padding: 0.7rem 0;
-					}
-
-					&:first-of-type {
-						padding-top: 0;
-					}
-
-					a {
-						font-family: "Red Rose", cursive;
-						font-size: 3rem;
-						color: var(--white);
-						letter-spacing: 0.029375rem;
-						line-height: 1.625rem;
-
-						@include media($phone, 768px) {
-							font-size: 2rem;
-							letter-spacing: -0.05rem;
-							line-height: 2.375rem;
-						}
+						font-size: 2rem;
+						letter-spacing: -0.05rem;
+						line-height: 2.375rem;
 					}
 				}
 			}
