@@ -55,7 +55,7 @@ $acfDBOR = [
 												<img data-lazy="<?php echo $image_carousel; ?>">
 											<?php endif; ?>
 											<?php if ($name): ?>
-												<h2><?php echo $name; ?></h2>
+												<h3><?php echo $name; ?></h3>
 											<?php endif; ?>
 											<?php if ($location): ?>
 												<span><?php echo $location; ?></span>
@@ -66,7 +66,7 @@ $acfDBOR = [
 										</a>
 										<div style="display: none;" id="modal<?php echo $i; ?>">
 											<?php if ($name): ?>
-												<h2><?php echo $name; ?></h2>
+												<h3><?php echo $name; ?></h3>
 											<?php endif; ?>
 											<?php if ($location): ?>
 												<span><?php echo $location; ?></span>
