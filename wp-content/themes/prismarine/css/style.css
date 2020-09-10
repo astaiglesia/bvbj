@@ -864,11 +864,44 @@ section.hero .paragraph p {
 Module Name: Our Recipients
 Author: Very - Andres Posada
 */
-section.our-recipients {
-	color: #2e9cca;
-	color: var(--light-blue);
+section.ourRecipients {
+	background-color: #4056a1;
+	background-color: var(--background-blue);
+	padding-bottom: 70px;
+	padding-top: 4.375rem;
+}
+section.ourRecipients .ourRecipients__container {
+	margin: 0 auto;
+	max-width: 1000px;
+	max-width: 62.5rem;
+	position: relative;
+}
+section.ourRecipients .ourRecipients__container .slick-slide > div {
+	text-align: center;
+}
+section.ourRecipients .heading {
+	margin-bottom: 2.625rem;
+}
+section.ourRecipients .heading h2 {
+	color: #fff;
+	color: var(--white);
+	font-family: Red Rose, cursive;
 	font-size: 18px;
 	font-size: 1.125rem;
+	letter-spacing: 2px;
+	letter-spacing: 0.125rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+section.ourRecipients .recipient {
+	max-width: 145px;
+	max-width: 9.0625rem;
+	width: 145px;
+	width: 9.0625rem;
+}
+section.ourRecipients .recipient img {
+	max-width: 100%;
+	width: 100%;
 }
 .social-icon {
 	display: inline-block;
@@ -981,6 +1014,19 @@ section.our-recipients {
 		line-height: 1.625rem;
 	}
 }
+@media screen and (min-width: 300px) and (max-width: 1022px) {
+	section.ourRecipients .ourRecipients__container {
+		max-width: 100%;
+		width: 100%;
+	}
+	section.ourRecipients .ourRecipients__container .slick-slide > div {
+		margin: 0 0.3125rem;
+	}
+	section.ourRecipients .recipient {
+		max-width: none;
+		width: auto;
+	}
+}
 @media screen and (min-width: 768px) and (max-width: 1369px) {
 	.header .header__container {
 		padding: 0 1.25rem;
@@ -998,6 +1044,11 @@ section.our-recipients {
 	}
 	.header .header__container .buttonsHeader .cta {
 		margin: 0 0.9375rem;
+	}
+}
+@media screen and (min-width: 1024px) {
+	section.ourRecipients .ourRecipients__container {
+		padding: 0 1.25rem;
 	}
 }
 @media screen and (min-width: 1194px) {

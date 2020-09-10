@@ -16,14 +16,14 @@ $acfDBOR = [
 ]; ?>
 
 <!-- Begin Our Recipients Section -->
-<section class="d-flex -items-center -row -wrap -justify-normal d-section our-recipients">
-	<div class="container">
+<section class="d-flex -items-center -row -wrap -justify-normal d-section ourRecipients">
+	<div class="ourRecipients__container">
 
 		<?php if ($acfDBOR['heading']): ?>
 			<div class="heading">
-				<p>
+				<h2>
 					<?php print $acfDBOR['heading']; ?>
-				</p>
+				</h2>
 			</div>
 		<?php endif; ?>
 
@@ -52,7 +52,7 @@ $acfDBOR = [
 									<div class="recipient">
 										<a data-fancybox data-src="#modal<?php echo $i; ?>" href="javascript:;" class="btn btn-primary">
 											<?php if ($image_carousel): ?>
-												<img src="<?php echo $image_carousel; ?>">
+												<img data-lazy="<?php echo $image_carousel; ?>">
 											<?php endif; ?>
 											<?php if ($name): ?>
 												<h2><?php echo $name; ?></h2>
@@ -60,6 +60,9 @@ $acfDBOR = [
 											<?php if ($location): ?>
 												<span><?php echo $location; ?></span>
 											<?php endif; ?>
+											<div class="learnMore">
+												Learn More
+											</div>
 										</a>
 										<div style="display: none;" id="modal<?php echo $i; ?>">
 											<?php if ($name): ?>

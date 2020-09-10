@@ -3,11 +3,61 @@ Module Name: Our Recipients
 Author: Very - Andres Posada
 */
 
-// @import "./media"; // Custom reset & base settings.
+section.ourRecipients {
+	background-color: var(--background-blue);
+	padding-top: 4.375rem;
+	padding-bottom: 70px;
 
-section.our-recipients {
-	color: var(--light-blue);
-	font-size: 1.125rem;
+	.ourRecipients__container {
+		max-width: 62.5rem;
+		position: relative;
+		margin: 0 auto;
+
+		@include media(1024px) {
+			padding: 0 1.25rem;
+		}
+
+		@include media($phone, 1023px) {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.slick-slide > div {
+			text-align: center;
+
+			@include media($phone, 1023px) {
+				margin: 0 0.3125rem;
+			}
+		}
+	}
+
+	.heading {
+		margin-bottom: 2.625rem;
+
+		h2 {
+			font-family: "Red Rose", cursive;
+			font-size: 1.125rem;
+			color: var(--white);
+			letter-spacing: 0.125rem;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+
+	.recipient {
+		width: 9.0625rem;
+		max-width: 9.0625rem;
+
+		@include media($phone, 1023px) {
+			width: initial;
+			max-width: initial;
+		}
+
+		img {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
 }
 
 .social-icon {
