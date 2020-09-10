@@ -17,6 +17,7 @@ Text Domain: bvbj
 	--light-blue: #2e9cca;
 	--dark-blue: #29658a;
 	--dark-blue-btn: #3a7aaa;
+	--background-blue: #4056a1;
 	--system-fonts: "Rubik", "-apple-system", "BlinkMacSystemFont",
 		"Helvetica Neue", "Roboto", "Oxygen", "Oxygen-Sans", "Ubuntu", "Cantarell",
 		"Arial", "system-ui", "Segoe UI", "sans-serif", "Apple Color Emoji",
@@ -438,6 +439,13 @@ table {
 .d-zidx-max {
 	z-index: 2147483647;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: Red Rose, cursive;
+}
 .lazy-load {
 	opacity: 0;
 	-webkit-transition: opacity 1.4s cubic-bezier(0.59, 0.01, 0.28, 1) 0s;
@@ -563,8 +571,14 @@ table {
 	height: 112px;
 	height: 7rem;
 	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 	width: 100%;
-	z-index: 2;
+}
+.--menu-open .header {
+	position: fixed;
+	top: 0;
 }
 .header .header__container {
 	margin-left: auto;
@@ -667,11 +681,14 @@ table {
 	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
 }
-.header .header__container nav {
-	background: #eaeaea;
+.header .header__container .menuHeader {
+	background-color: #4056a1;
+	background-color: var(--background-blue);
 	height: 100vh;
-	padding-top: 3rem;
+	left: 0;
+	padding-top: 8rem;
 	position: fixed;
+	top: 0;
 	-webkit-transform: translateX(-150%);
 	transform: translateX(-150%);
 	-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
@@ -680,24 +697,49 @@ table {
 	transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91),
 		-webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
 	width: 100%;
-	z-index: 999;
+	z-index: -1;
 }
-.--menu-open .header .header__container nav {
+.--menu-open .header .header__container .menuHeader {
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
 }
-.header .header__container nav ul {
+.header .header__container .menuHeader .menuHeader__container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1290px;
+	max-width: 80.625rem;
+	padding: 0 1.25rem;
+}
+.header .header__container .menuHeader .image {
+	width: 58%;
+}
+.header .header__container .menuHeader .image img {
+	max-width: 100%;
+	width: 100%;
+}
+.header .header__container .menuHeader ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-.header .header__container nav ul li {
+.header .header__container .menuHeader li {
 	font-size: 32px;
 	font-size: 2rem;
-	padding: 20px 5px;
+	padding: 1.25rem 0;
 }
-.header .header__container nav ul li:hover {
-	background: #ccc;
+.header .header__container .menuHeader li:first-of-type {
+	padding-top: 0;
+}
+.header .header__container .menuHeader li a {
+	color: #fff;
+	color: var(--white);
+	font-family: Red Rose, cursive;
+	font-size: 48px;
+	font-size: 3rem;
+	letter-spacing: 0.47px;
+	letter-spacing: 0.029375rem;
+	line-height: 26px;
+	line-height: 1.625rem;
 }
 .header .header__container .topHeading {
 	margin-left: auto;
@@ -713,6 +755,8 @@ table {
 	text-align: center;
 }
 .header .header__container .buttonsHeader {
+	-webkit-transition: all 0.4s linear;
+	transition: all 0.4s linear;
 	width: 255px;
 	width: 15.9375rem;
 }
@@ -748,8 +792,8 @@ Module Name: Hero Home
 Author: Very - Andres Posada
 */
 section.hero {
-	background-color: #25274d;
-	background-color: var(--main-blue);
+	background-color: #4056a1;
+	background-color: var(--background-blue);
 	color: #fff;
 	color: var(--white);
 	padding-top: 9.375rem;
@@ -761,19 +805,59 @@ section.hero .heading {
 	max-width: 61.5625rem;
 }
 section.hero .heading p {
-	font-size: 50px;
-	font-size: 3.125rem;
-	line-height: 1.2;
+	color: #fff;
+	color: var(--white);
+	font-family: Red Rose, cursive;
+	font-size: 72px;
+	font-size: 4.5rem;
+	letter-spacing: -1.8px;
+	letter-spacing: -0.1125rem;
+	line-height: 70px;
+	line-height: 4.375rem;
+	margin-bottom: 3.125rem;
+	margin-top: 3.875rem;
+	text-align: center;
+}
+section.hero .verticalLine {
+	height: 235px;
+	height: 14.6875rem;
+	position: relative;
+}
+section.hero .verticalLine .verticalLine__content {
+	border: none;
+	border-left: 1px solid #fff;
+	border-left: 1px solid var(--white);
+	bottom: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+}
+section.hero h2 {
+	color: #fff;
+	color: var(--white);
+	font-size: 18px;
+	font-size: 1.125rem;
+	letter-spacing: 2px;
+	letter-spacing: 0.125rem;
+	margin-top: 2.5rem;
+	text-align: center;
 }
 section.hero .paragraph {
-	margin: 0 auto;
-	max-width: 765px;
-	max-width: 47.8125rem;
+	margin: 0 auto 4.375rem;
+	max-width: 805px;
+	max-width: 50.3125rem;
 }
 section.hero .paragraph p {
-	font-size: 30px;
-	font-size: 1.875rem;
-	line-height: 1.1;
+	color: #fff;
+	color: var(--white);
+	font-size: 24px;
+	font-size: 1.5rem;
+	letter-spacing: -0.15px;
+	letter-spacing: -0.009375rem;
+	line-height: 32px;
+	line-height: 2rem;
+	text-align: center;
 }
 
 /*!
@@ -816,6 +900,18 @@ section.our-recipients {
 	.site-main {
 		margin-top: 0;
 	}
+	section.hero .heading p {
+		color: #fff;
+		color: var(--white);
+		font-size: 32px;
+		letter-spacing: -0.8px;
+		letter-spacing: -0.05rem;
+		line-height: 38px;
+		line-height: 2.375rem;
+		margin-bottom: 5rem;
+		margin-top: 4.6875rem;
+		text-align: center;
+	}
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
 	.header {
@@ -824,6 +920,23 @@ section.our-recipients {
 	.header .header__container .toggleMenu {
 		left: 24px;
 		left: 1.5rem;
+	}
+	.header .header__container .menuHeader {
+		padding-top: 13.5rem;
+	}
+	.header .header__container .menuHeader .image {
+		display: none;
+	}
+	.header .header__container .menuHeader li {
+		padding: 0.7rem 0;
+	}
+	.header .header__container .menuHeader li a {
+		font-size: 32px;
+		font-size: 2rem;
+		letter-spacing: -0.8px;
+		letter-spacing: -0.05rem;
+		line-height: 38px;
+		line-height: 2.375rem;
 	}
 	.header .header__container .topHeading {
 		max-width: 220px;
@@ -835,8 +948,12 @@ section.our-recipients {
 		line-height: 25px;
 		line-height: 1.5625rem;
 	}
+	.--menu-open .header .header__container .buttonsHeader {
+		margin-left: 1.25rem;
+		margin-right: 1.25rem;
+	}
 	.header .header__container .buttonsHeader {
-		margin-top: 0.9375rem;
+		margin-top: 0.75rem;
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
 		justify-content: center;
@@ -847,6 +964,22 @@ section.our-recipients {
 		padding: 1.3125rem 0;
 		width: 50%;
 	}
+	section.hero .verticalLine {
+		display: none;
+	}
+	section.hero h2 {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+	section.hero .paragraph p {
+		font-family: Helvetica;
+		font-size: 18px;
+		font-size: 1.125rem;
+		letter-spacing: -0.11px;
+		letter-spacing: -0.006875rem;
+		line-height: 26px;
+		line-height: 1.625rem;
+	}
 }
 @media screen and (min-width: 768px) and (max-width: 1369px) {
 	.header .header__container {
@@ -854,6 +987,9 @@ section.our-recipients {
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 938px) {
+	.header .header__container .menuHeader {
+		padding-top: 11rem;
+	}
 	.header .header__container .buttonsHeader {
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
