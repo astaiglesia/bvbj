@@ -29,6 +29,10 @@ $acfDBHero = [
 			</div>
 		<?php endif; ?>
 
+		<div class="verticalLine">
+			<div class="verticalLine__content"></div>
+		</div>
+
 		<?php if ($acfDBHero['subheading']): ?>
 			<h2>
 				<?php print $acfDBHero['subheading']; ?>

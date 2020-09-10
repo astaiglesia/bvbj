@@ -43,7 +43,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <main id="page" class="site-main">
-	<header id="masthead" class="d-flex -items-center -row -wrap -justify-normal header">
+	<header id="masthead" class="d-flex -items-center -row -wrap -justify-normal header d-zidx-over">
 		<div class="d-flex -items-center -row -wrap -justify-normal header__container content-wrapper">
 			<div class="mainMenu">
 				<div class="mainMenu__burger">
@@ -52,17 +52,27 @@
 					</button>
 				</div>
 
-				<nav id="site-navigation" class="main-navigation">
-					<?php
-						wp_nav_menu( array(
-							'menu'           => 'header-menu',
-							'container'      => 'ul',
-							'theme_location' => 'header-menu',
-							'menu_id'        => 'primary-menu',
-							'menu_class'     => 'navbar',
-						) );
-					?>
-				</nav><!-- #site-navigation -->
+				<div class="menuHeader">
+					<div class="menuHeader__container d-flex -items-start -row -wrap -justify-between">
+						<nav id="site-navigation" class="main-navigation">
+							<?php
+								wp_nav_menu( array(
+									'menu'           => 'header-menu',
+									'container'      => 'ul',
+									'theme_location' => 'header-menu',
+									'menu_id'        => 'primary-menu',
+									'menu_class'     => 'navbar',
+								) );
+							?>
+						</nav>
+						<?php if (get_field('menu_image', 'option')): ?>
+							<div class="image">
+								<img src="<?php the_field('menu_image', 'option') ?>" alt="menu image">
+							</div>
+						<?php endif; ?>
+					</div>
+				</div>
+
 			</div>
 
 			<?php

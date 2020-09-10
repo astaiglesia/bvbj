@@ -3,10 +3,8 @@ Module Name: Hero Home
 Author: Very - Andres Posada
 */
 
-// @import "./media"; // Custom reset & base settings.
-
 section.hero {
-	background-color: var(--main-blue);
+	background-color: var(--background-blue);
 	color: var(--white);
 	text-align: center;
 	padding-top: 9.375rem;
@@ -16,18 +14,75 @@ section.hero {
 		margin: 0 auto;
 
 		p {
-			font-size: 3.125rem;
-			line-height: 1.2;
+			font-family: "Red Rose", cursive;
+			font-size: 4.5rem;
+			color: var(--white);
+			letter-spacing: -0.1125rem;
+			text-align: center;
+			line-height: 4.375rem;
+			margin-top: 3.875rem;
+			margin-bottom: 3.125rem;
+
+			@include media($phone, $tablet-landscape) {
+				font-size: 32px;
+				color: var(--white);
+				letter-spacing: -0.05rem;
+				text-align: center;
+				line-height: 2.375rem;
+				margin-top: 4.6875rem;
+				margin-bottom: 5rem;
+			}
+		}
+	}
+
+	.verticalLine {
+		position: relative;
+		height: 14.6875rem;
+
+		@include media($phone, 768px) {
+			display: none;
+		}
+
+		.verticalLine__content {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			bottom: 0;
+			margin: 0;
+			border: none;
+			border-left: 1px solid var(--white);
+		}
+	}
+
+	h2 {
+		font-size: 1.125rem;
+		color: var(--white);
+		letter-spacing: 0.125rem;
+		text-align: center;
+		margin-top: 2.5rem;
+
+		@include media($phone, 768px) {
+			font-size: 1rem;
 		}
 	}
 
 	.paragraph {
-		max-width: 47.8125rem;
-		margin: 0 auto;
+		max-width: 50.3125rem;
+		margin: 0 auto 4.375rem;
 
 		p {
-			font-size: 1.875rem;
-			line-height: 1.1;
+			font-size: 1.5rem;
+			color: var(--white);
+			letter-spacing: -0.009375rem;
+			text-align: center;
+			line-height: 2rem;
+
+			@include media($phone, 768px) {
+				font-size: 1.125rem;
+				font-family: Helvetica;
+				letter-spacing: -0.006875rem;
+				line-height: 1.625rem;
+			}
 		}
 	}
 }
