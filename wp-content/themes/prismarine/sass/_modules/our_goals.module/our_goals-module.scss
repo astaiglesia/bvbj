@@ -21,4 +21,108 @@ section.ourGoals {
 			height: 37.5rem;
 		}
 	}
+
+	.twoGoals {
+		margin-top: 4.0625rem;
+
+		@include media($phone, 768px) {
+			margin-top: 2.8125rem;
+		}
+
+		.heading {
+			text-align: center;
+			width: 100%;
+			margin-bottom: 1.875rem;
+
+			h2 {
+				font-size: 1.125rem;
+				color: var(--grey-title);
+				letter-spacing: 0.0625rem;
+				text-align: center;
+				text-transform: uppercase;
+			}
+		}
+
+		.goal {
+			max-width: 49%;
+			padding: 0 6.875rem 0 6.5625rem;
+			height: 32.25rem;
+
+			@include media(1024px, 1359px) {
+				padding: 0 4.375rem 0 3.75rem;
+				height: 28.125rem;
+			}
+
+			@include media(768px, 1023px) {
+				padding: 0 2.5rem 0 3.125rem;
+				height: 32.5rem;
+			}
+
+			@include media($phone, 768px) {
+				padding: 2.5rem 1.25rem;
+				height: initial;
+				max-width: 100%;
+				width: 100%;
+				margin-bottom: 1.25rem;
+			}
+
+			&.g1 {
+				background: var(--background-blue);
+			}
+
+			&:last-of-type {
+				background: var(--dark-blue-btn);
+			}
+
+			.goal__content {
+				top: 50%;
+				transform: translateY(-50%);
+				position: relative;
+
+				@include media($phone, 768px) {
+					top: initial;
+					transform: initial;
+				}
+
+				h3 {
+					font-family: "helveticabold";
+					font-size: 1.125rem;
+					font-weight: 700;
+					color: var(--white);
+					letter-spacing: 0.010625rem;
+					margin-bottom: 1.875rem;
+					margin-top: 0;
+
+					@include media($phone, 768px) {
+						font-size: 1rem;
+					}
+				}
+
+				p {
+					font-family: "helveticaregular";
+					font-size: 1.4375rem;
+					color: var(--white);
+					letter-spacing: -0.011875rem;
+					margin-bottom: 2.375rem;
+
+					@include media($phone, 768px) {
+						font-size: 1.125rem;
+					}
+				}
+
+				a {
+					border-radius: 1.875rem;
+					text-align: center;
+					padding: 1.0625rem 0;
+					background-color: var(--light-blue);
+					font-size: 1rem;
+					color: var(--white);
+					letter-spacing: 0.00625rem;
+					line-height: 1rem;
+					width: 12.5rem;
+					display: inherit;
+				}
+			}
+		}
+	}
 }

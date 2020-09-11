@@ -33,36 +33,40 @@ $acfDBOG = [
 		</div>
 	<?php endif; ?>
 
-	<div class="container">
+	<div class="container d-flex -items-center -row -wrap -justify-between d-section twoGoals">
 
 		<?php if ($acfDBOG['heading']): ?>
-			<div class="heading">
+			<div class="heading -row -wrap">
 				<h2> <?php echo $acfDBOG['heading']; ?> </h2>
 			</div>
 		<?php endif; ?>
 
-		<div class="goal">
-			<?php if ($acfDBOG['heading_g1']): ?>
-				<h3> <?php echo $acfDBOG['heading_g1']; ?> </h3>
-			<?php endif; ?>
-			<?php if ($acfDBOG['paragraph_g1']): ?>
-				<p> <?php echo $acfDBOG['paragraph_g1']; ?> </p>
-			<?php endif; ?>
-			<?php if ($acfDBOG['button_url_g1']): ?>
-				<a href="<?php echo $acfDBOG['button_url_g1']; ?>" target="_blank"> <?php echo $acfDBOG['button_text_g1']; ?> </a>
-			<?php endif; ?>
+		<div class="goal g1">
+			<div class="goal__content">
+				<?php if ($acfDBOG['heading_g1']): ?>
+					<h3> <?php echo $acfDBOG['heading_g1']; ?> </h3>
+				<?php endif; ?>
+				<?php if ($acfDBOG['paragraph_g1']): ?>
+					<p> <?php echo $acfDBOG['paragraph_g1']; ?> </p>
+				<?php endif; ?>
+				<?php if ($acfDBOG['button_url_g1']): ?>
+					<a href="<?php echo $acfDBOG['button_url_g1']; ?>" target="_blank"> <?php echo $acfDBOG['button_text_g1']; ?> </a>
+				<?php endif; ?>
+			</div>
 		</div>
 
-		<div class="goal">
-			<?php if ($acfDBOG['heading_g2']): ?>
-				<h3> <?php echo $acfDBOG['heading_g2']; ?> </h3>
-			<?php endif; ?>
-			<?php if ($acfDBOG['paragraph_g2']): ?>
-				<p> <?php echo $acfDBOG['paragraph_g2']; ?> </p>
-			<?php endif; ?>
-			<?php if ($acfDBOG['button_url_g2']): ?>
-				<a href="<?php echo $acfDBOG['button_url_g2']; ?>" target="_blank"> <?php echo $acfDBOG['button_text_g2']; ?> </a>
-			<?php endif; ?>
+		<div class="goal g2">
+			<div class="goal__content">
+				<?php if ($acfDBOG['heading_g2']): ?>
+					<h3> <?php echo $acfDBOG['heading_g2']; ?> </h3>
+				<?php endif; ?>
+				<?php if ($acfDBOG['paragraph_g2']): ?>
+					<p> <?php echo $acfDBOG['paragraph_g2']; ?> </p>
+				<?php endif; ?>
+				<?php if ($acfDBOG['button_url_g2']): ?>
+					<a href="<?php echo $acfDBOG['button_url_g2']; ?>" target="_blank"> <?php echo $acfDBOG['button_text_g2']; ?> </a>
+				<?php endif; ?>
+			</div>
 		</div>
 
 

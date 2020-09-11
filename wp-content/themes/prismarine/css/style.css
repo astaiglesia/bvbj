@@ -19,6 +19,7 @@ Text Domain: bvbj
 	--dark-blue-btn: #3a7aaa;
 	--background-blue: #4056a1;
 	--light-grey: #cfcfd8;
+	--grey-title: #404040;
 	--system-fonts: "Rubik", "-apple-system", "BlinkMacSystemFont",
 		"Helvetica Neue", "Roboto", "Oxygen", "Oxygen-Sans", "Ubuntu", "Cantarell",
 		"Arial", "system-ui", "Segoe UI", "sans-serif", "Apple Color Emoji",
@@ -563,8 +564,8 @@ h5 {
 	margin: 0 auto;
 }
 .container {
-	max-width: 1170px;
-	padding: 0 2.5rem;
+	max-width: 1250px;
+	padding: 0 1.25rem;
 	position: relative;
 }
 .header {
@@ -909,8 +910,8 @@ section.ourRecipients .recipient span {
 	color: #cfcfd8;
 	color: var(--light-grey);
 	font-family: helveticaregular;
-	font-size: 18px;
-	font-size: 1.125rem;
+	font-size: 16px;
+	font-size: 1rem;
 	letter-spacing: 0.16px;
 	letter-spacing: 0.01rem;
 	margin-bottom: 0.3125rem;
@@ -1054,6 +1055,84 @@ section.ourGoals .fullWidth_image {
 	padding: 0 0 35%;
 	width: 100%;
 }
+section.ourGoals .twoGoals {
+	margin-top: 4.0625rem;
+}
+section.ourGoals .twoGoals .heading {
+	margin-bottom: 1.875rem;
+	text-align: center;
+	width: 100%;
+}
+section.ourGoals .twoGoals .heading h2 {
+	color: #404040;
+	color: var(--grey-title);
+	font-size: 18px;
+	font-size: 1.125rem;
+	letter-spacing: 1px;
+	letter-spacing: 0.0625rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+section.ourGoals .twoGoals .goal {
+	height: 516px;
+	height: 32.25rem;
+	max-width: 49%;
+	padding: 0 6.875rem 0 6.5625rem;
+}
+section.ourGoals .twoGoals .goal.g1 {
+	background: #4056a1;
+	background: var(--background-blue);
+}
+section.ourGoals .twoGoals .goal:last-of-type {
+	background: #3a7aaa;
+	background: var(--dark-blue-btn);
+}
+section.ourGoals .twoGoals .goal .goal__content {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+section.ourGoals .twoGoals .goal .goal__content h3 {
+	color: #fff;
+	color: var(--white);
+	font-family: helveticabold;
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: 700;
+	letter-spacing: 0.17px;
+	letter-spacing: 0.010625rem;
+	margin-bottom: 1.875rem;
+	margin-top: 0;
+}
+section.ourGoals .twoGoals .goal .goal__content p {
+	color: #fff;
+	color: var(--white);
+	font-family: helveticaregular;
+	font-size: 23px;
+	font-size: 1.4375rem;
+	letter-spacing: -0.19px;
+	letter-spacing: -0.011875rem;
+	margin-bottom: 2.375rem;
+}
+section.ourGoals .twoGoals .goal .goal__content a {
+	background-color: #2e9cca;
+	background-color: var(--light-blue);
+	border-radius: 1.875rem;
+	color: #fff;
+	color: var(--white);
+	display: inherit;
+	font-size: 16px;
+	font-size: 1rem;
+	letter-spacing: 0.1px;
+	letter-spacing: 0.00625rem;
+	line-height: 16px;
+	line-height: 1rem;
+	padding: 1.0625rem 0;
+	text-align: center;
+	width: 200px;
+	width: 12.5rem;
+}
 @media screen and (min-width: 300px) and (max-width: 899px) {
 	.site-main {
 		margin-top: 0;
@@ -1144,6 +1223,29 @@ section.ourGoals .fullWidth_image {
 		height: 600px;
 		height: 37.5rem;
 	}
+	section.ourGoals .twoGoals {
+		margin-top: 2.8125rem;
+	}
+	section.ourGoals .twoGoals .goal {
+		height: auto;
+		margin-bottom: 1.25rem;
+		max-width: 100%;
+		padding: 2.5rem 1.25rem;
+		width: 100%;
+	}
+	section.ourGoals .twoGoals .goal .goal__content {
+		top: auto;
+		-webkit-transform: initial;
+		transform: none;
+	}
+	section.ourGoals .twoGoals .goal .goal__content h3 {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+	section.ourGoals .twoGoals .goal .goal__content p {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
 }
 @media screen and (min-width: 300px) and (max-width: 1022px) {
 	section.ourRecipients .ourRecipients__container {
@@ -1177,6 +1279,13 @@ section.ourGoals .fullWidth_image {
 		margin: 0 0.9375rem;
 	}
 }
+@media screen and (min-width: 768px) and (max-width: 1022px) {
+	section.ourGoals .twoGoals .goal {
+		height: 520px;
+		height: 32.5rem;
+		padding: 0 2.5rem 0 3.125rem;
+	}
+}
 @media screen and (min-width: 1024px) {
 	section.ourRecipients .ourRecipients__container {
 		padding: 0 1.25rem;
@@ -1185,7 +1294,14 @@ section.ourGoals .fullWidth_image {
 		display: none;
 	}
 }
-@media screen and (min-width: 1194px) {
+@media screen and (min-width: 1024px) and (max-width: 1358px) {
+	section.ourGoals .twoGoals .goal {
+		height: 450px;
+		height: 28.125rem;
+		padding: 0 4.375rem 0 3.75rem;
+	}
+}
+@media screen and (min-width: 1280px) {
 	.container {
 		padding: 0;
 	}
