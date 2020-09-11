@@ -32,6 +32,17 @@
 			url(<?php echo $cssRouter.'/assets/fonts/helvetica_400.ttf'; ?>)
 				format("truetype");
 		}
+		@font-face {
+			font-family: 'helveticabold';
+			font-weight: normal;
+			font-style: normal;
+			src: url(<?php echo $cssRouter.'/assets/fonts/helvetica-bold-font-webfont.woff2'; ?>)
+				format("woff2"),
+			url(<?php echo $cssRouter.'/assets/fonts/helvetica-bold-font-webfont.woff'; ?>)
+				format("woff"),
+			url(<?php echo $cssRouter.'/assets/fonts/helvetica-bold-font-webfont.ttf'; ?>)
+				format("truetype");
+		}
 
 		body {
 			font-family: 'helveticaregular';

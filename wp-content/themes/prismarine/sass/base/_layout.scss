@@ -29,11 +29,11 @@
 //-----------------------------------------
 .container {
 	margin: 0 auto;
-	padding: 0 2.5rem;
+	padding: 0 1.25rem;
 	max-width: $max-width;
 	position: relative;
 
-	@include media($container-offset) {
+	@include media(1280px) {
 		padding: 0;
 	}
 } // .container
