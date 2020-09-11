@@ -40,6 +40,10 @@ section.ourGoals {
 				letter-spacing: 0.0625rem;
 				text-align: center;
 				text-transform: uppercase;
+
+				@include media($phone, 768px) {
+					font-size: 1rem;
+				}
 			}
 		}
 

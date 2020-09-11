@@ -8,6 +8,10 @@ section.ourRecipients {
 	padding-top: 4.375rem;
 	padding-bottom: 5.75rem;
 
+	@include media($phone, 768px) {
+		padding-bottom: 4.875rem;
+	}
+
 	.ourRecipients__container {
 		max-width: 62.5rem;
 		position: relative;
@@ -98,6 +102,10 @@ section.ourRecipients {
 				width: 0.9375rem;
 				height: 0.9375rem;
 				padding: 0.625rem;
+
+				&::before {
+					color: var(--white);
+				}
 			}
 
 			&.slick-active {
