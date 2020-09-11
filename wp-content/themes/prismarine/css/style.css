@@ -949,6 +949,10 @@ section.ourRecipients .slick-dots li button {
 	width: 15px;
 	width: 0.9375rem;
 }
+section.ourRecipients .slick-dots li button:before {
+	color: #fff;
+	color: var(--white);
+}
 section.ourRecipients .slick-dots li.slick-active button:before {
 	color: #fff;
 	color: var(--white);
@@ -1217,6 +1221,9 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		line-height: 26px;
 		line-height: 1.625rem;
 	}
+	section.ourRecipients {
+		padding-bottom: 4.875rem;
+	}
 	section.ourGoals .fullWidth_image {
 		background-position: 50%;
 		background-size: cover;
@@ -1225,6 +1232,10 @@ section.ourGoals .twoGoals .goal .goal__content a {
 	}
 	section.ourGoals .twoGoals {
 		margin-top: 2.8125rem;
+	}
+	section.ourGoals .twoGoals .heading h2 {
+		font-size: 16px;
+		font-size: 1rem;
 	}
 	section.ourGoals .twoGoals .goal {
 		height: auto;
