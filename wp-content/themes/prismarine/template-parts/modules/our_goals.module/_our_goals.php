@@ -25,11 +25,11 @@ $acfDBOG = [
 ]; ?>
 
 <!-- Begin Our Goals Section -->
-<section class="d-flex -items-center -row -wrap -justify-normal d-section our-goals">
+<section class="d-flex -items-center -row -wrap -justify-normal d-section ourGoals">
 
 	<?php if ($acfDBOG['full_width_image']): ?>
-		<div class="full_width_image">
-			<img src="<?php echo $acfDBOG['full_width_image']; ?>" alt="black voices">
+		<div class="fullWidth_image" style="background-image: url(<?php echo $acfDBOG['full_width_image']; ?>">
+
 		</div>
 	<?php endif; ?>
 

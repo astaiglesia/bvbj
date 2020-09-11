@@ -913,7 +913,7 @@ section.ourRecipients .recipient span {
 	font-size: 1.125rem;
 	letter-spacing: 0.16px;
 	letter-spacing: 0.01rem;
-	margin-bottom: 5px;
+	margin-bottom: 0.3125rem;
 	text-align: center;
 }
 section.ourRecipients .recipient span {
@@ -932,6 +932,7 @@ section.ourRecipients .recipient .learnMore {
 }
 section.ourRecipients .slick-dots {
 	bottom: -50px;
+	bottom: -3.125rem;
 }
 section.ourRecipients .slick-dots li {
 	height: 15px;
@@ -954,18 +955,22 @@ section.ourRecipients .slick-dots li.slick-active button:before {
 }
 section.ourRecipients .slick-next {
 	background: url(../assets/images/fw.png) no-repeat 50% transparent;
-	background-size: 17px 33px;
+	background-size: 1.0625rem 2.0625rem;
 	height: 33px;
+	height: 2.0625rem;
 	width: 17px;
+	width: 1.0625rem;
 }
 section.ourRecipients .slick-next:before {
 	content: "";
 }
 section.ourRecipients .slick-prev {
 	background: url(../assets/images/bw.png) no-repeat 50% transparent;
-	background-size: 17px 33px;
+	background-size: 1.0625rem 2.0625rem;
 	height: 33px;
+	height: 2.0625rem;
 	width: 17px;
+	width: 1.0625rem;
 }
 section.ourRecipients .slick-prev:before {
 	content: "";
@@ -995,6 +1000,59 @@ section.ourRecipients .slick-prev:before {
 .link-svg {
 	background: url(../assets/svg/linkedin.svg) no-repeat 50% transparent;
 	background-size: 0.9375rem;
+}
+
+/*!
+Module Name: Our Co Chairs
+Author: Very - Andres Posada
+*/
+section.our-co-chairs {
+	color: #000;
+	color: var(--black);
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+section.our-co-chairs .social-icon {
+	display: inline-block;
+}
+section.our-co-chairs .svg-social {
+	background-size: 0.9375rem;
+	height: 15px;
+	height: 0.9375rem;
+	width: 15px;
+	width: 0.9375rem;
+}
+section.our-co-chairs .fb-svg {
+	background: url(../assets/svg/facebook.svg) no-repeat 50% transparent;
+	background-size: 0.9375rem;
+}
+section.our-co-chairs .tw-svg {
+	background: url(../assets/svg/twitter.svg) no-repeat 50% transparent;
+	background-size: 0.9375rem;
+}
+section.our-co-chairs .ins-svg {
+	background: url(../assets/svg/instagram.svg) no-repeat 50% transparent;
+	background-size: 0.9375rem;
+}
+section.our-co-chairs .link-svg {
+	background: url(../assets/svg/linkedin.svg) no-repeat 50% transparent;
+	background-size: 0.9375rem;
+}
+
+/*!
+Module Name: Our Goals
+Author: Very - Andres Posada
+*/
+section.ourGoals {
+	position: relative;
+}
+section.ourGoals .fullWidth_image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% auto;
+	height: 0;
+	padding: 0 0 35%;
+	width: 100%;
 }
 @media screen and (min-width: 300px) and (max-width: 899px) {
 	.site-main {
@@ -1079,6 +1137,12 @@ section.ourRecipients .slick-prev:before {
 		letter-spacing: -0.006875rem;
 		line-height: 26px;
 		line-height: 1.625rem;
+	}
+	section.ourGoals .fullWidth_image {
+		background-position: 50%;
+		background-size: cover;
+		height: 600px;
+		height: 37.5rem;
 	}
 }
 @media screen and (min-width: 300px) and (max-width: 1022px) {

@@ -64,7 +64,7 @@ section.ourRecipients {
 			font-size: 1.125rem;
 			color: var(--light-grey);
 			letter-spacing: 0.01rem;
-			margin-bottom: 5px;
+			margin-bottom: 0.3125rem;
 			text-align: center;
 		}
 
@@ -87,7 +87,7 @@ section.ourRecipients {
 	}
 
 	.slick-dots {
-		bottom: -50px;
+		bottom: -3.125rem;
 
 		li {
 			width: 0.9375rem;
@@ -111,9 +111,9 @@ section.ourRecipients {
 
 	.slick-next {
 		background: url("../assets/images/fw.png") no-repeat center center transparent;
-		background-size: 17px 33px;
-		width: 17px;
-		height: 33px;
+		background-size: 1.0625rem 2.0625rem;
+		width: 1.0625rem;
+		height: 2.0625rem;
 
 		&::before {
 			content: "";
@@ -122,9 +122,9 @@ section.ourRecipients {
 
 	.slick-prev {
 		background: url("../assets/images/bw.png") no-repeat center center transparent;
-		background-size: 17px 33px;
-		width: 17px;
-		height: 33px;
+		background-size: 1.0625rem 2.0625rem;
+		width: 1.0625rem;
+		height: 2.0625rem;
 
 		&::before {
 			content: "";
