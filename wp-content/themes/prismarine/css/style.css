@@ -937,6 +937,18 @@ Author: Very - Andres Posada
 .footer .footer__container .contactUs .contactUs__social-media .social-icon {
 	margin: 0 0.375rem;
 }
+.footer
+	.footer__container
+	.contactUs
+	.contactUs__social-media
+	.social-icon
+	.svg-social {
+	background-size: 2rem;
+	height: 32px;
+	height: 2rem;
+	width: 32px;
+	width: 2rem;
+}
 .footer .copyright {
 	border-top: 1px solid #cfcfd8;
 	border-top: 1px solid var(--light-grey);
@@ -1368,6 +1380,20 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		border-radius: 0;
 		padding: 1.3125rem 0;
 		width: 50%;
+	}
+	.footer .footer__container .footer__heading h2 {
+		font-size: 32px;
+		font-size: 2rem;
+	}
+	.footer .footer__container .footer__subheading span {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+	.footer .footer__container .contactUs .contactUs__social-media .social-icon {
+		margin: 0 0.625rem;
+	}
+	.footer .copyright {
+		padding: 1.75rem 1.875rem 2rem;
 	}
 	section.hero .verticalLine {
 		display: none;
