@@ -37,10 +37,9 @@ $acfDBFoot = [
 				</div>
 			<?php endif; ?>
 			<div class="mailchimpForm">
-				<form>
-					<input type="email" id="lemail" name="lemail" placeholder="Email Address">
-					<input type="submit" value="Submit">
-				</form>
+			<?php
+				echo do_shortcode( '[mc4wp_form id="156"]' );
+			?>
 			</div>
 			<div class="contactUs">
 				<?php if ($acfDBFoot['contact_heading']): ?>
