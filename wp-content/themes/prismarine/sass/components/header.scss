@@ -212,7 +212,7 @@ Author: Very - Andres Posada
 			}
 
 			.topHeading {
-				@include media(768px, 1199px) {
+				@include media($phone, 1199px) {
 					margin-right: 1.25rem;
 				}
 			}
@@ -254,6 +254,10 @@ Author: Very - Andres Posada
 			@include media($phone, 768px) {
 				width: 100%;
 				justify-content: center;
+
+				.--menu-open & {
+					justify-content: space-between;
+				}
 			}
 
 			.cta {
@@ -271,6 +275,12 @@ Author: Very - Andres Posada
 
 				@include media(768px, 1200px) {
 					margin: 0 0.9375rem;
+				}
+
+				.--menu-open & {
+					@include media($phone, 768px) {
+						width: 48.8%;
+					}
 				}
 
 				&.cta--darkblue {
