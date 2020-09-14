@@ -49,7 +49,7 @@ $acfDBFoot = [
 				<?php endif; ?>
 				<?php if ($acfDBFoot['email']): ?>
 					<div class="contactUs__email">
-						<span> <?php echo $acfDBFoot['email']; ?> </span>
+						<a href="mailto: <?php echo $acfDBFoot['email']; ?>"><?php echo $acfDBFoot['email']; ?></a>
 					</div>
 				<?php endif; ?>
 				<div class="contactUs__social-media">

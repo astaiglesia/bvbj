@@ -23,12 +23,17 @@ Author: Very - Andres Posada
 
 				@include media($phone, 768px) {
 					font-size: 2rem;
+					margin-bottom: 1.5rem;
 				}
 			}
 		}
 
 		.footer__subheading {
 			margin-bottom: 1.875rem;
+
+			@include media($phone, 768px) {
+				margin-bottom: 1.25rem;
+			}
 
 			span {
 				font-size: 1rem;
@@ -64,13 +69,46 @@ Author: Very - Andres Posada
 					&#lemail {
 						width: calc(100% - 4.0625rem);
 					}
+				}
 
-					&[type="submit"] {
-						text-align: left;
-						color: var(--white);
-						font-size: 1rem;
-						padding-right: 0.4375rem;
+				input[type="submit"] {
+					text-align: left;
+					color: var(--white);
+					font-size: 1rem;
+					padding-right: 0.4375rem;
+
+					&:hover {
+						cursor: pointer;
 					}
+
+					@include media($phone, 480px) {
+						padding-left: 0.75rem;
+					}
+				}
+			}
+		}
+
+		.mc4wp-response {
+			margin-top: 1.25rem;
+
+			.mc4wp-alert {
+				p {
+					text-align: center;
+					font-size: 1rem;
+				}
+			}
+
+			.mc4wp-error,
+			.mc4wp-notice {
+				p {
+					color: #ff0000;
+				}
+			}
+
+			.mc4wp-success {
+				p {
+					color: var(--white);
+					line-height: 1.375rem;
 				}
 			}
 		}
@@ -94,12 +132,15 @@ Author: Very - Andres Posada
 			}
 
 			.contactUs__email {
-				color: var(--white);
-				font-size: 1rem;
-				letter-spacing: 0;
-				text-decoration: underline;
-				line-height: 1.875rem;
 				margin-top: 0.3125rem;
+
+				a {
+					color: var(--white);
+					font-size: 1rem;
+					letter-spacing: 0;
+					text-decoration: underline;
+					line-height: 1.875rem;
+				}
 			}
 
 			.contactUs__social-media {

@@ -862,6 +862,27 @@ Author: Very - Andres Posada
 	padding-right: 0.4375rem;
 	text-align: left;
 }
+.footer .footer__container .mailchimpForm form input[type="submit"]:hover {
+	cursor: pointer;
+}
+.footer .footer__container .mc4wp-response {
+	margin-top: 1.25rem;
+}
+.footer .footer__container .mc4wp-response .mc4wp-alert p {
+	font-size: 16px;
+	font-size: 1rem;
+	text-align: center;
+}
+.footer .footer__container .mc4wp-response .mc4wp-error p,
+.footer .footer__container .mc4wp-response .mc4wp-notice p {
+	color: red;
+}
+.footer .footer__container .mc4wp-response .mc4wp-success p {
+	color: #fff;
+	color: var(--white);
+	line-height: 22px;
+	line-height: 1.375rem;
+}
 .footer .footer__container input::-webkit-input-placeholder {
 	color: #fff;
 	color: var(--white);
@@ -921,6 +942,9 @@ Author: Very - Andres Posada
 	line-height: 1.875rem;
 }
 .footer .footer__container .contactUs .contactUs__email {
+	margin-top: 0.3125rem;
+}
+.footer .footer__container .contactUs .contactUs__email a {
 	color: #fff;
 	color: var(--white);
 	font-size: 16px;
@@ -928,7 +952,6 @@ Author: Very - Andres Posada
 	letter-spacing: 0;
 	line-height: 30px;
 	line-height: 1.875rem;
-	margin-top: 0.3125rem;
 	text-decoration: underline;
 }
 .footer .footer__container .contactUs .contactUs__social-media {
@@ -1384,6 +1407,10 @@ section.ourGoals .twoGoals .goal .goal__content a {
 	.footer .footer__container .footer__heading h2 {
 		font-size: 32px;
 		font-size: 2rem;
+		margin-bottom: 1.5rem;
+	}
+	.footer .footer__container .footer__subheading {
+		margin-bottom: 1.25rem;
 	}
 	.footer .footer__container .footer__subheading span {
 		font-size: 18px;
@@ -1446,6 +1473,11 @@ section.ourGoals .twoGoals .goal .goal__content a {
 	section.ourGoals .twoGoals .goal .goal__content p {
 		font-size: 18px;
 		font-size: 1.125rem;
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 479px) {
+	.footer .footer__container .mailchimpForm form input[type="submit"] {
+		padding-left: 0.75rem;
 	}
 }
 @media screen and (min-width: 300px) and (max-width: 1022px) {
