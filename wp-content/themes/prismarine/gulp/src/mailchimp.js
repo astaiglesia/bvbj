@@ -26,4 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
 		},
 		false
 	);
+
+	function scrollTo(hash) {
+		location.hash = `#${hash}`;
+	}
+
+	document.getElementById("submitMc").addEventListener("click", () => {
+		scrollTo("footerAbv");
+	});
 });
