@@ -1442,11 +1442,13 @@ section.ourGoals .twoGoals .goal .goal__content a {
 	section.ourRecipients {
 		padding-bottom: 4.875rem;
 	}
-	section.ourGoals .fullWidth_image {
+	section.ourGoals .fullWidth_image.--desktop {
+		display: none;
+	}
+	section.ourGoals .fullWidth_image.--mobile {
 		background-position: 50%;
 		background-size: cover;
-		height: 600px;
-		height: 37.5rem;
+		padding: 0 0 120%;
 	}
 	section.ourGoals .twoGoals {
 		margin-top: 2.8125rem;
@@ -1520,6 +1522,11 @@ section.ourGoals .twoGoals .goal .goal__content a {
 	}
 	.header .header__container .contTopHeading .topHeading {
 		margin-right: 1.25rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	section.ourGoals .fullWidth_image.--mobile {
+		display: none;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1022px) {
