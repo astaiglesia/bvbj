@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	);
 
 	function scrollTo(hash) {
-		location.hash = `#${hash}`;
+		window.location.hash = `#${hash}`;
 	}
 
 	document.getElementById("submitMc").addEventListener("click", () => {
