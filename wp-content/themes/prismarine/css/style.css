@@ -748,11 +748,11 @@ Author: Very - Andres Posada
 	line-height: 26px;
 	line-height: 1.625rem;
 }
-.header .header__container .topHeading {
-	margin-left: auto;
+.header .header__container .contTopHeading {
+	margin-left: 26%;
 	margin-right: auto;
 }
-.header .header__container .topHeading h1 {
+.header .header__container .contTopHeading h1 {
 	color: #2e9cca;
 	color: var(--light-blue);
 	font-family: Red Rose;
@@ -1378,11 +1378,12 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		line-height: 38px;
 		line-height: 2.375rem;
 	}
-	.header .header__container .topHeading {
+	.header .header__container .contTopHeading {
+		margin-left: auto;
 		max-width: 220px;
 		max-width: 13.75rem;
 	}
-	.header .header__container .topHeading h1 {
+	.header .header__container .contTopHeading h1 {
 		font-size: 18px;
 		font-size: 1.125rem;
 		line-height: 25px;
@@ -1498,7 +1499,7 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		padding: 0 1.25rem;
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 938px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 	.header .header__container .menuHeader {
 		padding-top: 11rem;
 	}
@@ -1510,6 +1511,15 @@ section.ourGoals .twoGoals .goal .goal__content a {
 	}
 	.header .header__container .buttonsHeader .cta {
 		margin: 0 0.9375rem;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+	.header .header__container .contTopHeading {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.header .header__container .contTopHeading .topHeading {
+		margin-right: 1.25rem;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1022px) {
@@ -1532,6 +1542,12 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		height: 450px;
 		height: 28.125rem;
 		padding: 0 4.375rem 0 3.75rem;
+	}
+}
+@media screen and (min-width: 1200px) and (max-width: 1369px) {
+	.header .header__container .contTopHeading {
+		margin-left: 22%;
+		margin-right: auto;
 	}
 }
 @media screen and (min-width: 1280px) {
