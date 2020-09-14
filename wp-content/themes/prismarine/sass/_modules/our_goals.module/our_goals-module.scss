@@ -16,9 +16,21 @@ section.ourGoals {
 		background-repeat: no-repeat;
 
 		@include media($phone, 768px) {
-			background-size: cover;
-			background-position: center;
-			height: 37.5rem;
+			&.--desktop {
+				display: none;
+			}
+
+			&.--mobile {
+				background-size: cover;
+				background-position: center;
+				padding: 0 0 130%;
+			}
+		}
+
+		@include media(768px) {
+			&.--mobile {
+				display: none;
+			}
 		}
 	}
 

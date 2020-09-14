@@ -748,11 +748,11 @@ Author: Very - Andres Posada
 	line-height: 26px;
 	line-height: 1.625rem;
 }
-.header .header__container .topHeading {
-	margin-left: auto;
+.header .header__container .contTopHeading {
+	margin-left: 26%;
 	margin-right: auto;
 }
-.header .header__container .topHeading h1 {
+.header .header__container .contTopHeading h1 {
 	color: #2e9cca;
 	color: var(--light-blue);
 	font-family: Red Rose;
@@ -1378,11 +1378,12 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		line-height: 38px;
 		line-height: 2.375rem;
 	}
-	.header .header__container .topHeading {
+	.header .header__container .contTopHeading {
+		margin-left: auto;
 		max-width: 220px;
 		max-width: 13.75rem;
 	}
-	.header .header__container .topHeading h1 {
+	.header .header__container .contTopHeading h1 {
 		font-size: 18px;
 		font-size: 1.125rem;
 		line-height: 25px;
@@ -1399,10 +1400,18 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		justify-content: center;
 		width: 100%;
 	}
+	.--menu-open .header .header__container .buttonsHeader {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
 	.header .header__container .buttonsHeader .cta {
 		border-radius: 0;
 		padding: 1.3125rem 0;
 		width: 50%;
+	}
+	.--menu-open .header .header__container .buttonsHeader .cta {
+		width: 48.8%;
 	}
 	.footer .footer__container .footer__heading h2 {
 		font-size: 32px;
@@ -1441,11 +1450,13 @@ section.ourGoals .twoGoals .goal .goal__content a {
 	section.ourRecipients {
 		padding-bottom: 4.875rem;
 	}
-	section.ourGoals .fullWidth_image {
+	section.ourGoals .fullWidth_image.--desktop {
+		display: none;
+	}
+	section.ourGoals .fullWidth_image.--mobile {
 		background-position: 50%;
 		background-size: cover;
-		height: 600px;
-		height: 37.5rem;
+		padding: 0 0 130%;
 	}
 	section.ourGoals .twoGoals {
 		margin-top: 2.8125rem;
@@ -1475,6 +1486,11 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		font-size: 1.125rem;
 	}
 }
+@media screen and (min-width: 300px) and (max-width: 1198px) {
+	.header .header__container .contTopHeading .topHeading {
+		margin-right: 1.25rem;
+	}
+}
 @media screen and (min-width: 300px) and (max-width: 479px) {
 	.footer .footer__container .mailchimpForm form input[type="submit"] {
 		padding-left: 0.75rem;
@@ -1498,7 +1514,7 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		padding: 0 1.25rem;
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 938px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 	.header .header__container .menuHeader {
 		padding-top: 11rem;
 	}
@@ -1510,6 +1526,17 @@ section.ourGoals .twoGoals .goal .goal__content a {
 	}
 	.header .header__container .buttonsHeader .cta {
 		margin: 0 0.9375rem;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+	.header .header__container .contTopHeading {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media screen and (min-width: 768px) {
+	section.ourGoals .fullWidth_image.--mobile {
+		display: none;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1022px) {
@@ -1532,6 +1559,12 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		height: 450px;
 		height: 28.125rem;
 		padding: 0 4.375rem 0 3.75rem;
+	}
+}
+@media screen and (min-width: 1200px) and (max-width: 1369px) {
+	.header .header__container .contTopHeading {
+		margin-left: 22%;
+		margin-right: auto;
 	}
 }
 @media screen and (min-width: 1280px) {

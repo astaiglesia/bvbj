@@ -99,8 +99,10 @@
 			?>
 
 			<?php if ($acfDBHeader['top_heading']): ?>
-				<div class="topHeading">
-					<h1><?php echo $acfDBHeader['top_heading']; ?></h1>
+				<div class="contTopHeading">
+					<div class="topHeading">
+						<h1><?php echo $acfDBHeader['top_heading']; ?></h1>
+					</div>
 				</div>
 			<?php endif; ?>
 
