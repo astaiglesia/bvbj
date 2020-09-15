@@ -1,0 +1,46 @@
+/*!
+Module Name: Our Supporting Partners
+Author: Very - Andres Posada
+*/
+
+section.ourSupportingP {
+	padding-top: 4.0625rem;
+	padding-bottom: 3.125rem;
+
+	@include media($phone, 1023px) {
+		padding-top: 1.5625rem;
+		padding-bottom: 3.4375rem;
+	}
+
+	.heading {
+		text-align: center;
+
+		h2 {
+			font-size: 1.125rem;
+			color: var(--light-black);
+			letter-spacing: 0.0625rem;
+			text-transform: uppercase;
+
+			@include media($phone, 1023px) {
+				margin-bottom: 2.5rem;
+			}
+		}
+	}
+
+	.logo {
+		width: 25%;
+
+		@include media($phone, 767px) {
+			width: 50%;
+		}
+
+		@include media(768px, 1023px) {
+			width: 33.333%;
+		}
+
+		img {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+}
