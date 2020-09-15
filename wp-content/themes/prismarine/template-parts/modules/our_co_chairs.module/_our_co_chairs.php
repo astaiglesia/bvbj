@@ -21,9 +21,7 @@ $acfDBOR = [
 
 		<?php if ($acfDBOR['heading']): ?>
 			<div class="heading">
-				<p>
-					<?php print $acfDBOR['heading']; ?>
-				</p>
+				<h2> <?php print $acfDBOR['heading']; ?> </h2>
 			</div>
 		<?php endif; ?>
 
@@ -33,7 +31,7 @@ $acfDBOR = [
 				if( have_rows('co_chairs') ):
 						$i = 1;
 						// Loop through rows.
-						echo '<div class="first">';
+						echo '<div class="first d-flex -items-start -row -wrap -justify-around">';
 						while( have_rows('co_chairs') ) : the_row();
 
 								// Load sub field value.
@@ -54,15 +52,16 @@ $acfDBOR = [
 											<img src="<?php echo $image_item; ?>">
 										<?php endif; ?>
 										<?php if ($name): ?>
-											<h2><?php echo $name; ?></h2>
+											<h3><?php echo $name; ?></h3>
 										<?php endif; ?>
 										<?php if ($role): ?>
 											<span><?php echo $role; ?></span>
 										<?php endif; ?>
+										<div class="learnMore">Learn More</div class="learnMore">
 									</a>
 									<div style="display: none;" id="modal-cc<?php echo $i; ?>">
 										<?php if ($name): ?>
-											<h2><?php echo $name; ?></h2>
+											<h3><?php echo $name; ?></h3>
 										<?php endif; ?>
 										<?php if ($subheading): ?>
 											<span><?php echo $subheading; ?></span>
@@ -102,7 +101,7 @@ $acfDBOR = [
 
 
 						if ($i === 3 ):
-							echo '</div><div class="second">';
+							echo '</div><div class="second d-flex -items-start -row -wrap -justify-around">';
 						endif;
 						if ($i === 7):
 							echo '</div>';
