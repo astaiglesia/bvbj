@@ -20,6 +20,7 @@ Text Domain: bvbj
 	--background-blue: #4056a1;
 	--light-grey: #cfcfd8;
 	--grey-title: #404040;
+	--light-black: #19181a;
 	--system-fonts: "Rubik", "-apple-system", "BlinkMacSystemFont",
 		"Helvetica Neue", "Roboto", "Oxygen", "Oxygen-Sans", "Ubuntu", "Cantarell",
 		"Arial", "system-ui", "Segoe UI", "sans-serif", "Apple Color Emoji",
@@ -567,6 +568,7 @@ h5 {
 	max-width: 1250px;
 	padding: 0 1.25rem;
 	position: relative;
+	width: 100%;
 }
 
 /*!
@@ -1215,6 +1217,50 @@ section.our-co-chairs {
 	color: var(--black);
 	font-size: 18px;
 	font-size: 1.125rem;
+	padding: 6.5625rem 0 4.375rem;
+}
+section.our-co-chairs .heading {
+	margin-bottom: 4.0625rem;
+	text-align: center;
+}
+section.our-co-chairs .heading h2 {
+	color: #19181a;
+	color: var(--light-black);
+	font-size: 18px;
+	font-size: 1.125rem;
+	letter-spacing: 1px;
+	letter-spacing: 0.0625rem;
+	text-transform: uppercase;
+}
+section.our-co-chairs .cont-co-chairs .recipient {
+	text-align: center;
+}
+section.our-co-chairs .cont-co-chairs .recipient img {
+	width: 100%;
+}
+section.our-co-chairs .cont-co-chairs .first {
+	margin: 0 auto 5rem;
+	max-width: 935px;
+	max-width: 58.4375rem;
+	width: 100%;
+}
+section.our-co-chairs .cont-co-chairs .first .recipient {
+	margin-left: auto;
+	margin-right: auto;
+	width: 290px;
+	width: 18.125rem;
+}
+section.our-co-chairs .cont-co-chairs .second {
+	margin: 0 auto;
+	max-width: 1250px;
+	max-width: 78.125rem;
+	width: 100%;
+}
+section.our-co-chairs .cont-co-chairs .second .recipient {
+	margin-left: auto;
+	margin-right: auto;
+	width: 290px;
+	width: 18.125rem;
 }
 section.our-co-chairs .social-icon {
 	display: inline-block;

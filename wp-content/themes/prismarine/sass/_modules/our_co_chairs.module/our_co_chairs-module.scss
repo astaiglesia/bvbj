@@ -8,6 +8,53 @@ Author: Very - Andres Posada
 section.our-co-chairs {
 	color: var(--black);
 	font-size: 1.125rem;
+	padding: 6.5625rem 0 4.375rem;
+
+	.heading {
+		text-align: center;
+		margin-bottom: 4.0625rem;
+
+		h2 {
+			font-size: 1.125rem;
+			color: var(--light-black);
+			letter-spacing: 0.0625rem;
+			text-transform: uppercase;
+		}
+	}
+
+	.cont-co-chairs {
+		.recipient {
+			text-align: center;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.first {
+			max-width: 58.4375rem;
+			width: 100%;
+			margin: 0 auto 5rem;
+
+			.recipient {
+				margin-left: auto;
+				margin-right: auto;
+				width: 18.125rem;
+			}
+		}
+
+		.second {
+			max-width: 78.125rem;
+			width: 100%;
+			margin: 0 auto;
+
+			.recipient {
+				margin-left: auto;
+				margin-right: auto;
+				width: 18.125rem;
+			}
+		}
+	}
 
 	.social-icon {
 		display: inline-block;
