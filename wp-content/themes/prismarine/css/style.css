@@ -1213,11 +1213,14 @@ Module Name: Our Co Chairs
 Author: Very - Andres Posada
 */
 section.our-co-chairs {
+	border-bottom: 1px solid #cfcfd8;
+	border-bottom: 1px solid var(--light-grey);
 	color: #000;
 	color: var(--black);
 	font-size: 18px;
 	font-size: 1.125rem;
-	padding: 6.5625rem 0 4.375rem;
+	margin-bottom: 2.5rem;
+	padding: 6.5625rem 0 8.125rem;
 }
 section.our-co-chairs .heading {
 	margin-bottom: 4.0625rem;
@@ -1238,8 +1241,39 @@ section.our-co-chairs .cont-co-chairs .recipient {
 section.our-co-chairs .cont-co-chairs .recipient img {
 	width: 100%;
 }
+section.our-co-chairs .cont-co-chairs .recipient h3 {
+	color: #19181a;
+	color: var(--light-black);
+	font-family: helveticabold;
+	font-size: 18px;
+	font-size: 1.125rem;
+	letter-spacing: 0.17px;
+	letter-spacing: 0.010625rem;
+	margin-bottom: 0.3125rem;
+	margin-top: 0.8125rem;
+}
+section.our-co-chairs .cont-co-chairs .recipient span {
+	color: #19181a;
+	color: var(--light-black);
+	font-family: helveticaregular;
+	font-size: 16px;
+	font-size: 1rem;
+	font-style: italic;
+	letter-spacing: 0.16px;
+	letter-spacing: 0.01rem;
+}
+section.our-co-chairs .cont-co-chairs .recipient .learnMore {
+	color: #2e9cca;
+	color: var(--light-blue);
+	font-size: 16px;
+	font-size: 1rem;
+	letter-spacing: 0.16px;
+	letter-spacing: 0.01rem;
+	margin-top: 0.625rem;
+	text-decoration: underline;
+}
 section.our-co-chairs .cont-co-chairs .first {
-	margin: 0 auto 5rem;
+	margin: 0 auto 5.625rem;
 	max-width: 935px;
 	max-width: 58.4375rem;
 	width: 100%;
@@ -1541,6 +1575,27 @@ section.ourGoals .twoGoals .goal .goal__content a {
 	.footer .footer__container .mailchimpForm form input[type="submit"] {
 		padding-left: 0.75rem;
 	}
+	section.our-co-chairs .heading h2 {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+	section.our-co-chairs .cont-co-chairs .recipient img {
+		max-width: 225px;
+		max-width: 14.0625rem;
+	}
+	section.our-co-chairs .cont-co-chairs .recipient h3 {
+		font-size: 20px;
+		font-size: 1.25rem;
+	}
+	section.our-co-chairs .cont-co-chairs .recipient .learnMore,
+	section.our-co-chairs .cont-co-chairs .recipient span {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+	section.our-co-chairs .cont-co-chairs .first .recipient,
+	section.our-co-chairs .cont-co-chairs .second .recipient {
+		width: 80%;
+	}
 }
 @media screen and (min-width: 300px) and (max-width: 1022px) {
 	section.ourRecipients .ourRecipients__container {
@@ -1553,6 +1608,38 @@ section.ourGoals .twoGoals .goal .goal__content a {
 	section.ourRecipients .recipient {
 		max-width: none;
 		width: auto;
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 943px) {
+	section.our-co-chairs {
+		padding: 1.875rem 0 0;
+	}
+	section.our-co-chairs .heading {
+		margin-bottom: 2.8125rem;
+	}
+	section.our-co-chairs .cont-co-chairs .recipient {
+		margin-bottom: 3.125rem;
+	}
+	section.our-co-chairs .cont-co-chairs .first {
+		margin-bottom: 0;
+	}
+	section.our-co-chairs .cont-co-chairs .first,
+	section.our-co-chairs .cont-co-chairs .second {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: vertical;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 943px) {
+	section.our-co-chairs .cont-co-chairs .recipient img {
+		max-width: 320px;
+		max-width: 20rem;
+	}
+	section.our-co-chairs .cont-co-chairs .first .recipient,
+	section.our-co-chairs .cont-co-chairs .second .recipient {
+		margin-bottom: 4.0625rem;
+		width: 80%;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1369px) {
@@ -1590,6 +1677,15 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		height: 520px;
 		height: 32.5rem;
 		padding: 0 2.5rem 0 3.125rem;
+	}
+}
+@media screen and (min-width: 945px) and (max-width: 1207px) {
+	section.our-co-chairs .cont-co-chairs .first {
+		max-width: 100%;
+	}
+	section.our-co-chairs .cont-co-chairs .second .recipient:last-child {
+		margin-bottom: 0;
+		margin-top: 5.75rem;
 	}
 }
 @media screen and (min-width: 1024px) {
