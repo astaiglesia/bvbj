@@ -16,7 +16,7 @@ $acfDBOR = [
 ]; ?>
 
 <!-- Begin Our Supporting Partners Section -->
-<section class="d-flex -items-center -row -wrap -justify-normal d-section our-supporting-partners">
+<section class="d-section ourSupportingP">
 	<div class="container">
 
 		<?php if ($acfDBOR['heading']): ?>
@@ -25,20 +25,21 @@ $acfDBOR = [
 			</div>
 		<?php endif; ?>
 
-		<div class="logos">
+		<div class="logos d-flex -items-center -row -wrap -justify-center">
 				<?php
 					// Check rows exists.
 					if( have_rows('logos') ):
 							// Loop through rows.
 							while( have_rows('logos') ) : the_row();
-
 									// Load sub field value.
 									$logo = get_sub_field('logo');
+									$link_url = get_sub_field('link_url');
 									?>
 									<div class="logo">
-										<img src="<?php echo $logo; ?>" alt="logo supporting partners">
+										<a href="<?php echo $link_url; ?>" target="_blank" title="Open partner website">
+											<img src="<?php echo $logo; ?>" alt="logo supporting partners">
+										</a>
 									</div>
-
 							<?php
 							// End loop.
 							endwhile;

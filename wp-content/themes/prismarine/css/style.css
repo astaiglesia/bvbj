@@ -1416,6 +1416,34 @@ section.ourGoals .twoGoals .goal .goal__content a {
 	width: 200px;
 	width: 12.5rem;
 }
+
+/*!
+Module Name: Our Supporting Partners
+Author: Very - Andres Posada
+*/
+section.ourSupportingP {
+	padding-bottom: 3.125rem;
+	padding-top: 4.0625rem;
+}
+section.ourSupportingP .heading {
+	text-align: center;
+}
+section.ourSupportingP .heading h2 {
+	color: #19181a;
+	color: var(--light-black);
+	font-size: 18px;
+	font-size: 1.125rem;
+	letter-spacing: 1px;
+	letter-spacing: 0.0625rem;
+	text-transform: uppercase;
+}
+section.ourSupportingP .logo {
+	width: 25%;
+}
+section.ourSupportingP .logo img {
+	max-width: 100%;
+	width: 100%;
+}
 @media screen and (min-width: 300px) and (max-width: 899px) {
 	.site-main {
 		margin-top: 0;
@@ -1609,6 +1637,13 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		max-width: none;
 		width: auto;
 	}
+	section.ourSupportingP {
+		padding-bottom: 3.4375rem;
+		padding-top: 1.5625rem;
+	}
+	section.ourSupportingP .heading h2 {
+		margin-bottom: 2.5rem;
+	}
 }
 @media screen and (min-width: 300px) and (max-width: 943px) {
 	section.our-co-chairs {
@@ -1629,6 +1664,11 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		-webkit-box-orient: vertical;
 		-ms-flex-direction: column;
 		flex-direction: column;
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 766px) {
+	section.ourSupportingP .logo {
+		width: 50%;
 	}
 }
 @media screen and (min-width: 481px) and (max-width: 943px) {
@@ -1677,6 +1717,9 @@ section.ourGoals .twoGoals .goal .goal__content a {
 		height: 520px;
 		height: 32.5rem;
 		padding: 0 2.5rem 0 3.125rem;
+	}
+	section.ourSupportingP .logo {
+		width: 33.333%;
 	}
 }
 @media screen and (min-width: 945px) and (max-width: 1207px) {
