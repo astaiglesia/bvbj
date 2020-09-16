@@ -1376,13 +1376,15 @@ section.our-co-chairs .link-svg {
 	margin-bottom: 0.875rem;
 }
 .modalAbv .modalAbv__container .text .text__inner .socialMedia .svg-social {
-	background-size: 32px 32px;
+	background-size: 2rem 2rem;
 	height: 32px;
+	height: 2rem;
 	margin-bottom: 0.875rem;
 	width: 32px;
+	width: 2rem;
 }
 .modalAbv .modalAbv__container .text .text__inner .social-icon {
-	margin-right: 22px;
+	margin-right: 1.375rem;
 }
 .modalAbv .modalAbv__container .text .text__inner .social-icon:last-child {
 	margin-right: 0;
@@ -1425,7 +1427,7 @@ body .fancybox-close-small {
 	left: 30px;
 	left: 1.875rem;
 	opacity: 1;
-	padding: 4px !important;
+	padding: 0.25rem !important;
 	right: auto;
 	top: 35px !important;
 	top: 2.1875rem !important;
@@ -1666,58 +1668,6 @@ section.ourSupportingP .logo img {
 	section.ourRecipients {
 		padding-bottom: 4.875rem;
 	}
-	.modalAbv .coChair__heading {
-		position: relative;
-	}
-	.modalAbv .coChair__heading h3 {
-		color: #fff;
-		color: var(--white);
-		font-size: 18px;
-		font-size: 1.125rem;
-		letter-spacing: 0.17px;
-		letter-spacing: 0.010625rem;
-		margin-bottom: 2.0625rem;
-		margin-top: 2.0625rem;
-	}
-	.modalAbv .modalAbv__container {
-		-webkit-box-direction: reverse;
-		-webkit-box-orient: vertical;
-		-ms-flex-direction: column-reverse;
-		flex-direction: column-reverse;
-	}
-	.modalAbv .modalAbv__container .text {
-		width: 100%;
-	}
-	.modalAbv .modalAbv__container .text .text__inner {
-		margin-bottom: 0.625rem;
-		margin-left: 0;
-		margin-top: 2.5rem;
-		padding: 0 1.25rem;
-		width: 100%;
-	}
-	.modalAbv .modalAbv__container .text .description p {
-		font-size: 18px;
-		font-size: 1.125rem;
-		letter-spacing: 0;
-		line-height: 26px;
-		line-height: 1.625rem;
-		margin-top: 1.625rem;
-	}
-	.modalAbv .modalAbv__container .text .description.-desktop {
-		display: none;
-	}
-	.modalAbv .modalAbv__container .text .description.-mobile {
-		display: block;
-	}
-	.modalAbv .modalAbv__container .image {
-		width: 100%;
-	}
-	.modalAbv .modalAbv__container .image .modalAbv__image.-desktop {
-		display: none;
-	}
-	.modalAbv .modalAbv__container .image .modalAbv__image.-mobile {
-		display: block;
-	}
 	body .fancybox-close-small {
 		left: 10px;
 		left: 0.625rem;
@@ -1832,6 +1782,60 @@ section.ourSupportingP .logo img {
 		flex-direction: column;
 	}
 }
+@media screen and (min-width: 300px) and (max-width: 959px) {
+	.modalAbv .coChair__heading {
+		position: relative;
+	}
+	.modalAbv .coChair__heading h3 {
+		color: #fff;
+		color: var(--white);
+		font-size: 18px;
+		font-size: 1.125rem;
+		letter-spacing: 0.17px;
+		letter-spacing: 0.010625rem;
+		margin-bottom: 2.0625rem;
+		margin-top: 2.0625rem;
+	}
+	.modalAbv .modalAbv__container {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: vertical;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+	.modalAbv .modalAbv__container .text {
+		width: 100%;
+	}
+	.modalAbv .modalAbv__container .text .text__inner {
+		margin-bottom: 0.625rem;
+		margin-left: 0;
+		margin-top: 2.5rem;
+		padding: 0 1.25rem;
+		width: 100%;
+	}
+	.modalAbv .modalAbv__container .text .description p {
+		font-size: 18px;
+		font-size: 1.125rem;
+		letter-spacing: 0;
+		line-height: 26px;
+		line-height: 1.625rem;
+		margin-top: 1.625rem;
+	}
+	.modalAbv .modalAbv__container .text .description.-desktop {
+		display: none;
+	}
+	.modalAbv .modalAbv__container .text .description.-mobile {
+		display: block;
+	}
+	.modalAbv .modalAbv__container .image {
+		width: 100%;
+	}
+	.modalAbv .modalAbv__container .image .modalAbv__image.-desktop {
+		display: none;
+	}
+	.modalAbv .modalAbv__container .image .modalAbv__image.-mobile {
+		display: block;
+	}
+}
 @media screen and (min-width: 300px) and (max-width: 480px) {
 	.modalAbv .modalAbv__container .image .modalAbv__image {
 		height: 0;
@@ -1854,7 +1858,7 @@ section.ourSupportingP .logo img {
 		width: 80%;
 	}
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
 	.modalAbv .modalAbv__container .image .modalAbv__image {
 		height: 0;
 		padding-bottom: 80%;
@@ -1886,28 +1890,8 @@ section.ourSupportingP .logo img {
 	}
 }
 @media screen and (min-width: 768px) {
-	.modalAbv .modalAbv__container .text .description.-desktop {
-		display: block;
-	}
-	.modalAbv .modalAbv__container .text .description.-mobile {
-		display: none;
-	}
-	.modalAbv .modalAbv__container .image .modalAbv__image.-desktop {
-		display: block;
-	}
-	.modalAbv .modalAbv__container .image .modalAbv__image.-mobile,
 	section.ourGoals .fullWidth_image.--mobile {
 		display: none;
-	}
-}
-@media (min-width: 768px) and (max-height: 767px) {
-	.modalAbv .modalAbv__container .image .modalAbv__image {
-		height: 100vh;
-	}
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-	.modalAbv .modalAbv__container .image .modalAbv__image {
-		height: 600px;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1022px) {
@@ -1920,6 +1904,12 @@ section.ourSupportingP .logo img {
 		width: 33.333%;
 	}
 }
+@media screen and (min-width: 769px) and (max-width: 959px) {
+	.modalAbv .modalAbv__container .image .modalAbv__image {
+		height: 0;
+		padding-bottom: 70%;
+	}
+}
 @media screen and (min-width: 945px) and (max-width: 1207px) {
 	section.our-co-chairs .cont-co-chairs .first {
 		max-width: 100%;
@@ -1927,6 +1917,31 @@ section.ourSupportingP .logo img {
 	section.our-co-chairs .cont-co-chairs .second .coChair:last-child {
 		margin-bottom: 0;
 		margin-top: 5.75rem;
+	}
+}
+@media screen and (min-width: 960px) {
+	.modalAbv .modalAbv__container .text .description.-desktop {
+		display: block;
+	}
+	.modalAbv .modalAbv__container .text .description.-mobile {
+		display: none;
+	}
+	.modalAbv .modalAbv__container .image .modalAbv__image.-desktop {
+		display: block;
+	}
+	.modalAbv .modalAbv__container .image .modalAbv__image.-mobile {
+		display: none;
+	}
+}
+@media (min-width: 961px) and (max-height: 767px) {
+	.modalAbv .modalAbv__container .image .modalAbv__image {
+		height: 100vh;
+	}
+}
+@media (min-width: 961px) and (max-width: 1199px) {
+	.modalAbv .modalAbv__container .image .modalAbv__image {
+		height: 600px;
+		height: 37.5rem;
 	}
 }
 @media screen and (min-width: 1024px) {
@@ -1957,6 +1972,7 @@ section.ourSupportingP .logo img {
 	}
 	.modalAbv .modalAbv__container .image .modalAbv__image {
 		height: 750px;
+		height: 46.875rem;
 	}
 }
 @media screen and (min-width: 1280px) {
