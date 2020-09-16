@@ -41,6 +41,7 @@ $acfDBOR = [
 								$image_popup = get_sub_field('image_popup');
 								$image_popup_mobile = get_sub_field('image_popup_mobile');
 								$description = get_sub_field('description');
+								$description_mobile = get_sub_field('description_mobile');
 								$subheading = get_sub_field('subheading');
 								$facebook_url = get_sub_field('facebook_url');
 								$twitter_url = get_sub_field('twitter_url');
@@ -75,7 +76,14 @@ $acfDBOR = [
 														</div>
 													<?php endif; ?>
 													<?php if ($description): ?>
-														<p><?php echo $description; ?></p>
+														<div class="description -desktop">
+															<p><?php echo $description; ?></p>
+														</div>
+													<?php endif; ?>
+													<?php if ($description_mobile): ?>
+														<div class="description -mobile">
+															<p><?php echo $description_mobile; ?></p>
+														</div>
 													<?php endif; ?>
 													<div class="socialMedia">
 														<span>Social Media</span>

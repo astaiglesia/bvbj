@@ -200,12 +200,24 @@ section.our-co-chairs {
 		width: 100%;
 		text-align: center;
 
+		@include media($phone, 768px) {
+			position: relative;
+		}
+
 		h3 {
 			font-size: 2rem;
 			font-weight: 400;
 			color: var(--white);
 			letter-spacing: -0.000625rem;
 			text-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+
+			@include media($phone, 768px) {
+				font-size: 1.125rem;
+				color: var(--white);
+				letter-spacing: 0.010625rem;
+				margin-top: 2.0625rem;
+				margin-bottom: 2.0625rem;
+			}
 		}
 	}
 
@@ -228,20 +240,19 @@ section.our-co-chairs {
 				margin-top: 21%;
 				margin-bottom: 3.4375rem;
 
+				@include media($phone, 768px) {
+					margin-bottom: 0.625rem;
+					margin-left: 0;
+					margin-top: 2.5rem;
+					width: 100%;
+					padding: 0 1.25rem;
+				}
+
 				.subheading {
 					font-size: 1.125rem;
 					color: var(--white);
 					letter-spacing: 0.010625rem;
 					font-style: italic;
-				}
-
-				p {
-					font-size: 1.5rem;
-					color: var(--white);
-					letter-spacing: 0.015625rem;
-					line-height: 2rem;
-					margin-top: 1.125rem;
-					margin-bottom: 2.5rem;
 				}
 
 				.socialMedia {
@@ -267,6 +278,44 @@ section.our-co-chairs {
 
 					&:last-child {
 						margin-right: 0;
+					}
+				}
+			}
+
+			.description {
+				p {
+					font-size: 1.5rem;
+					color: var(--white);
+					letter-spacing: 0.015625rem;
+					line-height: 2rem;
+					margin-top: 1.125rem;
+					margin-bottom: 2.5rem;
+
+					@include media($phone, 768px) {
+						font-size: 1.125rem;
+						letter-spacing: 0;
+						line-height: 1.625rem;
+						margin-top: 1.625rem;
+					}
+				}
+
+				@include media($phone, 768px) {
+					&.-desktop {
+						display: none;
+					}
+
+					&.-mobile {
+						display: block;
+					}
+				}
+
+				@include media(768px) {
+					&.-desktop {
+						display: block;
+					}
+
+					&.-mobile {
+						display: none;
 					}
 				}
 			}
@@ -358,5 +407,10 @@ body {
 		color: var(--white) !important;
 		opacity: 1;
 		padding: 4px !important;
+
+		@include media($phone, 768px) {
+			left: 0.625rem;
+			top: 1.3125rem !important;
+		}
 	}
 }
