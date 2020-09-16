@@ -39,15 +39,17 @@ $acfDBOR = [
 								$name = get_sub_field('name');
 								$role = get_sub_field('role');
 								$image_popup = get_sub_field('image_popup');
+								$image_popup_mobile = get_sub_field('image_popup_mobile');
 								$description = get_sub_field('description');
+								$description_mobile = get_sub_field('description_mobile');
 								$subheading = get_sub_field('subheading');
 								$facebook_url = get_sub_field('facebook_url');
 								$twitter_url = get_sub_field('twitter_url');
 								$instagram_url = get_sub_field('instagram_url');
 								$linkedin_url = get_sub_field('linkedin_url');
 						?>
-								<div class="recipient">
-									<a data-fancybox data-src="#modal-cc<?php echo $i; ?>" href="javascript:;" class="btn btn-primary">
+								<div class="coChair">
+									<a data-fancybox data-src="#modal-cc<?php echo $i; ?>" href="javascript:;">
 										<?php if ($image_item): ?>
 											<img src="<?php echo $image_item; ?>">
 										<?php endif; ?>
@@ -59,41 +61,67 @@ $acfDBOR = [
 										<?php endif; ?>
 										<div class="learnMore">Learn More</div class="learnMore">
 									</a>
-									<div style="display: none;" id="modal-cc<?php echo $i; ?>">
+									<div class="modalAbv" style="display: none;" id="modal-cc<?php echo $i; ?>">
 										<?php if ($name): ?>
-											<h3><?php echo $name; ?></h3>
+											<div class="coChair__heading">
+												<h3><?php echo $name; ?></h3>
+											</div>
 										<?php endif; ?>
-										<?php if ($subheading): ?>
-											<span><?php echo $subheading; ?></span>
-										<?php endif; ?>
-										<?php if ($description): ?>
-											<p><?php echo $description; ?></p>
-										<?php endif; ?>
-										<?php if ($image_popup): ?>
-											<img src="<?php echo $image_popup; ?>">
-										<?php endif; ?>
+										<div class="modalAbv__container d-flex -items-center -row -wrap -justify-between">
+											<div class="text">
+												<div class="text__inner">
+													<?php if ($subheading): ?>
+														<div class="subheading">
+															<?php echo $subheading; ?>
+														</div>
+													<?php endif; ?>
+													<?php if ($description): ?>
+														<div class="description -desktop">
+															<p><?php echo $description; ?></p>
+														</div>
+													<?php endif; ?>
+													<?php if ($description_mobile): ?>
+														<div class="description -mobile">
+															<p><?php echo $description_mobile; ?></p>
+														</div>
+													<?php endif; ?>
+													<div class="socialMedia">
+														<span>Social Media</span>
+														<?php if ($facebook_url): ?>
+														<a href="<?php echo $facebook_url; ?>" target="_blank" class="social-icon">
+															<div class="fb-svg svg-social"></div>
+														</a>
+														<?php endif; ?>
+														<?php if ($twitter_url): ?>
+														<a href="<?php echo $twitter_url; ?>" target="_blank" class="social-icon">
+															<div class="tw-svg svg-social"></div>
+														</a>
+														<?php endif; ?>
+														<?php if ($instagram_url): ?>
+														<a href="<?php echo $instagram_url; ?>" target="_blank" class="social-icon">
+															<div class="ins-svg svg-social"></div>
+														</a>
+														<?php endif; ?>
+														<?php if ($linkedin_url): ?>
+														<a href="<?php echo $linkedin_url; ?>" target="_blank" class="social-icon">
+															<div class="link-svg svg-social"></div>
+														</a>
+														<?php endif; ?>
+													</div>
+												</div>
+											</div>
 
-										<span>Social Media</span>
-										<?php if ($facebook_url): ?>
-										<a href="<?php echo $facebook_url; ?>" target="_blank" class="social-icon">
-											<div class="fb-svg svg-social"></div>
-										</a>
-										<?php endif; ?>
-										<?php if ($twitter_url): ?>
-										<a href="<?php echo $twitter_url; ?>" target="_blank" class="social-icon">
-											<div class="tw-svg svg-social"></div>
-										</a>
-										<?php endif; ?>
-										<?php if ($instagram_url): ?>
-										<a href="<?php echo $instagram_url; ?>" target="_blank" class="social-icon">
-											<div class="ins-svg svg-social"></div>
-										</a>
-										<?php endif; ?>
-										<?php if ($linkedin_url): ?>
-										<a href="<?php echo $linkedin_url; ?>" target="_blank" class="social-icon">
-											<div class="link-svg svg-social"></div>
-										</a>
-										<?php endif; ?>
+											<div class="image">
+												<?php if ($image_popup): ?>
+													<div class="modalAbv__image -desktop" style="background-image: url(<?php echo $image_popup; ?>)">
+													</div>
+												<?php endif; ?>
+												<?php if ($image_popup_mobile): ?>
+													<div class="modalAbv__image -mobile" style="background-image: url(<?php echo $image_popup_mobile; ?>)">
+													</div>
+												<?php endif; ?>
+											</div>
+										</div>
 									</div>
 								</div>
 
