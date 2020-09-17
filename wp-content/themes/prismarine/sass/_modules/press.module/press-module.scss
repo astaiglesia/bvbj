@@ -4,18 +4,148 @@ Author: Very - Andres Posada
 */
 
 section.press {
-	.post {
-		width: 29%;
+	padding-top: 12.5rem;
+	margin-bottom: 6.25rem;
+
+	@include media($phone, 768px) {
+		margin-bottom: 3.75rem;
 	}
 
-	.hiddenPost {
-		position: absolute;
-		overflow: hidden;
-		clip: rect(0 0 0 0);
-		height: 1px;
-		width: 1px;
-		margin: -1px;
-		padding: 0;
-		border: 0;
+	.top {
+		text-align: center;
+
+		.press__heading {
+			h1 {
+				font-size: 4.5rem;
+				font-weight: 400;
+				color: var(--background-blue);
+				letter-spacing: -0.1125rem;
+				line-height: 4.375rem;
+				margin-bottom: 1.875rem;
+				margin-top: 1.25rem;
+
+				@include media($phone, 768px) {
+					font-size: 2rem;
+					letter-spacing: -0.05rem;
+					line-height: 2.375rem;
+					margin-bottom: 0.625rem;
+				}
+			}
+		}
+
+		.emailBlock {
+			font-size: 1.125rem;
+			color: var(--black);
+			letter-spacing: -0.006875rem;
+			line-height: 1.75rem;
+			margin-top: 1.25rem;
+			margin-bottom: 6.25rem;
+
+			@include media($phone, 768px) {
+				margin-top: 10px;
+				font-size: 1rem;
+				line-height: 1.625rem;
+				margin-bottom: 5rem;
+			}
+
+			a {
+				color: var(--black);
+			}
+
+			.press__email {
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.press__subHeading {
+			h2 {
+				font-size: 1.125rem;
+				color: var(--black);
+				letter-spacing: 0.125rem;
+				text-transform: uppercase;
+				margin-bottom: 2.5rem;
+			}
+		}
+	}
+
+	.pressPosts {
+		margin-top: 3.75rem;
+
+		@include media($phone, 768px) {
+			margin-top: 2.8125rem;
+		}
+
+		@include media(480px, 768px) {
+			padding: 0 15%;
+		}
+
+		.post {
+			width: 32%;
+			margin-bottom: 2.5rem;
+
+			@include media($phone, 768px) {
+				width: 100%;
+			}
+
+			&.hiddenPost {
+				position: absolute;
+				overflow: hidden;
+				height: 0.0625rem;
+				width: 0.0625rem;
+				margin: -0.0625rem;
+				padding: 0;
+				border: 0;
+			}
+
+			h3 {
+				font-family: Helvetica-Bold;
+				font-size: 1.5rem;
+				color: var(--background-blue);
+				letter-spacing: -0.00875rem;
+				line-height: 2rem;
+				margin-top: 0.9375rem;
+				margin-bottom: 0.3125rem;
+			}
+
+			p {
+				font-size: 1.125rem;
+				color: var(--black);
+				letter-spacing: 0.006875rem;
+				line-height: 1.5rem;
+			}
+
+			a {
+				font-size: 1.125rem;
+				color: var(--light-blue);
+				letter-spacing: 0.006875rem;
+				line-height: 1.5rem;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.btnContainer {
+		text-align: center;
+		margin-top: 1.25rem;
+
+		@include media($phone, 768px) {
+			margin-top: 0;
+		}
+
+		#loadMore {
+			border: 1px solid var(--light-blue);
+			display: inline-block;
+			border-radius: 1.5625rem;
+			padding: 0.75rem 0.9375rem;
+			width: 12.5rem;
+			text-align: center;
+			font-size: 1rem;
+			color: var(--light-blue);
+			letter-spacing: 0.00625rem;
+			line-height: 1.5rem;
+			cursor: pointer;
+		}
 	}
 }

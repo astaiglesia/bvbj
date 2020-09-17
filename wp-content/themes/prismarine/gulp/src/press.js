@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const pressList = document.querySelector("#pressList");
 	const items = Array.from(pressList.querySelectorAll(".post"));
 	const loadMore = document.getElementById("loadMore");
-	const maxItems = 9;
+	const maxItems = 12;
 	const loadItems = 3;
 	const hiddenClass = "hiddenPost";
 

@@ -1587,18 +1587,126 @@ section.ourSupportingP .logo img {
 Module Name: Press
 Author: Very - Andres Posada
 */
-section.press .post {
-	width: 29%;
+section.press {
+	margin-bottom: 6.25rem;
+	padding-top: 12.5rem;
 }
-section.press .hiddenPost {
+section.press .top {
+	text-align: center;
+}
+section.press .top .press__heading h1 {
+	color: #4056a1;
+	color: var(--background-blue);
+	font-size: 72px;
+	font-size: 4.5rem;
+	font-weight: 400;
+	letter-spacing: -1.8px;
+	letter-spacing: -0.1125rem;
+	line-height: 70px;
+	line-height: 4.375rem;
+	margin-bottom: 1.875rem;
+	margin-top: 1.25rem;
+}
+section.press .top .emailBlock {
+	color: #000;
+	color: var(--black);
+	font-size: 18px;
+	font-size: 1.125rem;
+	letter-spacing: -0.11px;
+	letter-spacing: -0.006875rem;
+	line-height: 28px;
+	line-height: 1.75rem;
+	margin-bottom: 6.25rem;
+	margin-top: 1.25rem;
+}
+section.press .top .emailBlock a {
+	color: #000;
+	color: var(--black);
+}
+section.press .top .emailBlock .press__email a {
+	text-decoration: underline;
+}
+section.press .top .press__subHeading h2 {
+	color: #000;
+	color: var(--black);
+	font-size: 18px;
+	font-size: 1.125rem;
+	letter-spacing: 2px;
+	letter-spacing: 0.125rem;
+	margin-bottom: 2.5rem;
+	text-transform: uppercase;
+}
+section.press .pressPosts {
+	margin-top: 3.75rem;
+}
+section.press .pressPosts .post {
+	margin-bottom: 2.5rem;
+	width: 32%;
+}
+section.press .pressPosts .post.hiddenPost {
 	border: 0;
-	clip: rect(0 0 0 0);
 	height: 1px;
-	margin: -1px;
+	height: 0.0625rem;
+	margin: -0.0625rem;
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
 	width: 1px;
+	width: 0.0625rem;
+}
+section.press .pressPosts .post h3 {
+	color: #4056a1;
+	color: var(--background-blue);
+	font-family: Helvetica-Bold;
+	font-size: 24px;
+	font-size: 1.5rem;
+	letter-spacing: -0.14px;
+	letter-spacing: -0.00875rem;
+	line-height: 32px;
+	line-height: 2rem;
+	margin-bottom: 0.3125rem;
+	margin-top: 0.9375rem;
+}
+section.press .pressPosts .post p {
+	color: #000;
+	color: var(--black);
+}
+section.press .pressPosts .post a,
+section.press .pressPosts .post p {
+	font-size: 18px;
+	font-size: 1.125rem;
+	letter-spacing: 0.11px;
+	letter-spacing: 0.006875rem;
+	line-height: 24px;
+	line-height: 1.5rem;
+}
+section.press .pressPosts .post a {
+	color: #2e9cca;
+	color: var(--light-blue);
+	text-decoration: underline;
+}
+section.press .btnContainer {
+	margin-top: 1.25rem;
+	text-align: center;
+}
+section.press .btnContainer #loadMore {
+	border: 1px solid #2e9cca;
+	border: 1px solid var(--light-blue);
+	border-radius: 1.5625rem;
+	color: #2e9cca;
+	color: var(--light-blue);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-size: 1rem;
+	letter-spacing: 0.1px;
+	letter-spacing: 0.00625rem;
+	line-height: 24px;
+	line-height: 1.5rem;
+	padding: 0.75rem 0.9375rem;
+	text-align: center;
+	width: 200px;
+	width: 12.5rem;
 }
 @media screen and (min-width: 300px) and (max-width: 899px) {
 	.site-main {
@@ -1749,6 +1857,35 @@ section.press .hiddenPost {
 		font-size: 18px;
 		font-size: 1.125rem;
 	}
+	section.press {
+		margin-bottom: 3.75rem;
+	}
+	section.press .top .press__heading h1 {
+		font-size: 32px;
+		font-size: 2rem;
+		letter-spacing: -0.8px;
+		letter-spacing: -0.05rem;
+		line-height: 38px;
+		line-height: 2.375rem;
+		margin-bottom: 0.625rem;
+	}
+	section.press .top .emailBlock {
+		font-size: 16px;
+		font-size: 1rem;
+		line-height: 26px;
+		line-height: 1.625rem;
+		margin-bottom: 5rem;
+		margin-top: 10px;
+	}
+	section.press .pressPosts {
+		margin-top: 2.8125rem;
+	}
+	section.press .pressPosts .post {
+		width: 100%;
+	}
+	section.press .btnContainer {
+		margin-top: 0;
+	}
 }
 @media screen and (min-width: 300px) and (max-width: 1198px) {
 	.header .header__container .contTopHeading .topHeading {
@@ -1894,6 +2031,11 @@ section.press .hiddenPost {
 @media screen and (min-width: 300px) and (max-width: 766px) {
 	section.ourSupportingP .logo {
 		width: 50%;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	section.press .pressPosts {
+		padding: 0 15%;
 	}
 }
 @media screen and (min-width: 481px) and (max-width: 960px) {

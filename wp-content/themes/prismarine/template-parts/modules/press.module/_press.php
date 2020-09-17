@@ -22,29 +22,33 @@ $acfDBP = [
 <section class="d-section press">
 	<div class="container">
 
-		<?php if ($acfDBP['heading_page']): ?>
-			<div class="press__heading">
-				<h1> <?php print $acfDBP['heading_page']; ?> </h1>
-			</div>
-		<?php endif; ?>
+		<div class="top">
+			<?php if ($acfDBP['heading_page']): ?>
+				<div class="press__heading">
+					<h1> <?php print $acfDBP['heading_page']; ?> </h1>
+				</div>
+			<?php endif; ?>
 
-		<?php if ($acfDBP['caption_email']): ?>
-			<div class="press__captionEmail">
-				<a href="mailto: <?php echo $acfDBP['caption_email']; ?>"><?php echo $acfDBP['caption_email']; ?></a>
-			</div>
-		<?php endif; ?>
+			<div class="emailBlock">
+				<?php if ($acfDBP['caption_email']): ?>
+					<div class="press__captionEmail">
+						<span><?php echo $acfDBP['caption_email']; ?></span>
+					</div>
+				<?php endif; ?>
 
-		<?php if ($acfDBP['email']): ?>
-			<div class="press__email">
-				<span> <?php print $acfDBP['email']; ?> </span>
+				<?php if ($acfDBP['email']): ?>
+					<div class="press__email">
+						<a href="mailto: <?php echo $acfDBP['email']; ?>"><?php echo $acfDBP['email']; ?></a>
+					</div>
+				<?php endif; ?>
 			</div>
-		<?php endif; ?>
 
-		<?php if ($acfDBP['subheading']): ?>
-			<div class="press__subHeading">
-				<h2> <?php print $acfDBP['subheading']; ?> </h2>
-			</div>
-		<?php endif; ?>
+			<?php if ($acfDBP['subheading']): ?>
+				<div class="press__subHeading">
+					<h2> <?php print $acfDBP['subheading']; ?> </h2>
+				</div>
+			<?php endif; ?>
+		</div>
 
 		<?php
 
@@ -82,7 +86,9 @@ $acfDBP = [
 					// End loop.
 					endwhile; ?>
 				</div>
-				<div id="loadMore">View more</div>
+				<div class="btnContainer">
+					<div id="loadMore">View more</div>
+				</div>
 			<?php
 			endif;
 
