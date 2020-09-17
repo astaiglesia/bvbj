@@ -64,7 +64,7 @@ $acfDBOR = [
 												Learn More
 											</div>
 										</a>
-										<div class="modalAbv" style="display: none;" id="modal<?php echo $i; ?>">
+										<div class="modalAbv -fullHeight" style="display: none;" id="modal<?php echo $i; ?>">
 											<?php if ($name): ?>
 												<div class="heading">
 													<h3><?php echo $name; ?></h3>

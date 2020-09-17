@@ -141,16 +141,24 @@ section.ourRecipients {
 }
 
 .modalAbv {
-	.text__inner {
-		width: 69%;
+	&.-fullHeight {
+		.text__inner {
+			width: 69% !important;
 
-		@include media($phone, 960px) {
-			width: 100%;
+			@include media($phone, 960px) {
+				width: 100% !important;
+			}
 		}
-	}
 
-	.modalAbv__image {
-		background-position: center;
+		.image {
+			.modalAbv__image {
+				background-position: center;
+
+				@include media(960px) {
+					height: 100vh !important;
+				}
+			}
+		}
 	}
 }
 

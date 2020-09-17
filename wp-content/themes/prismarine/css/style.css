@@ -1181,10 +1181,10 @@ section.ourRecipients .slick-prev {
 section.ourRecipients .slick-prev:before {
 	content: "";
 }
-.modalAbv .text__inner {
-	width: 69%;
+.modalAbv.-fullHeight .text__inner {
+	width: 69% !important;
 }
-.modalAbv .modalAbv__image {
+.modalAbv.-fullHeight .image .modalAbv__image {
 	background-position: 50%;
 }
 .videoContainer {
@@ -1777,8 +1777,8 @@ section.ourSupportingP .logo img {
 	}
 }
 @media screen and (min-width: 300px) and (max-width: 959px) {
-	.modalAbv .text__inner {
-		width: 100%;
+	.modalAbv.-fullHeight .text__inner {
+		width: 100% !important;
 	}
 	.modalAbv .heading {
 		position: relative;
@@ -1949,6 +1949,9 @@ section.ourSupportingP .logo img {
 	}
 }
 @media screen and (min-width: 960px) {
+	.modalAbv.-fullHeight .image .modalAbv__image {
+		height: 100vh !important;
+	}
 	.modalAbv .modalAbv__container .text .description.-desktop {
 		display: block;
 	}
