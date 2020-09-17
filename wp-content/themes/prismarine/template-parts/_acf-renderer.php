@@ -38,6 +38,10 @@ if ( have_rows('modules') ):
 			renderPart('modules/our_supporting_partners.module/_our_supporting_partners');
 			break;
 
+		case 'press':
+			renderPart('modules/press.module/_press');
+		break;
+
 		default:
 			# code...
 			break;

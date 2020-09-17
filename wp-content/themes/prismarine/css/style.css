@@ -617,7 +617,8 @@ Author: Very - Andres Posada
 .header .header__container .toggleMenu:hover {
 	cursor: pointer;
 }
-.header .header__container .toggleMenu.--active .toggleMenu__bar {
+.header .header__container .toggleMenu.--active .toggleMenu__bar,
+.home .header .header__container .toggleMenu.--active .toggleMenu__bar {
 	background: 0;
 }
 .header .header__container .toggleMenu.--active .toggleMenu__bar:before {
@@ -651,8 +652,8 @@ Author: Very - Andres Posada
 .header .header__container .toggleMenu .toggleMenu__bar,
 .header .header__container .toggleMenu .toggleMenu__bar:after,
 .header .header__container .toggleMenu .toggleMenu__bar:before {
-	background: #fff;
-	background: var(--white);
+	background: #19181a;
+	background: var(--light-black);
 	content: "";
 	height: 2px;
 	left: 0;
@@ -668,6 +669,12 @@ Author: Very - Andres Posada
 	transition: background 0.2s linear 0.1s, top 0.2s linear 0.2s,
 		transform 0.2s linear, -webkit-transform 0.2s linear;
 	width: 100%;
+}
+.home .header .header__container .toggleMenu .toggleMenu__bar,
+.home .header .header__container .toggleMenu .toggleMenu__bar:after,
+.home .header .header__container .toggleMenu .toggleMenu__bar:before {
+	background: #fff;
+	background: var(--white);
 }
 .header .header__container .toggleMenu .toggleMenu__bar {
 	width: 22px;
@@ -1574,6 +1581,14 @@ section.ourSupportingP .logo {
 section.ourSupportingP .logo img {
 	max-width: 100%;
 	width: 100%;
+}
+
+/*!
+Module Name: Press
+Author: Very - Andres Posada
+*/
+section.press .post {
+	width: 29%;
 }
 @media screen and (min-width: 300px) and (max-width: 899px) {
 	.site-main {
