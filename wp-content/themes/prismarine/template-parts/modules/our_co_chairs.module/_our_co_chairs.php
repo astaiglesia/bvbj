@@ -63,7 +63,7 @@ $acfDBOR = [
 									</a>
 									<div class="modalAbv" style="display: none;" id="modal-cc<?php echo $i; ?>">
 										<?php if ($name): ?>
-											<div class="coChair__heading">
+											<div class="heading">
 												<h3><?php echo $name; ?></h3>
 											</div>
 										<?php endif; ?>
