@@ -1173,10 +1173,10 @@ section.ourRecipients .slick-next:before {
 section.ourRecipients .slick-prev {
 	background: url(../assets/images/bw.png) no-repeat 50% transparent;
 	background-size: 1.0625rem 2.0625rem;
-	height: 33px;
-	height: 2.0625rem;
-	width: 17px;
-	width: 1.0625rem;
+	height: 33.0016px;
+	height: 2.0626rem;
+	width: 17.0016px;
+	width: 1.0626rem;
 }
 section.ourRecipients .slick-prev:before {
 	content: "";
