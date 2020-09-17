@@ -170,6 +170,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5f637fda1ef36": {
+                    "key": "layout_5f637fda1ef36",
+                    "name": "press",
+                    "label": "Press",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f637fda1ef37",
+                            "label": "Press content",
+                            "name": "press_content",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5f63767d70498"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Module",
@@ -207,5 +238,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1598410438
+    "modified": 1600356348
 }

@@ -72,6 +72,7 @@ function bvbj_enqueue_script() {
 	}
 	wp_enqueue_script( 'header-menu', get_template_directory_uri() . '/js/header-menu.min.js', '1.0.0', 'true' );
 	wp_enqueue_script( 'mailchimp', get_template_directory_uri() . '/js/mailchimp.min.js', '1.0.0', 'true' );
+	wp_enqueue_script( 'press', get_template_directory_uri() . '/js/press.min.js', '1.0.0', 'true' );
 }
 
 add_action( 'wp_enqueue_scripts', 'bvbj_enqueue_style' );
