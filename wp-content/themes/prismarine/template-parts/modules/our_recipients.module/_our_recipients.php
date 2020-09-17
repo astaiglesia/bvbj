@@ -64,47 +64,64 @@ $acfDBOR = [
 												Learn More
 											</div>
 										</a>
-										<div style="display: none;" id="modal<?php echo $i; ?>">
+										<div class="modalAbv" style="display: none;" id="modal<?php echo $i; ?>">
 											<?php if ($name): ?>
-												<h3><?php echo $name; ?></h3>
-											<?php endif; ?>
-											<?php if ($location): ?>
-												<span><?php echo $location; ?></span>
-											<?php endif; ?>
-											<?php if ($description): ?>
-												<p><?php echo $description; ?></p>
-											<?php endif; ?>
-											<?php if ($image_popup): ?>
-												<img src="<?php echo $image_popup; ?>">
-											<?php endif; ?>
-
-											<?php if ($video_url): ?>
-												<div class="yt-video">
-													<?php echo $video_url; ?>
+												<div class="heading">
+													<h3><?php echo $name; ?></h3>
 												</div>
 											<?php endif; ?>
+											<div class="modalAbv__container d-flex -items-center -row -wrap -justify-between">
+												<div class="text">
+													<div class="text__inner">
+														<?php if ($location): ?>
+															<div class="subheading">
+																<?php echo $location; ?>
+															</div>
+														<?php endif; ?>
+														<?php if ($description): ?>
+															<div class="description">
+																<p><?php echo $description; ?></p>
+															</div>
+														<?php endif; ?>
 
-											<span>Social Media</span>
-											<?php if ($facebook_url): ?>
-											<a href="<?php echo $facebook_url; ?>" target="_blank" class="social-icon">
-												<div class="fb-svg svg-social"></div>
-											</a>
-											<?php endif; ?>
-											<?php if ($twitter_url): ?>
-											<a href="<?php echo $twitter_url; ?>" target="_blank" class="social-icon">
-												<div class="tw-svg svg-social"></div>
-											</a>
-											<?php endif; ?>
-											<?php if ($instagram_url): ?>
-											<a href="<?php echo $instagram_url; ?>" target="_blank" class="social-icon">
-												<div class="ins-svg svg-social"></div>
-											</a>
-											<?php endif; ?>
-											<?php if ($linkedin_url): ?>
-											<a href="<?php echo $linkedin_url; ?>" target="_blank" class="social-icon">
-												<div class="link-svg svg-social"></div>
-											</a>
-											<?php endif; ?>
+														<?php if ($video_url): ?>
+															<div class="videoContainer">
+																<?php echo $video_url; ?>
+															</div>
+														<?php endif; ?>
+														<div class="socialMedia">
+															<span>Social Media</span>
+															<?php if ($facebook_url): ?>
+															<a href="<?php echo $facebook_url; ?>" target="_blank" class="social-icon">
+																<div class="fb-svg svg-social"></div>
+															</a>
+															<?php endif; ?>
+															<?php if ($twitter_url): ?>
+															<a href="<?php echo $twitter_url; ?>" target="_blank" class="social-icon">
+																<div class="tw-svg svg-social"></div>
+															</a>
+															<?php endif; ?>
+															<?php if ($instagram_url): ?>
+															<a href="<?php echo $instagram_url; ?>" target="_blank" class="social-icon">
+																<div class="ins-svg svg-social"></div>
+															</a>
+															<?php endif; ?>
+															<?php if ($linkedin_url): ?>
+															<a href="<?php echo $linkedin_url; ?>" target="_blank" class="social-icon">
+																<div class="link-svg svg-social"></div>
+															</a>
+															<?php endif; ?>
+														</div>
+													</div>
+												</div>
+
+												<div class="image">
+													<?php if ($image_popup): ?>
+														<div class="modalAbv__image" style="background-image: url(<?php echo $image_popup; ?>)">
+														</div>
+													<?php endif; ?>
+												</div>
+											</div>
 										</div>
 									</div>
 

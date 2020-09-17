@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: "Install package"
-          command: npm install
+          command: yarn install
       - run:
           name: "Test: Stylelint Check"
           command: npm run style
@@ -21,7 +21,7 @@ jobs:
       - checkout
       - run:
           name: "Install package"
-          command: npm install
+          command: yarn install
       - run:
           name: "Test: ESLint Check"
           command: npm run eslint

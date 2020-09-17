@@ -131,12 +131,47 @@ section.ourRecipients {
 	.slick-prev {
 		background: url("../assets/images/bw.png") no-repeat center center transparent;
 		background-size: 1.0625rem 2.0625rem;
-		width: 1.0625rem;
-		height: 2.0625rem;
+		width: 1.0626rem;
+		height: 2.0626rem;
 
 		&::before {
 			content: "";
 		}
+	}
+}
+
+.modalAbv {
+	.text__inner {
+		width: 69%;
+
+		@include media($phone, 960px) {
+			width: 100%;
+		}
+	}
+
+	.modalAbv__image {
+		background-position: center;
+	}
+}
+
+.videoContainer {
+	position: relative;
+	padding-bottom: 78%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	margin-bottom: 2.3125rem;
+
+	@include media(481px, 961px) {
+		padding-bottom: 60%;
+	}
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
 

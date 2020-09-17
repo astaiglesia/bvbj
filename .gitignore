@@ -487,7 +487,7 @@ typings/
 # Yarn
 **/.pnp/
 **/.pnp*
-yarn.lock
+# yarn.lock
 
 #=================================================
 # Sass
