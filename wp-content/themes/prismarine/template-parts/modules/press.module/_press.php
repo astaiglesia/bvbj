@@ -51,7 +51,7 @@ $acfDBP = [
 			// Check rows exists.
 			if( have_rows('press_posts') ): ?>
 
-				<div class="pressPosts d-flex -items-center -row -wrap -justify-between d-section">
+				<div id="pressList" class="pressPosts d-flex -items-center -row -wrap -justify-between d-section">
 					<?php
 					// Loop through rows.
 					while( have_rows('press_posts') ) : the_row();
@@ -82,6 +82,7 @@ $acfDBP = [
 					// End loop.
 					endwhile; ?>
 				</div>
+				<div id="loadMore">View more</div>
 			<?php
 			endif;
 
