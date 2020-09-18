@@ -47,6 +47,37 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_5f64c59899f56": {
+                    "key": "layout_5f64c59899f56",
+                    "name": "nomination_form",
+                    "label": "Nomination form",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f64c59e99f57",
+                            "label": "Nomination form content",
+                            "name": "nomination_form_content",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5f64c482afece"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5f457a1e1f306": {
                     "key": "layout_5f457a1e1f306",
                     "name": "our_co_chairs",
@@ -238,5 +269,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1600356348
+    "modified": 1600439741
 }

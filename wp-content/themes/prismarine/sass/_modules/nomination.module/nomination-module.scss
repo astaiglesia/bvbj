@@ -1,0 +1,171 @@
+/*!
+Module Name: Nomination form
+Author: Very - Andres Posada
+*/
+
+section.nominationForm {
+	background-color: var(--light-grey);
+	color: var(--white);
+	text-align: center;
+	padding-top: 9.375rem;
+	padding-bottom: 3.75rem;
+
+	@include media($phone, 768px) {
+		padding-top: 185px;
+		padding-bottom: 40px;
+	}
+
+	.heading {
+		margin-bottom: 1.6875rem;
+
+		@include media($phone, 768px) {
+			margin-bottom: 0;
+		}
+
+		h1 {
+			font-size: 4.5rem;
+			font-weight: 400;
+			color: var(--background-blue);
+			letter-spacing: -0.1125rem;
+			line-height: 4.375rem;
+			margin-bottom: 1.875rem;
+
+			@include media($phone, 768px) {
+				font-size: 2rem;
+				letter-spacing: -0.05rem;
+				line-height: 2.375rem;
+				margin-bottom: 0.625rem;
+			}
+		}
+	}
+
+	.subHeading {
+		@include media($phone, 768px) {
+			margin-bottom: 46px;
+		}
+
+		span {
+			font-size: 1.125rem;
+			color: var(--main-blue);
+			letter-spacing: -0.006875rem;
+			line-height: 1.75rem;
+		}
+	}
+
+	.formContainer {
+		max-width: 610px;
+		margin: 0 auto;
+
+		.wpcf7-form-control-wrap {
+			margin-bottom: 0.625rem;
+			display: block;
+		}
+
+		label {
+			display: inline-block;
+			text-align: left;
+			font-size: 1rem;
+			color: var(--black);
+			letter-spacing: 0.00625rem;
+			line-height: 1.5rem;
+			width: 100%;
+		}
+
+		input,
+		textarea {
+			font-family: "helveticaregular";
+			font-size: 16px;
+			color: var(--black);
+			letter-spacing: 0.1px;
+			line-height: 24px;
+			background: #f7f7f7;
+			opacity: 1;
+			border: none;
+			width: 100%;
+			margin-bottom: 1px;
+		}
+
+		input {
+			padding: 0.8125rem 0.9375rem;
+		}
+
+		textarea {
+			height: 8.4375rem;
+			padding: 0.6875rem 1.125rem;
+		}
+
+		.radioLabel {
+			padding-top: 15px;
+			padding-bottom: 10px;
+		}
+
+		.contRadio {
+			margin-bottom: 50px;
+
+			.wpcf7-radio {
+				width: 100%;
+				display: flex;
+				align-items: flex-start;
+				flex-direction: row;
+				justify-content: flex-start;
+			}
+
+			.wpcf7-list-item {
+				width: 45%;
+				margin-left: 0;
+				text-align: left;
+
+				@include media($phone, 768px) {
+					width: 100%;
+				}
+
+				input[type="radio"],
+				.wpcf7-list-item-label {
+					display: inline-block;
+				}
+
+				input[type="radio"] {
+					width: 30px;
+				}
+			}
+		}
+
+		.nominee-bio {
+			margin-bottom: 5px !important;
+		}
+
+		.wpcf7-submit {
+			background: var(--dark-blue-btn);
+			border-radius: 1.5625rem;
+			font-size: 1rem;
+			color: var(--white);
+			letter-spacing: 0.00625rem;
+			text-align: center;
+			line-height: 1.5rem;
+			width: 12.5rem;
+			margin-top: 0.3125rem;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		input::placeholder {
+			font-family: "helveticaregular";
+			font-size: 1rem;
+			color: var(--black);
+			opacity: 0.5;
+			letter-spacing: 0.00625rem;
+			line-height: 1.5rem;
+		}
+
+		.wpcf7-not-valid-tip {
+			color: #ff0000;
+		}
+
+		.wpcf7-response-output {
+			color: #ff0000;
+			border: none;
+		}
+	}
+}
