@@ -108,6 +108,15 @@ section.nominationForm {
 				align-items: flex-start;
 				flex-direction: row;
 				justify-content: flex-start;
+
+				@include media($phone, 768px) {
+					flex-direction: column;
+				}
+			}
+
+			label {
+				position: relative;
+				cursor: pointer;
 			}
 
 			.wpcf7-list-item {
@@ -117,16 +126,59 @@ section.nominationForm {
 
 				@include media($phone, 768px) {
 					width: 100%;
+					margin-bottom: 1.875rem;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+
+				.wpcf7-list-item-label {
+					padding-left: 36px;
+
+					@include media($phone, 768px) {
+						font-size: 0.875rem;
+					}
 				}
 
 				input[type="radio"],
 				.wpcf7-list-item-label {
 					display: inline-block;
 				}
+			}
 
-				input[type="radio"] {
-					width: 30px;
+			input[type="radio"] {
+				width: 20px;
+				position: absolute;
+				z-index: -1;
+				opacity: 0;
+			}
+
+			.radioIndicator {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 24px;
+				width: 24px;
+				background: var(--white);
+				border-radius: 50%;
+				border: 1px solid var(--light-blue);
+
+				&::after {
+					content: "";
+					position: absolute;
+					display: none;
+					width: 14px;
+					height: 14px;
+					left: 4px;
+					top: 4px;
+					border-radius: 50%;
+					background: var(--light-blue);
 				}
+			}
+
+			.wpcf7-list-item input:checked ~ .radioIndicator::after {
+				display: block;
 			}
 		}
 

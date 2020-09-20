@@ -45,7 +45,6 @@ $acfDBHero = [
 					?>
 			</div>
 		<?php endif; ?>
-
 	</div>
 </section>
 <!-- End Nomination form -->

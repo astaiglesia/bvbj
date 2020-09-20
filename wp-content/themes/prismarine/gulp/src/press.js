@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	const hiddenClass = "hiddenPost";
 
 	items.forEach((item, index) => {
-		console.log(item.innerText, index);
 		if (index > maxItems - 1) {
 			item.classList.add(hiddenClass);
 		}
