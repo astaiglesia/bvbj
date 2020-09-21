@@ -161,22 +161,6 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_5f4342873c49c",
-                    "label": "Video URL",
-                    "name": "video_url",
-                    "type": "oembed",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "width": "",
-                    "height": ""
-                },
-                {
                     "key": "field_5f434339f450f",
                     "label": "Description",
                     "name": "description",
@@ -277,7 +261,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 0,
+    "active": false,
     "description": "",
-    "modified": 1598388718
+    "modified": 1600725860
 }

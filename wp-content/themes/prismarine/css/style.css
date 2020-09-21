@@ -1188,12 +1188,6 @@ section.ourRecipients .slick-prev {
 section.ourRecipients .slick-prev:before {
 	content: "";
 }
-.modalAbv.-fullHeight .text__inner {
-	width: 69% !important;
-}
-.modalAbv.-fullHeight .image .modalAbv__image {
-	background-position: 50%;
-}
 .videoContainer {
 	height: 0;
 	margin-bottom: 2.3125rem;
@@ -1379,7 +1373,7 @@ section.our-co-chairs .link-svg {
 }
 .modalAbv .modalAbv__container .text .text__inner {
 	margin-bottom: 3.4375rem;
-	margin-top: 8.1875rem;
+	margin-top: 10rem;
 	padding-right: 20%;
 	width: 100%;
 }
@@ -2302,8 +2296,8 @@ section.thankyou a {
 	}
 }
 @media screen and (min-width: 300px) and (max-width: 959px) {
-	.modalAbv.-fullHeight .text__inner {
-		width: 100% !important;
+	.modalAbv.-fullHeight .image .modalAbv__image {
+		background-position: 50% !important;
 	}
 	.modalAbv .heading {
 		position: relative;
@@ -2491,12 +2485,9 @@ section.thankyou a {
 	}
 }
 @media screen and (min-width: 960px) {
-	.modalAbv.-fullHeight .image .modalAbv__image {
-		height: 100vh !important;
-	}
 	.modalAbv .modalAbv__container .text .text__inner {
-		height: calc(100vh - 8.1875rem);
-		overflow-y: scroll;
+		height: calc(100vh - 10rem);
+		overflow-y: auto;
 	}
 	.modalAbv .modalAbv__container .text .description.-desktop {
 		display: block;

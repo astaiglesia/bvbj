@@ -43,7 +43,6 @@ $acfDBOR = [
 									$location = get_sub_field('location');
 									$image_popup = get_sub_field('image_popup');
 									$description = get_sub_field('description');
-									$video_url = get_sub_field('video_url');
 									$facebook_url = get_sub_field('facebook_url');
 									$twitter_url = get_sub_field('twitter_url');
 									$instagram_url = get_sub_field('instagram_url');
@@ -66,11 +65,11 @@ $acfDBOR = [
 										</a>
 										<div class="modalAbv -fullHeight" style="display: none;" id="modal<?php echo $i; ?>">
 											<?php if ($name): ?>
-												<div class="heading">
+												<div class="heading d-zidx-9">
 													<h3><?php echo $name; ?></h3>
 												</div>
 											<?php endif; ?>
-											<div class="modalAbv__container d-flex -items-center -row -wrap -justify-between">
+											<div class="modalAbv__container container d-flex -items-center -row -wrap -justify-between">
 												<div class="text">
 													<div class="text__inner">
 														<?php if ($location): ?>
@@ -81,12 +80,6 @@ $acfDBOR = [
 														<?php if ($description): ?>
 															<div class="description">
 																<p><?php echo $description; ?></p>
-															</div>
-														<?php endif; ?>
-
-														<?php if ($video_url): ?>
-															<div class="videoContainer">
-																<?php echo $video_url; ?>
 															</div>
 														<?php endif; ?>
 														<div class="socialMedia">

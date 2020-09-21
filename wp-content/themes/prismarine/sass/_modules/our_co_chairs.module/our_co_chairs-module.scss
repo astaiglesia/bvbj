@@ -237,7 +237,7 @@ section.our-co-chairs {
 			.text__inner {
 				width: 100%;
 				padding-right: 20%;
-				margin-top: 8.1875rem;
+				margin-top: 10rem;
 				margin-bottom: 3.4375rem;
 
 				@include media($phone, 960px) {
@@ -249,8 +249,8 @@ section.our-co-chairs {
 				}
 
 				@include media(960px) {
-					height: calc(100vh - 8.1875rem);
-					overflow-y: scroll;
+					height: calc(100vh - 10rem);
+					overflow-y: auto;
 				}
 
 				.subheading {
