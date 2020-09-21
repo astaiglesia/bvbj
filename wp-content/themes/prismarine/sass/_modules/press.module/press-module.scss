@@ -13,7 +13,7 @@ section.press {
 
 	.top {
 		text-align: center;
- 
+
 		.press__heading {
 			h1 {
 				font-size: 4.5rem;
@@ -55,6 +55,10 @@ section.press {
 			.press__email {
 				a {
 					text-decoration: underline;
+
+					@include media($phone, 360px) {
+						font-size: 0.875rem;
+					}
 				}
 			}
 		}
