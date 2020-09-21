@@ -129,13 +129,13 @@ Author: Very - Andres Posada
 			position: fixed;
 			top: 0;
 			left: 0;
-			transform: translateX(-150%);
-			transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+			opacity: 0;
+			transition: opacity 0.3s linear;
 			padding-top: 8rem;
 			z-index: -1;
 
 			.--menu-open & {
-				transform: translateX(0);
+				opacity: 1;
 			}
 
 			@include media($phone, 768px) {
