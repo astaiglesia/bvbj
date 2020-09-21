@@ -117,3 +117,17 @@ function debug( $entity ) {
  */
 
 add_filter('use_block_editor_for_post', '__return_false', 10);
+
+
+/**
+ * Add page class to Body tag
+ *
+ */
+add_filter( 'body_class', 'my_class_names' );
+	function my_class_names( $classes ) {
+	global $post;
+	if ( isset( $post ) ) {
+		$classes[] = $post->post_type . '-' . $post->post_name;
+	}
+	return $classes;
+}

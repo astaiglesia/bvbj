@@ -65,6 +65,8 @@ function bvbj_enqueue_style() {
 }
 
 function bvbj_enqueue_script() {
+	$body_classes = get_body_class();
+
 	if ( is_front_page() ) {
 		wp_enqueue_script( 'slick-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', array('jquery'), '1.0.0', 'true' );
 		wp_enqueue_script( 'slick-scripts', get_template_directory_uri() . '/js/slick-scripts.min.js', array('jquery'), '1.0.0', 'true' );
@@ -72,7 +74,15 @@ function bvbj_enqueue_script() {
 	}
 	wp_enqueue_script( 'header-menu', get_template_directory_uri() . '/js/header-menu.min.js', '1.0.0', 'true' );
 	wp_enqueue_script( 'mailchimp', get_template_directory_uri() . '/js/mailchimp.min.js', '1.0.0', 'true' );
-	wp_enqueue_script( 'press', get_template_directory_uri() . '/js/press.min.js', '1.0.0', 'true' );
+
+	if(in_array('page-nomination-form', $body_classes)) {
+		wp_enqueue_script( 'nomination', get_template_directory_uri() . '/js/nomination.min.js', '1.0.0', 'true' );
+		wp_enqueue_script( 'thank-you', get_template_directory_uri() . '/js/thank-you.min.js', '1.0.0', 'true' );
+	}
+	if(in_array('page-press', $body_classes)) {
+		wp_enqueue_script( 'press', get_template_directory_uri() . '/js/press.min.js', '1.0.0', 'true' );
+	}
+
 }
 
 add_action( 'wp_enqueue_scripts', 'bvbj_enqueue_style' );

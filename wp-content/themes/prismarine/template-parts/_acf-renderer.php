@@ -22,6 +22,10 @@ if ( have_rows('modules') ):
 			renderPart('modules/hero.module/_hero');
 			break;
 
+		case 'nomination_form':
+			renderPart('modules/nomination_form.module/_nomination_form');
+			break;
+
 		case 'our_co_chairs':
 			renderPart('modules/our_co_chairs.module/_our_co_chairs');
 			break;
@@ -40,6 +44,10 @@ if ( have_rows('modules') ):
 
 		case 'press':
 			renderPart('modules/press.module/_press');
+		break;
+
+		case 'thank_you':
+			renderPart('modules/thank_you.module/_thank_you');
 		break;
 
 		default:

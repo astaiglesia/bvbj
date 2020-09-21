@@ -1,0 +1,50 @@
+/*!
+Module Name: Thank You
+Author: Very - Andres Posada
+*/
+
+section.thankyou {
+	text-align: center;
+	padding-top: 11.25rem;
+	padding-bottom: 11.25rem;
+
+	@include media($phone, 768px) {
+		padding-top: 12.1875rem;
+		padding-bottom: 5rem;
+	}
+
+	h1 {
+		font-size: 4.5rem;
+		font-weight: 400;
+		color: var(--background-blue);
+		letter-spacing: -0.1125rem;
+		line-height: 4.375rem;
+		margin-bottom: 1.875rem;
+		margin-top: 1.25rem;
+
+		@include media($phone, 768px) {
+			font-size: 2rem;
+			letter-spacing: -0.05rem;
+			line-height: 2.375rem;
+			margin-bottom: 0.625rem;
+		}
+	}
+
+	p {
+		font-size: 1.125rem;
+		color: var(--main-blue);
+		letter-spacing: -0.006875rem;
+		line-height: 1.75rem;
+		padding-bottom: 25px;
+	}
+
+	a {
+		border-radius: 1.875rem;
+		text-align: center;
+		padding: 1rem 0;
+		width: 14.875rem;
+		background-color: var(--dark-blue-btn);
+		color: var(--white);
+		display: inline-block;
+	}
+}
