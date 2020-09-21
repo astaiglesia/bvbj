@@ -701,10 +701,11 @@ Author: Very - Andres Posada
 	background-color: #4056a1;
 	background-color: var(--background-blue);
 	height: 100vh;
-	left: 0;
+	left: -2000px;
+	left: -125rem;
 	opacity: 0;
 	padding-top: 8rem;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	-webkit-transition: opacity 0.3s linear;
 	transition: opacity 0.3s linear;
@@ -712,7 +713,9 @@ Author: Very - Andres Posada
 	z-index: -1;
 }
 .--menu-open .header .header__container .menuHeader {
+	left: 0;
 	opacity: 1;
+	position: fixed;
 }
 .header .header__container .menuHeader .menuHeader__container {
 	margin-left: auto;
