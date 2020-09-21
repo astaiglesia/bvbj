@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.addEventListener(
 		"wpcf7mailsent",
 		() => {
-			location = "/thank-you";
+			window.location.href = "/thank-you";
 		},
 		false
 	);
