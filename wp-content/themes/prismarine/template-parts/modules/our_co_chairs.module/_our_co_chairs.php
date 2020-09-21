@@ -63,13 +63,13 @@ $acfDBOR = [
 									</a>
 									<div class="modalAbv" style="display: none;" id="modal-cc<?php echo $i; ?>">
 										<?php if ($name): ?>
-											<div class="heading">
+											<div class="heading d-zidx-9">
 												<h3><?php echo $name; ?></h3>
 											</div>
 										<?php endif; ?>
-										<div class="modalAbv__container d-flex -items-center -row -wrap -justify-between">
+										<div class="modalAbv__container container d-flex -items-center -row -wrap -justify-between">
 											<div class="text">
-												<div class="text__inner">
+												<div class="text__inner" id="textInner">
 													<?php if ($subheading): ?>
 														<div class="subheading">
 															<?php echo $subheading; ?>
