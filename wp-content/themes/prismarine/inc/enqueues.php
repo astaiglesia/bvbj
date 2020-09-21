@@ -77,6 +77,7 @@ function bvbj_enqueue_script() {
 
 	if(in_array('page-nomination-form', $body_classes)) {
 		wp_enqueue_script( 'nomination', get_template_directory_uri() . '/js/nomination.min.js', '1.0.0', 'true' );
+		wp_enqueue_script( 'thank-you', get_template_directory_uri() . '/js/thank-you.min.js', '1.0.0', 'true' );
 	}
 	if(in_array('page-press', $body_classes)) {
 		wp_enqueue_script( 'press', get_template_directory_uri() . '/js/press.min.js', '1.0.0', 'true' );

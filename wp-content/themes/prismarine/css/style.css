@@ -1969,6 +1969,52 @@ section.nominationForm .formContainer .wpcf7-response-output {
 	border: none;
 	color: red;
 }
+
+/*!
+Module Name: Thank You
+Author: Very - Andres Posada
+*/
+section.thankyou {
+	padding-bottom: 11.25rem;
+	padding-top: 11.25rem;
+	text-align: center;
+}
+section.thankyou h1 {
+	color: #4056a1;
+	color: var(--background-blue);
+	font-size: 72px;
+	font-size: 4.5rem;
+	font-weight: 400;
+	letter-spacing: -1.8px;
+	letter-spacing: -0.1125rem;
+	line-height: 70px;
+	line-height: 4.375rem;
+	margin-bottom: 1.875rem;
+	margin-top: 1.25rem;
+}
+section.thankyou p {
+	color: #25274d;
+	color: var(--main-blue);
+	font-size: 18px;
+	font-size: 1.125rem;
+	letter-spacing: -0.11px;
+	letter-spacing: -0.006875rem;
+	line-height: 28px;
+	line-height: 1.75rem;
+	padding-bottom: 25px;
+}
+section.thankyou a {
+	background-color: #3a7aaa;
+	background-color: var(--dark-blue-btn);
+	border-radius: 1.875rem;
+	color: #fff;
+	color: var(--white);
+	display: inline-block;
+	padding: 1rem 0;
+	text-align: center;
+	width: 238px;
+	width: 14.875rem;
+}
 @media screen and (min-width: 300px) and (max-width: 899px) {
 	.site-main {
 		margin-top: 0;
@@ -2186,6 +2232,19 @@ section.nominationForm .formContainer .wpcf7-response-output {
 		.wpcf7-list-item-label {
 		font-size: 14px;
 		font-size: 0.875rem;
+	}
+	section.thankyou {
+		padding-bottom: 5rem;
+		padding-top: 12.1875rem;
+	}
+	section.thankyou h1 {
+		font-size: 32px;
+		font-size: 2rem;
+		letter-spacing: -0.8px;
+		letter-spacing: -0.05rem;
+		line-height: 38px;
+		line-height: 2.375rem;
+		margin-bottom: 0.625rem;
 	}
 }
 @media screen and (min-width: 300px) and (max-width: 1198px) {

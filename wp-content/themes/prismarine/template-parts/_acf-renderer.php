@@ -46,6 +46,10 @@ if ( have_rows('modules') ):
 			renderPart('modules/press.module/_press');
 		break;
 
+		case 'thank_you':
+			renderPart('modules/thank_you.module/_thank_you');
+		break;
+
 		default:
 			# code...
 			break;

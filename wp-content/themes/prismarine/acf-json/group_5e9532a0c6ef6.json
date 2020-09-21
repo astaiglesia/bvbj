@@ -232,6 +232,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5f67f504aab32": {
+                    "key": "layout_5f67f504aab32",
+                    "name": "thank_you",
+                    "label": "Thank you",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f67f504aab33",
+                            "label": "Thank you content",
+                            "name": "thank_you_content",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5f67e20bbab91"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Module",
@@ -269,5 +300,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1600439741
+    "modified": 1600648487
 }
