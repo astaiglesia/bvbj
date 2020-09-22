@@ -216,9 +216,20 @@ section.nominationForm {
 			color: #ff0000;
 		}
 
-		.wpcf7-response-output {
-			color: #ff0000;
-			border: none;
+		form {
+			&.failed,
+			&.aborted,
+			&.invalid,
+			&.unaccepted {
+				.wpcf7-response-output {
+					color: #ff0000;
+					border: none;
+				}
+			}
+
+			&.sent {
+				display: none;
+			}
 		}
 	}
 }
