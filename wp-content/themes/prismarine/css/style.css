@@ -1433,6 +1433,11 @@ section.our-co-chairs .link-svg {
 	height: 100vh;
 	width: 100%;
 }
+.hiddenLink {
+	height: 0;
+	position: absolute;
+	width: 0;
+}
 body .fancybox-content {
 	background-color: #4056a1;
 	background-color: var(--background-blue);

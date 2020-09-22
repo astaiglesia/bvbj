@@ -49,7 +49,7 @@ $acfDBOR = [
 									$linkedin_url = get_sub_field('linkedin_url');
 							?>
 									<div class="recipient">
-										<a data-fancybox data-src="#modal<?php echo $i; ?>" href="javascript:;" class="btn btn-primary">
+										<a data-fancybox data-touch="false" data-src="#modal<?php echo $i; ?>" href="javascript:;" class="btn btn-primary">
 											<?php if ($image_carousel): ?>
 												<img data-lazy="<?php echo $image_carousel; ?>">
 											<?php endif; ?>
@@ -77,13 +77,16 @@ $acfDBOR = [
 																<?php echo $location; ?>
 															</div>
 														<?php endif; ?>
+														<a class="hiddenLink" href="javascript:;">&nbsp;</a>
 														<?php if ($description): ?>
 															<div class="description">
 																<p><?php echo $description; ?></p>
 															</div>
 														<?php endif; ?>
 														<div class="socialMedia">
-															<span>Social Media</span>
+															<?php if (($facebook_url) || ($twitter_url) || ($instagram_url) || ($linkedin_url)): ?>
+																<span>Social Media</span>
+															<?php endif; ?>
 															<?php if ($facebook_url): ?>
 															<a href="<?php echo $facebook_url; ?>" target="_blank" class="social-icon">
 																<div class="fb-svg svg-social"></div>
