@@ -588,6 +588,7 @@ Author: Very - Andres Posada
 .--menu-open .header {
 	position: fixed;
 	top: 0;
+	z-index: 999999999;
 }
 .header .header__container {
 	margin-left: auto;
@@ -701,21 +702,20 @@ Author: Very - Andres Posada
 	background-color: #4056a1;
 	background-color: var(--background-blue);
 	height: 100vh;
-	left: -2000px;
-	left: -125rem;
+	left: 0;
 	opacity: 0;
 	padding-top: 8rem;
-	position: absolute;
+	position: fixed;
 	top: 0;
-	-webkit-transition: opacity 0.3s linear;
-	transition: opacity 0.3s linear;
+	-webkit-transition: visibility 0.3s, opacity 0.3s linear;
+	transition: visibility 0.3s, opacity 0.3s linear;
+	visibility: hidden;
 	width: 100%;
 	z-index: -1;
 }
 .--menu-open .header .header__container .menuHeader {
-	left: 0;
 	opacity: 1;
-	position: fixed;
+	visibility: visible;
 }
 .header .header__container .menuHeader .menuHeader__container {
 	margin-left: auto;
@@ -1432,6 +1432,11 @@ section.our-co-chairs .link-svg {
 	background-size: cover;
 	height: 100vh;
 	width: 100%;
+}
+.hiddenLink {
+	height: 0;
+	position: absolute;
+	width: 0;
 }
 body .fancybox-content {
 	background-color: #4056a1;

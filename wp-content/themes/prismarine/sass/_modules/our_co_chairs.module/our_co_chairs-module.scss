@@ -394,6 +394,12 @@ section.our-co-chairs {
 	}
 }
 
+.hiddenLink {
+	position: absolute;
+	height: 0;
+	width: 0;
+}
+
 body {
 	.fancybox-content {
 		background-color: var(--background-blue);

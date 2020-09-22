@@ -69,12 +69,13 @@ $acfDBOR = [
 										<?php endif; ?>
 										<div class="modalAbv__container container d-flex -items-center -row -wrap -justify-between">
 											<div class="text">
-												<div class="text__inner" id="textInner">
+												<div class="text__inner">
 													<?php if ($subheading): ?>
 														<div class="subheading">
 															<?php echo $subheading; ?>
 														</div>
 													<?php endif; ?>
+													<a class="hiddenLink" href="javascript:;">&nbsp;</a>
 													<?php if ($description): ?>
 														<div class="description -desktop">
 															<p><?php echo $description; ?></p>
@@ -86,7 +87,9 @@ $acfDBOR = [
 														</div>
 													<?php endif; ?>
 													<div class="socialMedia">
-														<span>Social Media</span>
+														<?php if (($facebook_url) || ($twitter_url) || ($instagram_url) || ($linkedin_url)): ?>
+															<span>Social Media</span>
+														<?php endif; ?>
 														<?php if ($facebook_url): ?>
 														<a href="<?php echo $facebook_url; ?>" target="_blank" class="social-icon">
 															<div class="fb-svg svg-social"></div>
