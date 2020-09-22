@@ -14,6 +14,7 @@ Author: Very - Andres Posada
 	.--menu-open & {
 		position: fixed;
 		top: 0;
+		z-index: 999999999;
 	}
 
 	@include media($phone, 768px) {
@@ -126,18 +127,18 @@ Author: Very - Andres Posada
 			width: 100%;
 			height: 100vh;
 			background-color: var(--background-blue);
-			position: absolute;
+			position: fixed;
 			top: 0;
-			left: -125rem;
+			left: 0;
 			opacity: 0;
-			transition: opacity 0.3s linear;
+			transition: visibility 0.3s, opacity 0.3s linear;
 			padding-top: 8rem;
 			z-index: -1;
+			visibility: hidden;
 
 			.--menu-open & {
 				opacity: 1;
-				left: 0;
-				position: fixed;
+				visibility: visible;
 			}
 
 			@include media($phone, 768px) {
