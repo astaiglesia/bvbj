@@ -1877,6 +1877,9 @@ section.nominationForm .formContainer .nominee-bio {
 	margin-bottom: 5px !important;
 }
 section.nominationForm .formContainer .wpcf7-submit {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	background: #3a7aaa;
 	background: var(--dark-blue-btn);
 	border-radius: 1.5625rem;
