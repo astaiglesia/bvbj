@@ -1709,8 +1709,7 @@ Module Name: Nomination form
 Author: Very - Andres Posada
 */
 section.nominationForm {
-	background-color: #cfcfd8;
-	background-color: var(--light-grey);
+	background-color: rgba(207, 207, 216, 0.6);
 	color: #fff;
 	color: var(--white);
 	padding-bottom: 3.75rem;
