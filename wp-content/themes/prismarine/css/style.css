@@ -1967,9 +1967,15 @@ section.nominationForm .formContainer input::placeholder {
 section.nominationForm .formContainer .wpcf7-not-valid-tip {
 	color: red;
 }
-section.nominationForm .formContainer .wpcf7-response-output {
+section.nominationForm .formContainer form.aborted .wpcf7-response-output,
+section.nominationForm .formContainer form.failed .wpcf7-response-output,
+section.nominationForm .formContainer form.invalid .wpcf7-response-output,
+section.nominationForm .formContainer form.unaccepted .wpcf7-response-output {
 	border: none;
 	color: red;
+}
+section.nominationForm .formContainer form.sent {
+	display: none;
 }
 
 /*!
