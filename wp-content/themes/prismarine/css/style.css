@@ -701,10 +701,11 @@ Author: Very - Andres Posada
 	background-color: #4056a1;
 	background-color: var(--background-blue);
 	height: 100vh;
-	left: 0;
+	left: -2000px;
+	left: -125rem;
 	opacity: 0;
 	padding-top: 8rem;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	-webkit-transition: opacity 0.3s linear;
 	transition: opacity 0.3s linear;
@@ -712,7 +713,9 @@ Author: Very - Andres Posada
 	z-index: -1;
 }
 .--menu-open .header .header__container .menuHeader {
+	left: 0;
 	opacity: 1;
+	position: fixed;
 }
 .header .header__container .menuHeader .menuHeader__container {
 	margin-left: auto;
@@ -1706,8 +1709,7 @@ Module Name: Nomination form
 Author: Very - Andres Posada
 */
 section.nominationForm {
-	background-color: #cfcfd8;
-	background-color: var(--light-grey);
+	background-color: rgba(207, 207, 216, 0.6);
 	color: #fff;
 	color: var(--white);
 	padding-bottom: 3.75rem;
@@ -1875,6 +1877,9 @@ section.nominationForm .formContainer .nominee-bio {
 	margin-bottom: 5px !important;
 }
 section.nominationForm .formContainer .wpcf7-submit {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	background: #3a7aaa;
 	background: var(--dark-blue-btn);
 	border-radius: 1.5625rem;

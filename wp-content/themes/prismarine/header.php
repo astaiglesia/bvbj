@@ -101,7 +101,9 @@
 			<?php if ($acfDBHeader['top_heading']): ?>
 				<div class="contTopHeading">
 					<div class="topHeading">
-						<h1><?php echo $acfDBHeader['top_heading']; ?></h1>
+						<a href="<?php echo get_home_url(); ?>">
+							<h1><?php echo $acfDBHeader['top_heading']; ?></h1>
+						</a>
 					</div>
 				</div>
 			<?php endif; ?>
