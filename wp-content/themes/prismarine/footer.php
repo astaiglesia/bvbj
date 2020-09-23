@@ -36,9 +36,9 @@ $acfDBFoot = [
 					<span> <?php echo $acfDBFoot['subheading']; ?> </span>
 				</div>
 			<?php endif; ?>
-			<div class="mailchimpForm">
+			<div class="footerForm">
 			<?php
-				echo do_shortcode( '[mc4wp_form id="156"]' );
+				echo do_shortcode( '[contact-form-7 id="287" title="Footer Form"]' );
 			?>
 			</div>
 			<div class="contactUs">

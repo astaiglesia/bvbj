@@ -32,7 +32,7 @@ Author: Very - Andres Posada
 			margin-bottom: 1.875rem;
 
 			@include media($phone, 768px) {
-				margin-bottom: 1.25rem;
+				margin-bottom: 1.5625rem;
 			}
 
 			span {
@@ -41,74 +41,7 @@ Author: Very - Andres Posada
 				letter-spacing: 0.01rem;
 
 				@include media($phone, 768px) {
-					font-size: 1.125rem;
-				}
-			}
-		}
-
-		.mailchimpForm {
-			form {
-				display: inline-block;
-				width: 100%;
-				font-size: 0;
-
-				input {
-					line-height: 1em;
-					border-bottom: 0.0625rem solid #fff;
-					padding: 10px 0;
-					border-top: none;
-					border-left: none;
-					border-right: none;
-					background: transparent;
-					display: inline-block;
-					font-size: 0.9375rem;
-					color: var(--white);
-					height: 2.5rem;
-					vertical-align: bottom;
-
-					&#lemail {
-						width: calc(100% - 4.0625rem);
-					}
-				}
-
-				input[type="submit"] {
-					text-align: left;
-					color: var(--white);
 					font-size: 1rem;
-					padding-right: 0.4375rem;
-
-					&:hover {
-						cursor: pointer;
-					}
-
-					@include media($phone, 480px) {
-						padding-left: 0.75rem;
-					}
-				}
-			}
-		}
-
-		.mc4wp-response {
-			margin-top: 1.25rem;
-
-			.mc4wp-alert {
-				p {
-					text-align: center;
-					font-size: 1rem;
-				}
-			}
-
-			.mc4wp-error,
-			.mc4wp-notice {
-				p {
-					color: #ff0000;
-				}
-			}
-
-			.mc4wp-success {
-				p {
-					color: var(--white);
-					line-height: 1.375rem;
 				}
 			}
 		}
@@ -121,7 +54,7 @@ Author: Very - Andres Posada
 		}
 
 		.contactUs {
-			margin-top: 3.4375rem;
+			margin-top: 3.125rem;
 			margin-bottom: 1.875rem;
 
 			.contactUs__heading {
@@ -129,6 +62,10 @@ Author: Very - Andres Posada
 				font-size: 1.3125rem;
 				letter-spacing: 0;
 				line-height: 1.875rem;
+
+				@include media($phone, 480px) {
+					font-size: 1.125rem;
+				}
 			}
 
 			.contactUs__email {
@@ -146,6 +83,10 @@ Author: Very - Andres Posada
 			.contactUs__social-media {
 				margin: 3.875rem auto 3.4375rem;
 
+				@include media($phone, 768px) {
+					margin-top: 4.4375rem;
+				}
+
 				.social-icon {
 					margin: 0 0.375rem;
 
@@ -159,6 +100,86 @@ Author: Very - Andres Posada
 						width: 2rem;
 					}
 				}
+			}
+		}
+	}
+
+	.footerForm {
+		form {
+			display: inline-block;
+			width: 100%;
+			font-size: 0;
+
+			p {
+				display: inline-block;
+
+				&:first-of-type {
+					width: calc(100% - 72px);
+					vertical-align: top;
+
+					@include media($phone, 480px) {
+						width: calc(100% - 42px);
+					}
+				}
+			}
+
+			input {
+				line-height: 1em;
+				border-bottom: 0.0625rem solid #fff;
+				padding: 10px 0;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				background: transparent;
+				display: inline-block;
+				font-size: 0.9375rem;
+				color: var(--white);
+				height: 2.5rem;
+				vertical-align: bottom;
+				width: 100%;
+
+				&:-webkit-autofill {
+					box-shadow: 0 0 0 1000px var(--background-blue) inset;
+					-webkit-text-fill-color: var(--white);
+				}
+			}
+
+			input[type="submit"] {
+				text-align: right;
+				color: var(--white);
+				font-size: 1rem;
+				padding-right: 0;
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				@include media($phone, 480px) {
+					padding-left: 0.75rem;
+				}
+			}
+
+			&.failed,
+			&.aborted,
+			&.invalid,
+			&.unaccepted {
+				.wpcf7-response-output {
+					color: #ff0000;
+					border: none;
+					font-size: 1rem;
+				}
+			}
+
+			&.sent {
+				.wpcf7-response-output {
+					color: var(--white);
+					border: none !important;
+					font-size: 1rem;
+				}
+			}
+
+			.wpcf7-response-output {
+				margin-top: 0;
 			}
 		}
 	}

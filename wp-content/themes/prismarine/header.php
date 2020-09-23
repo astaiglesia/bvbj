@@ -22,30 +22,30 @@
 	<?php $cssRouter = get_stylesheet_directory_uri(); ?>
 	<style type="text/css" style-type="above-the-fold">
 		@font-face {
-			font-family: 'helveticaregular';
+			font-family: "Helvetica LT W01 Roman";
 			font-weight: normal;
 			font-style: normal;
-			src: url(<?php echo $cssRouter.'/assets/fonts/helvetica_400-webfont.woff2'; ?>)
+			src: url(<?php echo $cssRouter.'/assets/fonts/helvetica.woff2'; ?>)
 				format("woff2"),
-			url(<?php echo $cssRouter.'/assets/fonts/helvetica_400-webfont.woff'; ?>)
+			url(<?php echo $cssRouter.'/assets/fonts/helvetica.woff'; ?>)
 				format("woff"),
-			url(<?php echo $cssRouter.'/assets/fonts/helvetica_400.ttf'; ?>)
+			url(<?php echo $cssRouter.'/assets/fonts/helvetica.ttf'; ?>)
 				format("truetype");
 		}
 		@font-face {
-			font-family: 'helveticabold';
+			font-family: "Helvetica LT W01 Bold";
 			font-weight: normal;
 			font-style: normal;
-			src: url(<?php echo $cssRouter.'/assets/fonts/helvetica-bold-font-webfont.woff2'; ?>)
+			src: url(<?php echo $cssRouter.'/assets/fonts/helvetica_bold.woff2'; ?>)
 				format("woff2"),
-			url(<?php echo $cssRouter.'/assets/fonts/helvetica-bold-font-webfont.woff'; ?>)
+			url(<?php echo $cssRouter.'/assets/fonts/helvetica_bold.woff'; ?>)
 				format("woff"),
-			url(<?php echo $cssRouter.'/assets/fonts/helvetica-bold-font-webfont.ttf'; ?>)
+			url(<?php echo $cssRouter.'/assets/fonts/helvetica_bold.ttf'; ?>)
 				format("truetype");
 		}
 
 		body {
-			font-family: 'helveticaregular';
+			font-family: "Helvetica LT W01 Roman";
 			font-weight: normal;
 		}
 	</style>
