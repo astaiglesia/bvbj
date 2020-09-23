@@ -2441,7 +2441,7 @@ section.thankyou a {
 @media screen and (min-width: 481px) and (max-width: 768px) {
 	.modalAbv .modalAbv__container .image .modalAbv__image {
 		height: 0;
-		padding-bottom: 80%;
+		padding-bottom: 100%;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1369px) {
@@ -2532,6 +2532,49 @@ section.thankyou a {
 	}
 	section.ourRecipients .recipient .learnMore {
 		display: none;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+	.modalAbv .heading {
+		position: relative;
+	}
+	.modalAbv .modalAbv__container {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: vertical;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+	.modalAbv .modalAbv__container .text {
+		width: 100%;
+	}
+	.modalAbv .modalAbv__container .text .text__inner {
+		height: auto;
+		margin-bottom: 0.625rem;
+		margin-left: 0;
+		margin-top: 3.125rem;
+		padding: 0 1.25rem;
+		width: 100%;
+	}
+	.modalAbv .modalAbv__container .image {
+		width: 100%;
+	}
+	.modalAbv .modalAbv__container .image .modalAbv__image {
+		background-position: top;
+	}
+	.modalAbv .modalAbv__container .image .modalAbv__image.-desktop {
+		display: none;
+	}
+	.modalAbv .modalAbv__container .image .modalAbv__image.-mobile {
+		display: block;
+	}
+	body .fancybox-slide {
+		overflow-y: scroll;
+	}
+	body .fancybox-close-small {
+		left: 10px;
+		left: 0.625rem;
+		top: 21px !important;
+		top: 1.3125rem !important;
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1358px) {
