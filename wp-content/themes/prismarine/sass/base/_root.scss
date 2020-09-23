@@ -140,16 +140,16 @@ $scrollTickness: 8px;
 
 ::-webkit-scrollbar {
 	height: $scrollTickness; // for horizontal scrollbars //
-	width: $scrollTickness; // for vertical scrollbars //
+	width: 6px; // for vertical scrollbars //
 	z-index: $scrollIndex;
 }
 
 ::-webkit-scrollbar-track {
-	background: #eeeeee;
+	background: transparent;
 	z-index: $scrollIndex;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #626262;
+	background: #444444;
 	z-index: $scrollIndex;
 }

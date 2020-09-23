@@ -17,6 +17,10 @@ Author: Very - Andres Posada
 		z-index: 999999999;
 	}
 
+	.admin-bar & {
+		top: 2rem;
+	}
+
 	@include media($phone, 768px) {
 		padding-top: 0.625rem;
 	}

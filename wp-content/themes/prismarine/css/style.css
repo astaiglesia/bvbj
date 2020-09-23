@@ -118,15 +118,15 @@ table {
 }
 ::-webkit-scrollbar {
 	height: 8px;
-	width: 8px;
+	width: 6px;
 	z-index: 99;
 }
 ::-webkit-scrollbar-track {
-	background: #eee;
+	background: transparent;
 	z-index: 99;
 }
 ::-webkit-scrollbar-thumb {
-	background: #626262;
+	background: #444;
 	z-index: 99;
 }
 .colr-white {
@@ -589,6 +589,10 @@ Author: Very - Andres Posada
 	position: fixed;
 	top: 0;
 	z-index: 999999999;
+}
+.admin-bar .header {
+	top: 32px;
+	top: 2rem;
 }
 .header .header__container {
 	margin-left: auto;
@@ -2507,7 +2511,7 @@ section.thankyou a {
 @media screen and (min-width: 769px) and (max-width: 959px) {
 	.modalAbv .modalAbv__container .image .modalAbv__image {
 		height: 0;
-		padding-bottom: 70%;
+		padding-bottom: 90%;
 	}
 }
 @media screen and (min-width: 945px) and (max-width: 1207px) {
@@ -2529,6 +2533,9 @@ section.thankyou a {
 	}
 	.modalAbv .modalAbv__container .text .description.-mobile {
 		display: none;
+	}
+	.modalAbv .modalAbv__container .image .modalAbv__image {
+		min-height: 700px;
 	}
 	.modalAbv .modalAbv__container .image .modalAbv__image.-desktop {
 		display: block;
