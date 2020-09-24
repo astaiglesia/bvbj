@@ -52,18 +52,6 @@ $acfDBFoot = [
 						<a href="mailto: <?php echo $acfDBFoot['email']; ?>"><?php echo $acfDBFoot['email']; ?></a>
 					</div>
 				<?php endif; ?>
-				<div class="contactUs__social-media">
-					<?php if ($acfDBFoot['instagram_url']): ?>
-						<a href="<?php echo $acfDBFoot['instagram_url']; ?>" target="_blank" class="social-icon">
-							<div class="ins-svg svg-social"></div>
-						</a>
-					<?php endif; ?>
-					<?php if ($acfDBFoot['twitter_url']): ?>
-						<a href="<?php echo $acfDBFoot['twitter_url']; ?>" target="_blank" class="social-icon">
-							<div class="tw-svg svg-social"></div>
-						</a>
-					<?php endif; ?>
-				</div>
 			</div>
 		</div>
 		<div class="copyright">
