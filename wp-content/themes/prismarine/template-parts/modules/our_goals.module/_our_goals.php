@@ -52,7 +52,7 @@ $acfDBOG = [
 					<p> <?php echo $acfDBOG['paragraph_g1']; ?> </p>
 				<?php endif; ?>
 				<?php if ($acfDBOG['button_url_g1']): ?>
-					<a href="<?php echo $acfDBOG['button_url_g1']; ?>" target="_blank"> <?php echo $acfDBOG['button_text_g1']; ?> </a>
+					<a href="<?php echo $acfDBOG['button_url_g1']; ?>"> <?php echo $acfDBOG['button_text_g1']; ?> </a>
 				<?php endif; ?>
 			</div>
 		</div>
