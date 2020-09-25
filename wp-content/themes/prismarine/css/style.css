@@ -780,7 +780,7 @@ Author: Very - Andres Posada
 }
 .header .header__container .buttonsHeader .cta {
 	border-radius: 1.875rem;
-	padding: 1rem 0;
+	padding: 1.0625rem 0;
 	text-align: center;
 	width: 120px;
 	width: 7.5rem;
@@ -794,7 +794,7 @@ Author: Very - Andres Posada
 	background-color: #2e9cca;
 	background-color: var(--light-blue);
 }
-.header .header__container .buttonsHeader .cta .cta__btn {
+.header .header__container .buttonsHeader .cta.cta__btn {
 	color: #fff;
 	color: var(--white);
 	font-size: 16px;

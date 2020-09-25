@@ -110,19 +110,15 @@
 
 			<div class="buttonsHeader d-flex -items-start -row -wrap -justify-between">
 				<?php if ($acfDBHeader['url_1']): ?>
-					<div class="cta cta--darkblue">
-						<a href="<?php echo $acfDBHeader['url_1']; ?>" class="cta__btn" target="<?php echo $acfDBHeader['open_link_1']; ?>">
-							<?php echo $acfDBHeader['text_button_1']; ?>
-						</a>
-					</div>
+					<a href="<?php echo $acfDBHeader['url_1']; ?>" class="cta cta__btn cta--darkblue" target="<?php echo $acfDBHeader['open_link_1']; ?>">
+						<?php echo $acfDBHeader['text_button_1']; ?>
+					</a>
 				<?php endif; ?>
-				<div class="cta cta--lightblue">
-					<?php if ($acfDBHeader['url_2']): ?>
-						<a href="<?php echo $acfDBHeader['url_2']; ?>" class="cta__btn" target="<?php echo $acfDBHeader['open_link_2']; ?>">
-							<?php echo $acfDBHeader['text_button_2']; ?>
-						</a>
-					<?php endif; ?>
-				</div>
+				<?php if ($acfDBHeader['url_2']): ?>
+					<a href="<?php echo $acfDBHeader['url_2']; ?>" class="cta cta__btn cta--lightblue" target="<?php echo $acfDBHeader['open_link_2']; ?>">
+						<?php echo $acfDBHeader['text_button_2']; ?>
+					</a>
+				<?php endif; ?>
 			</div>
 		</div>
 	</header><!-- #masthead -->
