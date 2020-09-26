@@ -149,7 +149,7 @@ Author: Very - Andres Posada
 				padding-top: 13.5rem;
 			}
 
-			@include media(768px, 1200px) {
+			@include media(768px, 1100px) {
 				padding-top: 11rem;
 			}
 
@@ -211,7 +211,7 @@ Author: Very - Andres Posada
 			margin-left: 26%;
 			margin-right: auto;
 
-			@include media(1200px, $header-desktop) {
+			@include media(1100px, $header-desktop) {
 				margin-left: 22%;
 				margin-right: auto;
 			}
@@ -247,7 +247,7 @@ Author: Very - Andres Posada
 		}
 
 		.buttonsHeader {
-			width: 15.9375rem;
+			// width: 15.9375rem;
 			transition: 0.4s all linear;
 
 			.--menu-open & {
@@ -261,7 +261,7 @@ Author: Very - Andres Posada
 				margin-top: 0.75rem;
 			}
 
-			@include media(768px, 1200px) {
+			@include media(480px, 850px) {
 				width: 100%;
 				justify-content: center;
 			}
@@ -282,18 +282,18 @@ Author: Very - Andres Posada
 				width: 7.5rem;
 				background-color: var(--dark-blue-btn);
 
-				@include media($phone, 768px) {
-					width: 50%;
+				@include media($phone, 480px) {
+					width: 100%;
 					border-radius: 0;
 					padding: 1.3125rem 0;
 				}
 
-				@include media(768px, 1200px) {
+				@include media(480px, 1100px) {
 					margin: 0 0.9375rem;
 				}
 
 				.--menu-open & {
-					@include media($phone, 768px) {
+					@include media($phone, 480px) {
 						width: 48.8%;
 					}
 				}

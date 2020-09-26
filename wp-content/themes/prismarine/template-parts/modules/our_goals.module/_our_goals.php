@@ -22,7 +22,7 @@ $acfDBOG = [
 	'heading_g2'   => get_sub_field('heading_g2'),
 	'paragraph_g2'   => get_sub_field('paragraph_g2'),
   'button_text_g2'   => get_sub_field('button_text_g2'),
-  'button_url_g2'   => get_sub_field('button_url_g2'),
+  'button_email'   => get_sub_field('button_email'),
 ]; ?>
 
 <!-- Begin Our Goals Section -->
@@ -65,8 +65,8 @@ $acfDBOG = [
 				<?php if ($acfDBOG['paragraph_g2']): ?>
 					<p> <?php echo $acfDBOG['paragraph_g2']; ?> </p>
 				<?php endif; ?>
-				<?php if ($acfDBOG['button_url_g2']): ?>
-					<a href="<?php echo $acfDBOG['button_url_g2']; ?>" target="_blank"> <?php echo $acfDBOG['button_text_g2']; ?> </a>
+				<?php if ($acfDBOG['button_email']): ?>
+					<a href="mailto: <?php echo $acfDBOG['button_email']; ?>" target="_blank"> <?php echo $acfDBOG['button_text_g2']; ?> </a>
 				<?php endif; ?>
 			</div>
 		</div>

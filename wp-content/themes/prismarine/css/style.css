@@ -775,8 +775,6 @@ Author: Very - Andres Posada
 .header .header__container .buttonsHeader {
 	-webkit-transition: all 0.4s linear;
 	transition: all 0.4s linear;
-	width: 255px;
-	width: 15.9375rem;
 }
 .header .header__container .buttonsHeader .cta {
 	border-radius: 1.875rem;
@@ -2092,14 +2090,6 @@ section.thankyou a {
 		-ms-flex-pack: justify;
 		justify-content: space-between;
 	}
-	.header .header__container .buttonsHeader .cta {
-		border-radius: 0;
-		padding: 1.3125rem 0;
-		width: 50%;
-	}
-	.--menu-open .header .header__container .buttonsHeader .cta {
-		width: 48.8%;
-	}
 	.footer .footer__container .footer__heading h2 {
 		font-size: 32px;
 		font-size: 2rem;
@@ -2258,6 +2248,14 @@ section.thankyou a {
 	}
 }
 @media screen and (min-width: 300px) and (max-width: 479px) {
+	.header .header__container .buttonsHeader .cta {
+		border-radius: 0;
+		padding: 1.3125rem 0;
+		width: 100%;
+	}
+	.--menu-open .header .header__container .buttonsHeader .cta {
+		width: 48.8%;
+	}
 	.footer .footer__container .contactUs .contactUs__heading {
 		font-size: 18px;
 		font-size: 1.125rem;
@@ -2417,6 +2415,19 @@ section.thankyou a {
 		font-size: 0.875rem;
 	}
 }
+@media screen and (min-width: 480px) and (max-width: 849px) {
+	.header .header__container .buttonsHeader {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		width: 100%;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 1099px) {
+	.header .header__container .buttonsHeader .cta {
+		margin: 0 0.9375rem;
+	}
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
 	section.press .pressPosts {
 		padding: 0 15%;
@@ -2449,18 +2460,9 @@ section.thankyou a {
 		padding: 0 1.25rem;
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1099px) {
 	.header .header__container .menuHeader {
 		padding-top: 11rem;
-	}
-	.header .header__container .buttonsHeader {
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		width: 100%;
-	}
-	.header .header__container .buttonsHeader .cta {
-		margin: 0 0.9375rem;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1198px) {
@@ -2584,7 +2586,7 @@ section.thankyou a {
 		padding: 0 4.375rem 0 3.75rem;
 	}
 }
-@media screen and (min-width: 1200px) and (max-width: 1369px) {
+@media screen and (min-width: 1100px) and (max-width: 1369px) {
 	.header .header__container .contTopHeading {
 		margin-left: 22%;
 		margin-right: auto;
