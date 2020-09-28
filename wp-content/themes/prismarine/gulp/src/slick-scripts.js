@@ -23,6 +23,7 @@ document.addEventListener(
 					settings: {
 						arrows: false,
 						slidesToShow: 4,
+						slidesToScroll: 4,
 					},
 				},
 				{
@@ -30,6 +31,7 @@ document.addEventListener(
 					settings: {
 						arrows: false,
 						slidesToShow: 3,
+						slidesToScroll: 3,
 					},
 				},
 				{
@@ -39,6 +41,7 @@ document.addEventListener(
 						centerMode: true,
 						centerPadding: "60px",
 						slidesToShow: 1,
+						slidesToScroll: 1,
 					},
 				},
 			],

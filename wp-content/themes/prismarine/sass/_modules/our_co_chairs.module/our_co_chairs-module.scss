@@ -222,6 +222,10 @@ section.our-co-chairs {
 				margin-top: 2.0625rem;
 				margin-bottom: 2.0625rem;
 			}
+
+			@include media($phone, 480px) {
+				padding: 0 3.125rem;
+			}
 		}
 	}
 
