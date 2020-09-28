@@ -2273,6 +2273,9 @@ section.thankyou a {
 	section.our-co-chairs .cont-co-chairs .second .coChair {
 		width: 80%;
 	}
+	.modalAbv .heading h3 {
+		padding: 0 3.125rem;
+	}
 }
 @media screen and (min-width: 300px) and (max-width: 1022px) {
 	section.ourRecipients .ourRecipients__container {
