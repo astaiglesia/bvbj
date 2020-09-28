@@ -272,23 +272,10 @@ Author: Very - Andres Posada
 		}
 
 		.buttonsHeader {
-			// width: 15.9375rem;
 			transition: 0.4s all linear;
-
-			.--menu-open & {
-				// @include media($phone, 480px) {
-				// 	margin-left: 1.25rem;
-				// 	margin-right: 1.25rem;
-				// }
-			}
 
 			@include media($phone, 480px) {
 				margin-top: 0.75rem;
-			}
-
-			@include media(480px, 850px) {
-				// width: 100%;
-				// justify-content: center;
 			}
 
 			@include media($phone, 480px) {
