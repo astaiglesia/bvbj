@@ -36,9 +36,13 @@ $acfDBOR = [
 									$link_url = get_sub_field('link_url');
 									?>
 									<div class="logo">
-										<a href="<?php echo $link_url; ?>" target="_blank" title="Open partner website">
+										<?php if ($link_url): ?>
+											<a href="<?php echo $link_url; ?>" target="_blank" title="Open partner website">
+												<img src="<?php echo $logo; ?>" alt="logo supporting partners">
+											</a>
+										<?php else: ?>
 											<img src="<?php echo $logo; ?>" alt="logo supporting partners">
-										</a>
+										<?php endif; ?>
 									</div>
 							<?php
 							// End loop.
