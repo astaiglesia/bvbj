@@ -18,6 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon.ico">
 	<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
 	<?php $cssRouter = get_stylesheet_directory_uri(); ?>
 	<style type="text/css" style-type="above-the-fold">
@@ -108,21 +109,12 @@
 				</div>
 			<?php endif; ?>
 
-			<div class="buttonsHeader d-flex -items-start -row -wrap -justify-between">
+			<div class="buttonsHeader d-flex -items-start -row -wrap -justify-end">
 				<?php if ($acfDBHeader['url_1']): ?>
-					<div class="cta cta--darkblue">
-						<a href="<?php echo $acfDBHeader['url_1']; ?>" class="cta__btn" target="<?php echo $acfDBHeader['open_link_1']; ?>">
-							<?php echo $acfDBHeader['text_button_1']; ?>
-						</a>
-					</div>
+					<a href="<?php echo $acfDBHeader['url_1']; ?>" class="cta cta__btn cta--darkblue" target="<?php echo $acfDBHeader['open_link_1']; ?>">
+						<?php echo $acfDBHeader['text_button_1']; ?>
+					</a>
 				<?php endif; ?>
-				<div class="cta cta--lightblue">
-					<?php if ($acfDBHeader['url_2']): ?>
-						<a href="<?php echo $acfDBHeader['url_2']; ?>" class="cta__btn" target="<?php echo $acfDBHeader['open_link_2']; ?>">
-							<?php echo $acfDBHeader['text_button_2']; ?>
-						</a>
-					<?php endif; ?>
-				</div>
 			</div>
 		</div>
 	</header><!-- #masthead -->
