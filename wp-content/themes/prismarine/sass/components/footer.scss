@@ -55,7 +55,7 @@ Author: Very - Andres Posada
 
 		.contactUs {
 			margin-top: 3.125rem;
-			margin-bottom: 4.375rem;
+			margin-bottom: 1.875rem;
 
 			.contactUs__heading {
 				color: var(--white);
@@ -77,6 +77,34 @@ Author: Very - Andres Posada
 					letter-spacing: 0;
 					text-decoration: underline;
 					line-height: 1.875rem;
+				}
+			}
+		}
+	}
+
+	.contactUs__social-media {
+		margin: 3.875rem auto 3.4375rem;
+
+		@include media($phone, 768px) {
+			margin-top: 4.4375rem;
+		}
+
+		.social-icon {
+			margin: 0 0.375rem;
+
+			@include media($phone, 768px) {
+				margin: 0 0.625rem;
+			}
+
+			.svg-social {
+				background-size: 1rem;
+				height: 1rem;
+				width: 1rem;
+
+				@include media($phone, 992px) {
+					background-size: 2rem;
+					height: 2rem;
+					width: 2rem;
 				}
 			}
 		}
