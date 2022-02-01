@@ -1,0 +1,23 @@
+/* TODO: migrate this to post-slider cmp */
+@layer components {
+    .double-feature {
+        .glide__track {
+            overflow: visible;
+        }
+    }
+
+    .bg-blue .double-feature {
+        h2,
+        h3,
+        h4,
+        span,
+        p,
+        a {
+            @apply text-white;
+        }
+
+        .arrow__inner {
+            @apply bg-white;
+        }
+    }
+}

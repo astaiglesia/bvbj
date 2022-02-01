@@ -1,0 +1,11 @@
+/* base */
+@import "../../node_modules/tailwindcss/base";
+@import './global/fonts';
+@import './global/typography';
+@import "../../node_modules/tailwindcss/components";
+
+/* components -- DO-NOT-DELETE-THIS-LINE */
+@import './components/block-demo';
+
+/* utilities */
+@import "../../node_modules/tailwindcss/utilities";

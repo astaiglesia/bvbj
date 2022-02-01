@@ -1,0 +1,115 @@
+@layer components {
+  label {
+    @apply mb-e10 font-semibold;
+  }
+  .search-wrap {
+    @apply relative;
+
+    input[type=text].searchterm {
+      @apply border-0 border-b opacity-100 py-e8 px-0 transition-all duration-300 pr-e30;
+
+      &:focus {
+        @apply border-orange
+      }
+    }
+
+    &:after {
+      content: '';
+      @apply block h-e18 w-e18 border-0 opacity-100 absolute right-0 top-0;
+      z-index: 4000;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../images/magnifying-glass.svg');
+    }
+  }
+
+  input[type=text] {
+    @apply bg-transparent border p-e16 opacity-50 text-blue transition-all duration-300;
+  }
+
+  input[type=text]:focus {
+    @apply opacity-100 outline-0;
+  }
+
+  input[type=radio] {
+    @apply w-e18 h-e18 relative appearance-none;
+
+    &:after {
+      content: '';
+      @apply w-e18 h-e18 block border absolute top-0 left-0 rounded-full pointer-events-none;
+    }
+
+    &:checked:before {
+      content: '';
+      @apply w-e8 h-e8 top-e5 left-e5 absolute bg-orange rounded-full;
+    }
+  }
+
+  input[type=checkbox] {
+    @apply w-e18 h-e18 relative appearance-none;
+
+    &:after {
+      content: '';
+      @apply w-e18 h-e18 block border absolute top-0 left-0 pointer-events-none;
+    }
+
+    &:checked:after {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../images/input-checkbox-check.svg');
+    }
+  }
+
+  input.error {
+    @apply opacity-100 border-red-500
+  }
+
+  .listbox {
+    @apply relative w-full border p-e16 opacity-50;
+
+    button {
+      @apply bg-sky w-full relative flex justify-between items-center whitespace-nowrap overflow-hidden;
+      padding: 0 12px;
+
+      &:after {
+        content: '';
+        z-index: 2;
+        @apply w-e10 h-e10 block absolute right-e10 border-orange border-b border-r rotate-45 transition-all duration-300;
+      }
+
+      &[aria-expanded=true]:after {
+        @apply -rotate-135
+      }
+    }
+
+    &--open {
+      @apply border-b-0 opacity-100;
+    }
+
+    ul {
+      list-style-type: none;
+      top: 56px;
+      left: -1px;
+      z-index: 1;
+      width: calc(100% + 2px);
+      @apply hidden p-0 m-0 absolute bg-sky border border-t-0;
+
+      li {
+        @apply px-e16 py-e10 cursor-pointer relative;
+
+        &:hover {
+          @apply bg-white;
+        }
+      }
+
+      li.disabled {
+        cursor: no-drop;
+        @apply bg-sky;
+      }
+
+      li.focused:not(.disabled) {
+        @apply bg-white;
+      }
+    }
+  }
+}

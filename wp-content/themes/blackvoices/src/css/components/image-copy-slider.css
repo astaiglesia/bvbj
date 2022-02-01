@@ -1,0 +1,13 @@
+@layer components {
+  .image-copy-slider {
+    .glide__track {
+      overflow: visible;
+    }
+
+    @media screen('2xl') {
+      .image-copy-slider__buttons {
+        padding-right: 20%;
+      }
+    }
+  }
+}

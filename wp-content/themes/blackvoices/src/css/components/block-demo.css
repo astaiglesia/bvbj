@@ -1,0 +1,18 @@
+/* @tailwind base; */
+@tailwind components;
+/* @tailwind utilities;
+@tailwind screens; */
+
+@layer components {
+  .block-demo {
+    @apply p-12;
+
+    .block-demo__text {
+      @apply mb-6 block font-light;
+    }
+
+    .block-demo__image {
+      @apply h-e460 w-e460;
+    }
+  }
+}

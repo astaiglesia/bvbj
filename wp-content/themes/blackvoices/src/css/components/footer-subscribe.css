@@ -1,0 +1,15 @@
+@layer components {
+  .footer-subscribe {
+    .footer-subscribe__content {
+      z-index: 20;
+      position: relative;
+      @apply bg-white;
+    }
+    
+    &:after {
+      content: '';
+      z-index: 10;
+      @apply absolute bg-sky top-0 left-0 w-full h-1/2;
+    }
+  }
+}

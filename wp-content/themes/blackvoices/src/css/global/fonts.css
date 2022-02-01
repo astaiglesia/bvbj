@@ -1,0 +1,64 @@
+@font-face {
+  font-family:Graphie;
+  font-weight:700;
+  src:
+    url(./fonts/Graphie-Bold.woff2) format("woff2"),
+    url(./fonts/Graphie-Bold.woff) format("woff");
+  font-style:normal;
+}
+@font-face {
+  font-family:Graphie;
+  font-weight:700;
+  src:
+    url(./fonts/Graphie-BoldItalic.woff2) format("woff2"),
+    url(./fonts/Graphie-BoldItalic.woff) format("woff");
+  font-style:italic;
+}
+@font-face {
+  font-family:Graphie;
+  font-weight:400;
+  src:
+    url(./fonts/Graphie-Book.woff2) format("woff2"),
+    url(./fonts/Graphie-Book.woff) format("woff");
+  font-style:normal;
+}
+@font-face {
+  font-family:Graphie;
+  font-weight:400;
+  src:
+    url(./fonts/Graphie-BookItalic.woff2) format("woff2"),
+    url(./fonts/Graphie-BookItalic.woff) format("woff");
+  font-style:italic;
+}
+@font-face {
+  font-family:Graphie;
+  font-weight:300;
+  src:
+    url(./fonts/Graphie-Light.woff2) format("woff2"),
+    url(./fonts/Graphie-Light.woff) format("woff");
+  font-style:normal;
+}
+@font-face {
+  font-family:Graphie;
+  font-weight:300;
+  src:
+    url(./fonts/Graphie-LightItalic.woff2) format("woff2"),
+    url(./fonts/Graphie-LightItalic.woff) format("woff");
+  font-style:italic;
+}
+@font-face {
+  font-family:Graphie;
+  font-weight:600;
+  src:
+    url(./fonts/Graphie-SemiBold.woff2) format("woff2"),
+    url(./fonts/Graphie-SemiBold.woff) format("woff");
+  font-style:normal;
+}
+/* @font-face {
+  font-family:Graphie;
+  font-weight:600;
+  src:
+    url(./fonts/Graphie-SemiBoldItalic.woff2) format("woff2"),
+    url(./fonts/Graphie-SemiBoldItalic.woff) format("woff");
+  font-style:italic;
+} */

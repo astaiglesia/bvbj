@@ -1,0 +1,43 @@
+@layer base {
+
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    @apply antialiased text-base text-blue leading-snug lg:text-md;
+  }
+
+  a,
+  button {
+    @apply cursor-pointer;
+  }
+
+  h1,
+  .h1 {
+    @apply font-extralight text-2xl-alt md:text-5xl-alt lg:text-5xl;
+  }
+
+  h2,
+  .h2 {
+    @apply text-4xl font-extralight;
+  }
+
+  h3,
+  .h3 {
+    @apply text-3xl font-extralight;
+  }
+
+  h4,
+  .h4 {
+    @apply text-md lg:text-xl;
+  }
+
+  .copy-lg {
+    @apply text-md lg:text-lg;
+  }
+
+  a {
+    @apply decoration-1 decoration-orange hover:underline;
+  }
+}

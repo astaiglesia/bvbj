@@ -1,0 +1,26 @@
+@layer components {
+    .mobile-nav__trigger {
+      .arrow__outter {
+        @apply border-orange;
+      }
+
+      .arrow__inner {
+        @apply bg-white;
+      }
+    }
+  
+    .mobile-nav__trigger.active {
+      .arrow {
+        @apply rotate-180;
+      }
+
+      .arrow__outter {
+        @apply border-white;
+      }
+    }
+
+    .mobile-nav .nav-menu a,
+    .header .mobile-nav .nav-menu .nav-link {
+      @apply text-white font-normal uppercase text-lg my-e20 block;
+    }
+}

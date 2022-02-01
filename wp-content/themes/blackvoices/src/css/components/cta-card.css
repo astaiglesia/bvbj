@@ -1,0 +1,29 @@
+@layer components {
+    .cta-card {
+        &__arrow.arrow.arrow--lg {
+            @apply w-e16 h-e16 overflow-hidden;
+
+            @media screen(lg) {
+                height: 61px;
+                width: 61px;
+            }
+
+            .arrow__outter {
+                @apply w-e16 h-e16;
+
+                @media screen(lg) {
+                    height: 61px;
+                    width: 61px;
+                }
+            }
+
+            .arrow__inner {
+                left: -52px;
+
+                @media screen(lg) {
+                    left: -42px;
+                }
+            }
+        }
+    }
+}

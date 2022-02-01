@@ -1,0 +1,15 @@
+@layer components {
+    .bg-blue .post-list-featured {
+        h2,
+        h3,
+        h4,
+        span,
+        p {
+            @apply text-white;
+        }
+
+        .post-list-item {
+            @apply border-orange;
+        }
+    }
+}

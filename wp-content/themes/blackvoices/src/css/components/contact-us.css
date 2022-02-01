@@ -1,0 +1,76 @@
+@layer components {
+    .page-template-page-contact {
+        .contact-us {
+            h1 {
+                font-size: 3rem;
+                line-height: 1.2;
+                @apply text-center font-light;
+
+                @media screen(md) {
+                    font-size: 8rem;
+                }
+
+                @media screen(lg) {
+                    font-size: 12rem;
+                }
+
+                @media screen(3xl) {
+                    font-size: 28rem;
+                }
+            }
+
+            &__content .container,
+            &__locations .container {
+                @media screen(lg) {
+                    max-width: 990px;
+                    padding-left: 140px
+                }
+            }
+
+            .error-message {
+                @apply hidden;
+            }
+
+            .listbox {
+                @apply bg-sky;
+            }
+
+            .form__input.error {
+                input,
+                select,
+                .listbox {
+                    @apply border-red-500;
+                }
+
+                label {
+                    @apply text-red-500;
+                }
+
+                .error-message {
+                    @apply block
+                }
+            }
+
+            &__locations {
+                @apply pb-e120;
+            }
+
+            .locations__location {
+                @media screen(md) {
+                    &:nth-of-type(even) {
+                        padding-left: 30px
+                    }
+
+                    &:nth-of-type(odd) {
+                        padding-right: 30px
+                    }
+                }
+
+                b,
+                strong {
+                    @apply mb-e5 uppercase font-semibold inline-block;
+                }
+            }
+        }
+    }
+}

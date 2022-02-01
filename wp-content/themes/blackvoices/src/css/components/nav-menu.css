@@ -1,0 +1,17 @@
+@layer components {
+  .header .nav-menu {
+    @apply flex;
+  }
+
+  .header .nav-menu .nav-link {
+    @apply text-white uppercase text-sm lg:text-base px-10 font-semibold;
+  }
+
+  .footer .nav-menu {
+    @apply columns-2 lg:columns-3;
+
+    .nav-link {
+      @apply text-sky uppercase text-sm pr-10 font-semibold mb-e15 block;
+    }
+  }
+}

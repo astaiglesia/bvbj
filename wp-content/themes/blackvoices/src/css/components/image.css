@@ -1,0 +1,30 @@
+@layer components {
+  .image {
+    &.image--cover {
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &.image--contain {
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &.image--pos-center {
+      img {
+        object-position: center;
+      }
+    }
+
+    &.image--ellipse {
+      border-radius: 100%;
+      overflow: hidden;
+    }
+  }
+}

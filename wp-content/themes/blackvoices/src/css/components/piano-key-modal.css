@@ -1,0 +1,83 @@
+@layer components {
+  .piano-key-modal {
+    @apply fixed z-500 top-0 left-0 h-screen w-screen;
+
+    &__inner {
+      @apply flex relative z-100 justify-center items-center;
+    }
+
+    &__bg {
+      @apply bg-purple absolute w-1/2 h-4/5
+    }
+
+    &__logo {
+      @apply mb-e120;
+    }
+
+    &__image {
+      @apply w-e420 h-e240;
+    }
+
+    &__title {
+      @apply text-2xl mb-e40;
+    }
+
+    &__desc {
+      @apply text-white pr-e40 mb-e60 w-full max-w-e550;
+    }
+
+    &__desc p,
+    &__desc span,
+    &__desc a,{
+      @apply text-white;
+    }
+
+    &__study-link {
+      @apply text-white;
+    }
+
+    &__title {
+      @apply text-white w-full max-w-e550;
+    }
+
+    &__tags {
+      @apply flex mb-e40 w-full max-w-e550 justify-between;
+    }
+
+    &__column {
+      @apply flex flex-col mr-e40;
+    }
+
+    &__tag {
+      @apply text-white;
+    }
+
+    &__actions {
+      @apply relative flex flex-col justify-between items-center h-screen w-e180 border-l border-white pb-e60;
+    }
+
+    &__close {
+      @apply relative pt-e60 cursor-pointer
+    }
+
+    &__next {
+      @apply mb-e30 cursor-pointer;
+    }
+
+    &__prev {
+      @apply cursor-pointer;
+    }
+
+    &__position {
+      @apply text-white font-semibold mb-e30;
+    }
+
+    &__actions-bottom {
+      @apply flex flex-col justify-between items-center;
+    }
+
+    &__icon {
+      @apply pointer-events-none;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@layer components {
+  .button {
+    &:not(.button--arrow){
+      @apply border justify-center;
+      min-height: 56px;
+    }
+  
+    @apply overflow-hidden inline-flex items-center relative p-e16 text-base border-orange leading-none bg-transparent font-semibold uppercase min-w-e240;
+
+    &.button--invert {
+      @apply text-white;
+    }
+
+    &.button--white {
+      @apply text-white border-white;
+
+      &.button--arrow:before,
+      &.button--arrow:after {
+        @apply bg-white;
+      }
+    }
+
+    &--arrow {
+      @apply justify-between border-l border-b;
+
+      &:after {
+        content: '';
+        @apply bg-orange w-full h-e1 block top-0 left-0 absolute transition-all ease-out duration-300;
+      }
+  
+      &:before {
+        content: '';
+        @apply bg-orange h-full w-e1 block bottom-0 right-0 absolute transition-all ease-out duration-300;
+      }
+
+      .arrow {
+        @apply inline-block ml-e30 transition-all duration-300;
+      }
+
+      &.button:hover .arrow {
+        transform: translate(16px, -16px);
+      }
+
+      &.button:hover:after {
+        width: calc(100% - 32px);
+      }
+
+      &.button:hover:before {
+        height: calc(100% - 32px);
+      }
+    }
+  }
+}
