@@ -87,9 +87,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "post"
+                "value": "templates\/page-home.php"
             }
         ]
     ],
@@ -101,5 +101,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1643766567
+    "modified": 1643771758
 }

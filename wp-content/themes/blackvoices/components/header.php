@@ -1,7 +1,7 @@
 <?php
 $logo = get_field('header_logo', 'option');?>
 
-<header class="header z-150 h-e100 fixed w-full top-0" data-component="header">
+<header class="header z-150 w-full" data-component="header">
 
   <div class="container flex justify-between py-10">
     <a class="header__logo" href="<?= site_url() ?>" title="home">

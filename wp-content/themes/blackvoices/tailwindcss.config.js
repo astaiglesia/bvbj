@@ -121,7 +121,10 @@ module.exports = {
       'auto': 'auto',
     },
     extend: {
-      // colors: {},
+      colors: {
+        'pale-grey': '#f1f1f1',
+        'violet-bl': '#01196d'
+      },
       spacing: spacing,
       order: {
         '1': 1,

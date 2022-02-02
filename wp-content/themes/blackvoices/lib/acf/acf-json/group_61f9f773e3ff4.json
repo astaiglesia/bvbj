@@ -1,0 +1,23 @@
+{
+    "key": "group_61f9f773e3ff4",
+    "title": "Awardees List Content",
+    "fields": [],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/page-awardees.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1643771783
+}
