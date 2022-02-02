@@ -648,13 +648,13 @@ a:hover {
 .uppercase {
   text-transform: uppercase;
 }
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-bvbj-blue-lt {
   --tw-text-opacity: 1;
   color: rgb(131 195 254 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .decoration-1 {
   text-decoration-thickness: 1px;
