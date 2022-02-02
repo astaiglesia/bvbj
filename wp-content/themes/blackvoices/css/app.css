@@ -633,6 +633,10 @@ a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(241 241 241 / var(--tw-bg-opacity));
 }
+.bg-violet-bl {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 25 109 / var(--tw-bg-opacity));
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;

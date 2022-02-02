@@ -31,39 +31,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/js/components/co-chair-emeritus.js":
-/*!************************************************!*\
-  !*** ./src/js/components/co-chair-emeritus.js ***!
-  \************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }\n/* harmony export */ });\n/**\n* Initializes the site's coChairEmeritus component.\n* @constructor\n* @param {Object} el - The site's coChairEmeritus container element.\n*/\nvar coChairEmeritus = function coChairEmeritus(el) {\n  console.log(el);\n};\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {\n  coChairEmeritus(el);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvY29tcG9uZW50cy9jby1jaGFpci1lbWVyaXR1cy5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLElBQU1BLGVBQWUsR0FBRyxTQUFsQkEsZUFBa0IsQ0FBQUMsRUFBRSxFQUFJO0FBQzFCQyxFQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWUYsRUFBWjtBQUNILENBRkQ7O0FBR0EsNkJBQWUsb0NBQVNBLEVBQVQsRUFBYTtBQUN4QkQsRUFBQUEsZUFBZSxDQUFDQyxFQUFELENBQWY7QUFDSCIsInNvdXJjZXMiOlsid2VicGFjazovL2Jhc2UtdGhlbWUvLi9zcmMvanMvY29tcG9uZW50cy9jby1jaGFpci1lbWVyaXR1cy5qcz80MTdkIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxuKiBJbml0aWFsaXplcyB0aGUgc2l0ZSdzIGNvQ2hhaXJFbWVyaXR1cyBjb21wb25lbnQuXG4qIEBjb25zdHJ1Y3RvclxuKiBAcGFyYW0ge09iamVjdH0gZWwgLSBUaGUgc2l0ZSdzIGNvQ2hhaXJFbWVyaXR1cyBjb250YWluZXIgZWxlbWVudC5cbiovXG5jb25zdCBjb0NoYWlyRW1lcml0dXMgPSBlbCA9PiB7XG4gICAgY29uc29sZS5sb2coZWwpXG59XG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbihlbCkge1xuICAgIGNvQ2hhaXJFbWVyaXR1cyhlbClcbn1cbiJdLCJuYW1lcyI6WyJjb0NoYWlyRW1lcml0dXMiLCJlbCIsImNvbnNvbGUiLCJsb2ciXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/js/components/co-chair-emeritus.js\n");
-
-/***/ }),
-
-/***/ "./src/js/components/co-chairs.js":
-/*!****************************************!*\
-  !*** ./src/js/components/co-chairs.js ***!
-  \****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }\n/* harmony export */ });\n/**\n* Initializes the site's coChairs component.\n* @constructor\n* @param {Object} el - The site's coChairs container element.\n*/\nvar coChairs = function coChairs(el) {\n  console.log(el);\n};\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {\n  coChairs(el);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvY29tcG9uZW50cy9jby1jaGFpcnMuanMuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxJQUFNQSxRQUFRLEdBQUcsU0FBWEEsUUFBVyxDQUFBQyxFQUFFLEVBQUk7QUFDbkJDLEVBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZRixFQUFaO0FBQ0gsQ0FGRDs7QUFHQSw2QkFBZSxvQ0FBU0EsRUFBVCxFQUFhO0FBQ3hCRCxFQUFBQSxRQUFRLENBQUNDLEVBQUQsQ0FBUjtBQUNIIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYmFzZS10aGVtZS8uL3NyYy9qcy9jb21wb25lbnRzL2NvLWNoYWlycy5qcz82NjVmIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxuKiBJbml0aWFsaXplcyB0aGUgc2l0ZSdzIGNvQ2hhaXJzIGNvbXBvbmVudC5cbiogQGNvbnN0cnVjdG9yXG4qIEBwYXJhbSB7T2JqZWN0fSBlbCAtIFRoZSBzaXRlJ3MgY29DaGFpcnMgY29udGFpbmVyIGVsZW1lbnQuXG4qL1xuY29uc3QgY29DaGFpcnMgPSBlbCA9PiB7XG4gICAgY29uc29sZS5sb2coZWwpXG59XG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbihlbCkge1xuICAgIGNvQ2hhaXJzKGVsKVxufVxuIl0sIm5hbWVzIjpbImNvQ2hhaXJzIiwiZWwiLCJjb25zb2xlIiwibG9nIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/js/components/co-chairs.js\n");
-
-/***/ }),
-
-/***/ "./src/js/components/description-block.js":
-/*!************************************************!*\
-  !*** ./src/js/components/description-block.js ***!
-  \************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }\n/* harmony export */ });\n/**\n* Initializes the site's descriptionBlock component.\n* @constructor\n* @param {Object} el - The site's descriptionBlock container element.\n*/\nvar descriptionBlock = function descriptionBlock(el) {\n  console.log(el);\n};\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {\n  descriptionBlock(el);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvY29tcG9uZW50cy9kZXNjcmlwdGlvbi1ibG9jay5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLElBQU1BLGdCQUFnQixHQUFHLFNBQW5CQSxnQkFBbUIsQ0FBQUMsRUFBRSxFQUFJO0FBQzNCQyxFQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWUYsRUFBWjtBQUNILENBRkQ7O0FBR0EsNkJBQWUsb0NBQVNBLEVBQVQsRUFBYTtBQUN4QkQsRUFBQUEsZ0JBQWdCLENBQUNDLEVBQUQsQ0FBaEI7QUFDSCIsInNvdXJjZXMiOlsid2VicGFjazovL2Jhc2UtdGhlbWUvLi9zcmMvanMvY29tcG9uZW50cy9kZXNjcmlwdGlvbi1ibG9jay5qcz8wNGMwIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxuKiBJbml0aWFsaXplcyB0aGUgc2l0ZSdzIGRlc2NyaXB0aW9uQmxvY2sgY29tcG9uZW50LlxuKiBAY29uc3RydWN0b3JcbiogQHBhcmFtIHtPYmplY3R9IGVsIC0gVGhlIHNpdGUncyBkZXNjcmlwdGlvbkJsb2NrIGNvbnRhaW5lciBlbGVtZW50LlxuKi9cbmNvbnN0IGRlc2NyaXB0aW9uQmxvY2sgPSBlbCA9PiB7XG4gICAgY29uc29sZS5sb2coZWwpXG59XG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbihlbCkge1xuICAgIGRlc2NyaXB0aW9uQmxvY2soZWwpXG59XG4iXSwibmFtZXMiOlsiZGVzY3JpcHRpb25CbG9jayIsImVsIiwiY29uc29sZSIsImxvZyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/js/components/description-block.js\n");
-
-/***/ }),
-
 /***/ "./src/js/components/footer.js":
 /*!*************************************!*\
   !*** ./src/js/components/footer.js ***!
@@ -94,39 +61,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }\n/* harmony export */ });\n/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lib/utils */ \"./src/js/lib/utils.js\");\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, \"prototype\", { writable: false }); return Constructor; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n\n\nvar Image = /*#__PURE__*/_createClass(function Image(el) {\n  _classCallCheck(this, Image);\n\n  this.el = el;\n  this.objectFit = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_0__.doesSupportObjectFit)();\n});\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {\n  new Image(el);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvY29tcG9uZW50cy9pbWFnZS5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUFBOztJQUVNQyxrQ0FDSixlQUFhQyxFQUFiLEVBQWlCO0FBQUE7O0FBQ2YsT0FBS0EsRUFBTCxHQUFVQSxFQUFWO0FBQ0EsT0FBS0MsU0FBTCxHQUFpQkgsZ0VBQW9CLEVBQXJDO0FBQ0Q7O0FBR0gsNkJBQWUsb0NBQVNFLEVBQVQsRUFBYTtBQUMxQixNQUFJRCxLQUFKLENBQVVDLEVBQVY7QUFDRCIsInNvdXJjZXMiOlsid2VicGFjazovL2Jhc2UtdGhlbWUvLi9zcmMvanMvY29tcG9uZW50cy9pbWFnZS5qcz8wMGQ4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGRvZXNTdXBwb3J0T2JqZWN0Rml0IH0gZnJvbSAnLi4vbGliL3V0aWxzJ1xuXG5jbGFzcyBJbWFnZSB7XG4gIGNvbnN0cnVjdG9yIChlbCkge1xuICAgIHRoaXMuZWwgPSBlbFxuICAgIHRoaXMub2JqZWN0Rml0ID0gZG9lc1N1cHBvcnRPYmplY3RGaXQoKVxuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uKGVsKSB7XG4gIG5ldyBJbWFnZShlbClcbn0iXSwibmFtZXMiOlsiZG9lc1N1cHBvcnRPYmplY3RGaXQiLCJJbWFnZSIsImVsIiwib2JqZWN0Rml0Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/js/components/image.js\n");
-
-/***/ }),
-
-/***/ "./src/js/components/newsletter-signup.js":
-/*!************************************************!*\
-  !*** ./src/js/components/newsletter-signup.js ***!
-  \************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }\n/* harmony export */ });\n/**\n* Initializes the site's newsletterSignup component.\n* @constructor\n* @param {Object} el - The site's newsletterSignup container element.\n*/\nvar newsletterSignup = function newsletterSignup(el) {\n  console.log(el);\n};\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {\n  newsletterSignup(el);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvY29tcG9uZW50cy9uZXdzbGV0dGVyLXNpZ251cC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLElBQU1BLGdCQUFnQixHQUFHLFNBQW5CQSxnQkFBbUIsQ0FBQUMsRUFBRSxFQUFJO0FBQzNCQyxFQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWUYsRUFBWjtBQUNILENBRkQ7O0FBR0EsNkJBQWUsb0NBQVNBLEVBQVQsRUFBYTtBQUN4QkQsRUFBQUEsZ0JBQWdCLENBQUNDLEVBQUQsQ0FBaEI7QUFDSCIsInNvdXJjZXMiOlsid2VicGFjazovL2Jhc2UtdGhlbWUvLi9zcmMvanMvY29tcG9uZW50cy9uZXdzbGV0dGVyLXNpZ251cC5qcz82MDliIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxuKiBJbml0aWFsaXplcyB0aGUgc2l0ZSdzIG5ld3NsZXR0ZXJTaWdudXAgY29tcG9uZW50LlxuKiBAY29uc3RydWN0b3JcbiogQHBhcmFtIHtPYmplY3R9IGVsIC0gVGhlIHNpdGUncyBuZXdzbGV0dGVyU2lnbnVwIGNvbnRhaW5lciBlbGVtZW50LlxuKi9cbmNvbnN0IG5ld3NsZXR0ZXJTaWdudXAgPSBlbCA9PiB7XG4gICAgY29uc29sZS5sb2coZWwpXG59XG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbihlbCkge1xuICAgIG5ld3NsZXR0ZXJTaWdudXAoZWwpXG59XG4iXSwibmFtZXMiOlsibmV3c2xldHRlclNpZ251cCIsImVsIiwiY29uc29sZSIsImxvZyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/js/components/newsletter-signup.js\n");
-
-/***/ }),
-
-/***/ "./src/js/components/partners.js":
-/*!***************************************!*\
-  !*** ./src/js/components/partners.js ***!
-  \***************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }\n/* harmony export */ });\n/**\n* Initializes the site's partners component.\n* @constructor\n* @param {Object} el - The site's partners container element.\n*/\nvar partners = function partners(el) {\n  console.log(el);\n};\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {\n  partners(el);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvY29tcG9uZW50cy9wYXJ0bmVycy5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLElBQU1BLFFBQVEsR0FBRyxTQUFYQSxRQUFXLENBQUFDLEVBQUUsRUFBSTtBQUNuQkMsRUFBQUEsT0FBTyxDQUFDQyxHQUFSLENBQVlGLEVBQVo7QUFDSCxDQUZEOztBQUdBLDZCQUFlLG9DQUFTQSxFQUFULEVBQWE7QUFDeEJELEVBQUFBLFFBQVEsQ0FBQ0MsRUFBRCxDQUFSO0FBQ0giLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9iYXNlLXRoZW1lLy4vc3JjL2pzL2NvbXBvbmVudHMvcGFydG5lcnMuanM/OWI1YSJdLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiogSW5pdGlhbGl6ZXMgdGhlIHNpdGUncyBwYXJ0bmVycyBjb21wb25lbnQuXG4qIEBjb25zdHJ1Y3RvclxuKiBAcGFyYW0ge09iamVjdH0gZWwgLSBUaGUgc2l0ZSdzIHBhcnRuZXJzIGNvbnRhaW5lciBlbGVtZW50LlxuKi9cbmNvbnN0IHBhcnRuZXJzID0gZWwgPT4ge1xuICAgIGNvbnNvbGUubG9nKGVsKVxufVxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24oZWwpIHtcbiAgICBwYXJ0bmVycyhlbClcbn1cbiJdLCJuYW1lcyI6WyJwYXJ0bmVycyIsImVsIiwiY29uc29sZSIsImxvZyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/js/components/partners.js\n");
-
-/***/ }),
-
-/***/ "./src/js/components/side-by-side.js":
-/*!*******************************************!*\
-  !*** ./src/js/components/side-by-side.js ***!
-  \*******************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }\n/* harmony export */ });\n/**\n* Initializes the site's sideBySide component.\n* @constructor\n* @param {Object} el - The site's sideBySide container element.\n*/\nvar sideBySide = function sideBySide(el) {\n  console.log(el);\n};\n\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(el) {\n  sideBySide(el);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvY29tcG9uZW50cy9zaWRlLWJ5LXNpZGUuanMuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxJQUFNQSxVQUFVLEdBQUcsU0FBYkEsVUFBYSxDQUFBQyxFQUFFLEVBQUk7QUFDckJDLEVBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZRixFQUFaO0FBQ0gsQ0FGRDs7QUFHQSw2QkFBZSxvQ0FBU0EsRUFBVCxFQUFhO0FBQ3hCRCxFQUFBQSxVQUFVLENBQUNDLEVBQUQsQ0FBVjtBQUNIIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vYmFzZS10aGVtZS8uL3NyYy9qcy9jb21wb25lbnRzL3NpZGUtYnktc2lkZS5qcz83NjdkIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxuKiBJbml0aWFsaXplcyB0aGUgc2l0ZSdzIHNpZGVCeVNpZGUgY29tcG9uZW50LlxuKiBAY29uc3RydWN0b3JcbiogQHBhcmFtIHtPYmplY3R9IGVsIC0gVGhlIHNpdGUncyBzaWRlQnlTaWRlIGNvbnRhaW5lciBlbGVtZW50LlxuKi9cbmNvbnN0IHNpZGVCeVNpZGUgPSBlbCA9PiB7XG4gICAgY29uc29sZS5sb2coZWwpXG59XG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbihlbCkge1xuICAgIHNpZGVCeVNpZGUoZWwpXG59XG4iXSwibmFtZXMiOlsic2lkZUJ5U2lkZSIsImVsIiwiY29uc29sZSIsImxvZyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/js/components/side-by-side.js\n");
 
 /***/ }),
 
@@ -277,15 +211,9 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar _createClass = function (
 
 var map = {
 	"./awardee-slider.js": "./src/js/components/awardee-slider.js",
-	"./co-chair-emeritus.js": "./src/js/components/co-chair-emeritus.js",
-	"./co-chairs.js": "./src/js/components/co-chairs.js",
-	"./description-block.js": "./src/js/components/description-block.js",
 	"./footer.js": "./src/js/components/footer.js",
 	"./header.js": "./src/js/components/header.js",
-	"./image.js": "./src/js/components/image.js",
-	"./newsletter-signup.js": "./src/js/components/newsletter-signup.js",
-	"./partners.js": "./src/js/components/partners.js",
-	"./side-by-side.js": "./src/js/components/side-by-side.js"
+	"./image.js": "./src/js/components/image.js"
 };
 
 

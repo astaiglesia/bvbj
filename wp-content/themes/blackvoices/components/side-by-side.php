@@ -1,3 +1,3 @@
-<section class="side-by-side" data-component="side-by-side">
-    <div class="container"></div>
+<section class="side-by-side">
+    <div class="container">side-by-side</div>
 </section>
