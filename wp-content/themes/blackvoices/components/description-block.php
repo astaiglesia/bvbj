@@ -1,5 +1,5 @@
-<section class="description-block w-full bg-violet-bl">
+<section class="description-block w-full bg-bvbj-blue">
     <div class="container">
-        <span>description block</span>
+        <span class="text-bvbj-blue-lt uppercase"><?= $description ?></span>
     </div>
 </section>

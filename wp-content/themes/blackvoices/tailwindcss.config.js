@@ -122,8 +122,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        'pale-grey': '#f1f1f1',
-        'violet-bl': '#01196d'
+        'bvbj-grey': '#f1f1f1',
+        'bvbj-blue': '#01196d',
+        'bvbj-blue-lt': '#83C3FE'
       },
       spacing: spacing,
       order: {
