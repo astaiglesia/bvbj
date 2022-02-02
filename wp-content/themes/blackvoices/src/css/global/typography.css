@@ -5,7 +5,7 @@
   }
 
   body {
-    @apply antialiased text-base text-blue leading-snug lg:text-md;
+    @apply antialiased text-base lg:text-md;
   }
 
   a,
@@ -15,17 +15,17 @@
 
   h1,
   .h1 {
-    @apply font-extralight text-2xl-alt md:text-5xl-alt lg:text-5xl;
+    @apply lg:text-5xl;
   }
 
   h2,
   .h2 {
-    @apply text-4xl font-extralight;
+    @apply text-4xl;
   }
 
   h3,
   .h3 {
-    @apply text-3xl font-extralight;
+    @apply text-3xl;
   }
 
   h4,
@@ -38,6 +38,6 @@
   }
 
   a {
-    @apply decoration-1 decoration-orange hover:underline;
+    @apply decoration-1 hover:underline;
   }
 }

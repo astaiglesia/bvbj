@@ -5,7 +5,6 @@ new ThemeInit();
 
 // Advanced Custom Field plugin.
 require_once( 'lib/acf.php' );
-require_once( 'lib/acf-block-registration.php' );
 // // Enqueue scripts and styles.
 require_once( 'lib/enqueue-scripts.php' );
 // Register theme support for title tag, etc.
@@ -20,7 +19,7 @@ require_once( 'lib/components.php' );
 require_once( 'lib/media.php' );
 // Admin functions & modifications.
 require_once( 'lib/admin.php' );
-// Add handler for cURL requests and other wp-rest tasks
+// Add handlers wp-rest tasks
 require_once( 'lib/rest-routes.php' );
 // add svg support
 require_once( 'lib/svg-support.php');

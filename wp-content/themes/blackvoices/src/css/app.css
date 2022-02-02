@@ -1,6 +1,3 @@
-/* sass mixins */
-/* @import "./global/mixins"; */
-
 /* base */
 @import "../../node_modules/tailwindcss/base";
 @import './global/fonts';
@@ -8,23 +5,17 @@
 @import "../../node_modules/tailwindcss/components";
 
 /* components -- DO-NOT-DELETE-THIS-LINE */
-@import "./components/double-feature.css";
-@import "./components/post-list-featured.css";
-@import "./components/cta-card.css";
-@import "./components/contact-us.css";
-@import './components/mobile-nav';
-@import './components/image-copy-slider';
-@import './components/arrow';
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./components/newsletter-signup.css";
+@import "./components/partners.css";
+@import "./components/co-chair-emeritus.css";
+@import "./components/co-chairs.css";
+@import "./components/side-by-side.css";
+@import "./components/description-block.css";
+@import "./components/awardee-slider.css";
 @import './components/button';
 @import './components/image';
-@import './components/nav-menu';
-@import './components/piano-key-carousel';
-@import './components/piano-key-modal';
-@import './components/footer-subscribe';
-@import './components/company-index';
-@import './components/user-index';
-@import './components/block-demo';
-@import './global/forms.css';
 
 /* utilities */
 @import "../../node_modules/tailwindcss/utilities";

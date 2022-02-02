@@ -1,0 +1,7 @@
+@layer components {
+	.header {
+		&__desktop-nav a {
+			@apply block px-8;
+		}
+	}
+}
